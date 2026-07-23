@@ -1,0 +1,59 @@
+const fs = require('fs');
+
+// 1. Update HTML
+let html = fs.readFileSync('index.html', 'utf8');
+
+const targetHtml = `<div class="tmj-cta">
+                <div class="container">
+                    <div class="tmj-cta-content">`;
+
+const newHtml = `<div class="tmj-cta">
+                <div class="container">
+                    <div style="max-width: 1000px; margin: 0 auto; width: 100%;">
+                        <div class="tmj-cta-content">`;
+
+if (html.includes(targetHtml)) {
+    // We also need to add the closing div for the new wrapper
+    // The structure is:
+    /*
+                        </div> <!-- cta-buttons -->
+                    </div> <!-- tmj-cta-content -->
+                </div> <!-- container -->
+            </div> <!-- tmj-cta -->
+    */
+    // We need to insert a closing div after tmj-cta-content
+    
+    // Let's replace the whole block to be safe
+    const fullBlockMatch = /<div class="tmj-cta">[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/;
+    if (fullBlockMatch.test(html)) {
+        const matched = html.match(fullBlockMatch)[0];
+        
+        let newBlock = matched.replace(
+            '<div class="container">\n                    <div class="tmj-cta-content">',
+            '<div class="container">\n                    <div style="max-width: 1000px; margin: 0 auto; width: 100%;">\n                        <div class="tmj-cta-content">'
+        );
+        
+        // Add closing div for the wrapper
+        newBlock = newBlock.replace(
+            '</div>\n                </div>\n            </div>',
+            '</div>\n                    </div>\n                </div>\n            </div>'
+        );
+        
+        html = html.replace(matched, newBlock);
+        fs.writeFileSync('index.html', html);
+        console.log('HTML updated');
+    }
+} else {
+    console.log('Target HTML not found');
+}
+
+// 2. Update CSS
+let css = fs.readFileSync('css/style.css', 'utf8');
+
+css = css.replace(
+    '.tmj-cta-content { text-align: left; max-width: 450px; margin: 0 auto; transform: translateX(-200px); }',
+    '.tmj-cta-content { text-align: left; max-width: 450px; margin: 0; transform: none; }'
+);
+
+fs.writeFileSync('css/style.css', css);
+console.log('CSS updated');

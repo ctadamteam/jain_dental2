@@ -1,0 +1,195 @@
+----
+Index: 388
+Text: RAYFace
+----
+Index: 463
+Text: RAYFace
+----
+Index: 464
+Text: RAYFace
+----
+Index: 466
+Text: RAYFace는 환자의 얼굴을 빠르게 스캔하여  얼굴 윤곽, 입술 라인, 치아 위치, 안면 비율 등을 입체적으로 분석하는 장비입니다.
+기존의 2D 사진이나 구강 스캔만으로는 확인하기 어려운 얼굴과
+치아의 관계를 시각적으로 파악할 수 있어, 치료 전후 변화 예측과 상담에 도움을 줍니다.
+----
+Index: 471
+Text: RAYFace
+----
+Index: 472
+Text: RAY  Panorama / 3D CT
+----
+Index: 474
+Text: RAYFace
+----
+Index: 475
+Text: RAY  Panorama / 3D CT
+----
+Index: 477
+Text: RAY
+Panorama /
+3D CT
+----
+Index: 478
+Text: RAY Panorama / 3D CT
+----
+Index: 480
+Text: RAYFace Panorama는 파노라마 촬영, 세팔로 촬영, 3D CT, Face Scan 등
+다양한 기능을 결합한 디지털 진단 장비입니다.
+치아와 잇몸뼈, 턱뼈 구조, 신경 위치 등을 입체적으로 확인할 수 있어 임플란트, 사랑니 발치, 교정,
+턱관절 진단 등 다양한 진료에서 보다 세밀한 치료 계획을 세울 수 있습니다.
+특히 임플란트 치료에서는 뼈의 양과 폭, 신경과의 거리, 식립 위치 등을 정확히 확인하는 것이 중요합니다.
+----
+Index: 485
+Text: RAYFace
+----
+Index: 486
+Text: RAY  Panorama / 3D CT
+----
+Index: 488
+Text: RAYFace
+----
+Index: 489
+Text: RAY  Panorama / 3D CT
+----
+Index: 501
+Text: RAYFace
+----
+Index: 502
+Text: RAYFace
+----
+Index: 503
+Text: RAY  Panorama / 3D CT
+----
+Index: 504
+Text: RAY  Panorama / 3D CT
+----
+Index: 1719
+Text: RAYFace
+----
+Index: 2125
+Text: RAYFace
+----
+Index: 2195
+Text: RAYFace
+----
+Index: 2196
+Text: RAYFace
+----
+Index: 2198
+Text: RAYFace는 환자의 얼굴을 빠르게 스캔하여  얼굴 윤곽, 입술 라인, 치아 위치, 안면 비율 등을 입체적으로 분석하는 장비입니다.
+기존의 2D 사진이나 구강 스캔만으로는 확인하기 어려운 얼굴과
+치아의 관계를 시각적으로 파악할 수 있어, 치료 전후 변화 예측과 상담에 도움을 줍니다.
+----
+Index: 2203
+Text: RAYFace
+----
+Index: 2204
+Text: RAY  Panorama / 3D CT
+----
+Index: 2206
+Text: RAYFace
+----
+Index: 2207
+Text: RAY  Panorama / 3D CT
+----
+Index: 2209
+Text: RAY
+Panorama /
+3D CT
+----
+Index: 2210
+Text: RAY Panorama / 3D CT
+----
+Index: 2212
+Text: RAYFace Panorama는 파노라마 촬영, 세팔로 촬영, 3D CT, Face Scan 등
+다양한 기능을 결합한 디지털 진단 장비입니다.
+치아와 잇몸뼈, 턱뼈 구조, 신경 위치 등을 입체적으로 확인할 수 있어 임플란트, 사랑니 발치, 교정,
+턱관절 진단 등 다양한 진료에서 보다 세밀한 치료 계획을 세울 수 있습니다.
+특히 임플란트 치료에서는 뼈의 양과 폭, 신경과의 거리, 식립 위치 등을 정확히 확인하는 것이 중요합니다.
+----
+Index: 2217
+Text: RAYFace
+----
+Index: 2218
+Text: RAY  Panorama / 3D CT
+----
+Index: 2220
+Text: RAYFace
+----
+Index: 2221
+Text: RAY  Panorama / 3D CT
+----
+Index: 2233
+Text: RAYFace
+----
+Index: 2234
+Text: RAYFace
+----
+Index: 2235
+Text: RAY  Panorama / 3D CT
+----
+Index: 2236
+Text: RAY  Panorama / 3D CT
+----
+Index: 3017
+Text: RAYFace
+----
+Index: 3018
+Text: RAYFace
+----
+Index: 3020
+Text: RAYFace는 환자의 얼굴을 빠르게 스캔하여  얼굴 윤곽, 입술 라인, 치아 위치, 안면 비율 등을 입체적으로 분석하는 장비입니다.
+기존의 2D 사진이나 구강 스캔만으로는 확인하기 어려운 얼굴과
+치아의 관계를 시각적으로 파악할 수 있어, 치료 전후 변화 예측과 상담에 도움을 줍니다.
+----
+Index: 3025
+Text: RAYFace
+----
+Index: 3026
+Text: RAY  Panorama / 3D CT
+----
+Index: 3028
+Text: RAYFace
+----
+Index: 3029
+Text: RAY  Panorama / 3D CT
+----
+Index: 3031
+Text: RAY
+Panorama /
+3D CT
+----
+Index: 3032
+Text: RAY Panorama / 3D CT
+----
+Index: 3034
+Text: RAYFace Panorama는 파노라마 촬영, 세팔로 촬영, 3D CT, Face Scan 등
+다양한 기능을 결합한 디지털 진단 장비입니다.
+치아와 잇몸뼈, 턱뼈 구조, 신경 위치 등을 입체적으로 확인할 수 있어 임플란트, 사랑니 발치, 교정,
+턱관절 진단 등 다양한 진료에서 보다 세밀한 치료 계획을 세울 수 있습니다.
+특히 임플란트 치료에서는 뼈의 양과 폭, 신경과의 거리, 식립 위치 등을 정확히 확인하는 것이 중요합니다.
+----
+Index: 3039
+Text: RAYFace
+----
+Index: 3040
+Text: RAY  Panorama / 3D CT
+----
+Index: 3042
+Text: RAYFace
+----
+Index: 3043
+Text: RAY  Panorama / 3D CT
+----
+Index: 3055
+Text: RAYFace
+----
+Index: 3056
+Text: RAYFace
+----
+Index: 3057
+Text: RAY  Panorama / 3D CT
+----
+Index: 3058
+Text: RAY  Panorama / 3D CT

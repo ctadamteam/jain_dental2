@@ -1,0 +1,280 @@
+
+/* STEP 694 */
+   .section-subtitle { font-size: 27px; font-weight: 400; text-align: center; margin-bottom: 20px; color: #C69D5D; }
+   .section-title { font-size: 81px; font-weight: 800; text-align: center; margin-bottom: 60px; }
+
+/* STEP 694 */
+        .section-title { font-size: 45px; }
+        .section-subtitle { font-size: 18px; }
+        .section-desc, .section-highlight { font-size: 20px; }
+
+/* STEP 697 */
+       .nav-menu li a { font-size: 24px; padding: 15px 0; display: block; }
+       .hamburger-btn { display: block; }
+       
+       /* Scaling down massive typography safely */
+       .section-title { font-size: 45px; }
+       .section-subtitle { font-size: 18px; }
+       .section-desc, .section-highlight { font-size: 20px; }
+       .tab-btn { font-size: 18px; padding: 15px 30px; }
+       
+       /* 2-line layout or horizontal scroll for tabs as requested */
+       .tab-buttons { flex-wrap: wrap; justify-content: flex-start; gap: 10px; }
+       .tab-btn { flex: 1 1 calc(50% - 10px); text-align: center; }
+
+/* STEP 1659 */
+   .implant-process-section { background: #f9f9f9; padding: 80px 0; margin-left: calc(-50vw + 50%); width: 100vw; }
+   .implant-process-section .container { max-width: 1000px; margin: 0 auto; padding: 0; }
+   .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+   .process-item .process-img { height: 200px; background: #e0e0e0; margin-bottom: 20px; }
+   .process-item .process-img.bg-gray { background: #d0d0d0; }
+
+/* STEP 1662 */
+   .process-item .process-img { width: 100%; height: 200px; background: #ddd; margin-bottom: 0; }
+   .process-item .process-img.bg-gray { background: #d0d0d0; }
+
+/* STEP 1762 */
+   .implant-process-section { background: #f9f9f9; padding: 80px 0; }
+   
+   .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+   .process-item { text-align: center; }
+   .process-item .process-img { width: 100%; height: 200px; background: #ddd; margin-bottom: 20px; }
+
+/* STEP 2103 */
+   .implant-process-section { background: #f9f9f9; padding: 80px 0; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; display: flex; flex-direction: column; align-items: center; }
+   .implant-process-section > * { width: 100%; max-width: 1000px; margin-left: auto; margin-right: auto; }
+   
+   .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+/* STEP 2466 */
+   .process-item .process-img { width: 100%; height: 200px; background: #ddd; margin-bottom: 0; }
+
+/* STEP 2466 */
+   .process-item p { font-size: 18px; color: #444; line-height: 1.6; }
+
+/* STEP 2584 */
+   .ae-card { background: #fff; border: 1px solid #eee; text-align: center; overflow: hidden; border-radius: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+
+/* STEP 2584 */
+                <div class="aesthetic-grid">
+                    <div class="ae-card">
+                        <div class="ae-img" style="background: url('image/jain_section5_1.png') no-repeat center/cover;"></div>
+                        <div class="ae-text">
+                            <h4>자연치아와 유사한 심미성</h4>
+                            <p>투명감과 색감을 고려한 보철 제작으로<br>자연치아와 어우러지는 결과를 제공합니다.</p>
+                        </div>
+                    </div>
+                    <div class="ae-card">
+                        <div class="ae-img" style="background: url('image/jain_section5_2.png') no-repeat center/cover;"></div>
+
+/* STEP 2584 */
+                        <div class="ae-text">
+                            <h4>개인 맞춤 디자인</h4>
+                            <p>개인별 치아 비율과 얼굴 조화를 고려하여<br>맞춤형 심미 디자인을 진행합니다.</p>
+                        </div>
+                    </div>
+                    <div class="ae-card">
+                        <div class="ae-img" style="background: url('image/jain_section5_3.png') no-repeat center/cover;"></div>
+
+/* STEP 2584 */
+                        <div class="ae-text">
+                            <h4>정밀하고 안정적인 치료</h4>
+                            <p>세밀한 진단과 계획을 통해<br>보다 안정적이고 만족도 높은 치료를 추구합니다.</p>
+                        </div>
+                    </div>
+                    <div class="ae-card">
+                        <div class="ae-img" style="background: url('image/jain_section5_4.png') no-repeat center/cover;"></div>
+
+/* STEP 2700 */
+   .cause-title { width: 180px; font-size: 20px; font-weight: 700; color: #111; flex-shrink: 0; }
+   .cause-desc { flex: 1; font-size: 20px; color: #444; }
+
+/* STEP 2700 */
+   .ae-pros-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 1000px; margin: 0 auto; text-align: left; }
+   .ae-pro-item { display: flex; align-items: center; background: #f4f6f8; padding: 20px 30px; border-radius: 10px; font-size: 20px; font-weight: 600; color: #111; }
+
+/* STEP 2715 */
+   .ae-cause-list { display: flex; flex-direction: column; gap: 20px; max-width: 1000px; margin: 0 auto; padding: 0 40px; }
+   .ae-cause-item { display: flex; align-items: flex-start; background: transparent; padding: 0; border-radius: 0; text-align: left; }
+   .ae-cause-item.no-bg { background: transparent; padding: 15px 0; border-bottom: 1px solid #eee; border-radius: 0; }
+   .ae-cause-item.no-bg:last-child { border-bottom: none; }
+   .num-badge { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: #0b1536; color: #fff; font-size: 14px; font-weight: bold; border-radius: 4px; margin-right: 15px; flex-shrink: 0; }
+   .cause-title { width: 261px; font-size: 20px; font-weight: 700; color: #111; flex-shrink: 0; display: flex; align-items: flex-start; padding-top: 2px; }
+   .cause-title.badge-title { width: 220px; display:flex; align-items:center; }
+   .cause-desc { flex: 1; font-size: 20px; color: #444; line-height: 1.6; padding-top: 2px; }
+
+/* STEP 3440 */
+   .con-method-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
+   .con-method-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
+   .con-method-item { text-align: center; }
+   .con-method-item .method-img { width: 100%; height: 200px; background: #ddd; margin-bottom: 0; }
+   .con-method-item.prev-item .method-img { height: 180px; }
+   .method-title { padding: 15px 0; color: #fff; font-size: 18px; font-weight: 700; margin-bottom: 20px; }
+   .method-title.bg-blue { background: #0b1536; }
+   .method-title.bg-gold { background: #dcb37b; }
+   .con-method-item p { font-size: 15px; color: #444; line-height: 1.6; }
+
+   .con-jain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1000px; margin: 0 auto; }
+   .jain-card { background: #fff; border: 1px solid #eaeaea; text-align: center; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+   .jain-card .jc-img { width: 100%; height: 220px; background: #eee; }
+   .jain-card .jc-text { padding: 30px; }
+   .jain-card .jc-text h5 { font-size: 18px; font-weight: 700; color: #0b1536; margin-bottom: 15px; margin-top:0;}
+   .jain-card .jc-text p { font-size: 15px; color: #555; line-height: 1.6; margin:0;}
+
+   /* 주사치료 탭 요소 */
+   .ba-section { max-width: 1000px; margin: 0 auto; }
+   .faq-list { max-width: 800px; margin: 0 auto; text-align: left; }
+   .faq-item { border-bottom: 1px solid #ddd; margin-bottom: 10px; }
+   .faq-question { padding: 20px; font-size: 18px; font-weight: 600; color: #333; cursor: pointer; display: flex; align-items: center; background: #f9f9f9; border-radius: 8px; transition: background 0.3s; }
+   .faq-question:hover { background: #f1f1f1; }
+   .faq-q-icon { display: inline-block; width: 30px; height: 30px; background: #0b1536; color: #fff; text-align: center; line-height: 30px; border-radius: 50%; margin-right: 15px; font-weight: 700; font-size: 16px; flex-shrink: 0; }
+   .faq-toggle-icon { margin-left: auto; font-size: 24px; font-weight: 400; color: #999; transition: transform 0.3s; }
+   .faq-item.active .faq-toggle-icon { transform: rotate(45deg); color: #0b1536; }
+   .faq-answer { display: none; padding: 20px; background: #fff; align-items: flex-start; }
+   .faq-item.active .faq-answer { display: flex; }
+   .faq-a-icon { display: inline-block; width: 30px; height: 30px; background: #dcb37b; color: #fff; text-align: center; line-height: 30px; border-radius: 50%; margin-right: 15px; font-weight: 700; font-size: 16px; flex-shrink: 0; }
+   .faq-a-text { font-size: 16px; color: #555; line-height: 1.6; padding-top: 3px; }
+
+/* STEP 3468 */
+   .con-hero-img { width: 100%; max-width: 1000px; height: 548px; background: #ddd; margin: 0 auto; border-radius: 0; }
+
+/* STEP 3501 */
+   /* 치아균열 치료 탭 주요 불편 요소 */
+   .discomfort-container { position: relative; background: #f5f5f5; border-radius: 10px; padding: 40px 30px 30px; max-width: 800px; margin: 0 auto; text-align: left; }
+   .discomfort-title-badge { position: absolute; top: -20px; left: 50%; transform: translateX(-50%); background: #0b1536; color: #fff; font-size: 18px; font-weight: 700; padding: 8px 30px; border-radius: 30px; }
+   .discomfort-item { display: flex; align-items: center; margin-bottom: 15px; }
+   .discomfort-item:last-child { margin-bottom: 0; }
+   .discomfort-num { background: #0b1536; color: #fff; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; margin-right: 15px; border-radius: 4px; flex-shrink: 0; }
+   .discomfort-text { font-size: 18px; color: #333; }
+
+   /* 주사치료 탭 요소 */
+
+/* STEP 3507 */
+   /* 치아균열 치료 탭 주요 불편 요소 */
+   .discomfort-container { position: relative; background: #f5f5f5; border-radius: 10px; padding: 40px 30px 30px; max-width: 1000px; margin: 0 auto; text-align: left; }
+   .discomfort-title-badge { position: absolute; top: -20px; left: 50%; transform: translateX(-50%); background: #0b1536; color: #fff; font-size: 18px; font-weight: 700; padding: 8px 30px; border-radius: 30px; }
+   .discomfort-item { display: flex; align-items: center; margin-bottom: 15px; }
+   .discomfort-item:last-child { margin-bottom: 0; }
+   .discomfort-num { background: #0b1536; color: #fff; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; margin-right: 15px; border-radius: 4px; flex-shrink: 0; }
+   .discomfort-text { font-size: 20px; color: #333; }
+
+/* STEP 3521 */
+   .discomfort-text { font-size: 20px; color: #333; }
+   
+   /* 지르코니아 장점 리스트 */
+   .zirconia-adv-list { display: flex; flex-direction: column; gap: 15px; max-width: 800px; margin: 0 auto; }
+   .zirconia-adv-item { display: flex; align-items: center; background: #fff; border-radius: 8px; padding: 15px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+   .zirconia-adv-text { font-size: 18px; color: #333; text-align: left; }
+
+/* STEP 3527 */
+   .zirconia-adv-text { font-size: 20px; color: #333; text-align: left; }
+
+/* STEP 3534 */
+   .zirconia-adv-list { display: flex; flex-direction: column; gap: 15px; width: 100%; margin: 0 auto; }
+   .zirconia-adv-item { display: flex; align-items: center; background: #fff; border-radius: 8px; padding: 15px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+   .zirconia-adv-text { font-size: 20px; color: #333; text-align: left; }
+
+/* STEP 3567 */
+   /* 지르코니아 장점 리스트 */
+   .zirconia-adv-list { display: flex; flex-direction: column; gap: 15px; width: 100%; margin: 0 auto; }
+   .zirconia-adv-item { display: flex; align-items: center; background: #fff; border-radius: 8px; padding: 15px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+   .zirconia-adv-text { font-size: 20px; color: #333; text-align: left; }
+
+   /* 엠도게인 대상/장점 리스트 */
+   .emdo-target-list { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+   .emdo-target-item { display: flex; align-items: center; }
+   .emdo-target-text { font-size: 20px; color: #333; }
+
+   .emdo-adv-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+   .emdo-adv-item { display: flex; align-items: flex-start; }
+   .emdo-adv-item .discomfort-num { margin-top: 2px; }
+   .emdo-adv-title { font-size: 20px; font-weight: 700; color: #111; width: 180px; flex-shrink: 0; padding-top: 2px; }
+   .emdo-adv-desc { font-size: 18px; color: #555; line-height: 1.6; flex: 1; text-align: left; }
+
+/* STEP 3656 */
+   .faq-list { max-width: 1000px; margin: 0 auto; text-align: left; border-top: 1px solid #ddd; }
+   .faq-item { border-bottom: 1px solid #ddd; margin-bottom: 0; }
+   .faq-question { padding: 20px; font-size: 18px; font-weight: 600; color: #333; cursor: pointer; display: flex; align-items: center; background: #fff; border-radius: 0; transition: background 0.3s; }
+   .faq-question:hover { background: #f9f9f9; }
+   .faq-q-icon { display: inline-block; width: 30px; height: 30px; background: #0b1536; color: #fff; text-align: center; line-height: 30px; border-radius: 50%; margin-right: 15px; font-weight: 700; font-size: 16px; flex-shrink: 0; }
+   .faq-toggle-icon { margin-left: auto; font-size: 24px; font-weight: 400; color: #999; transition: transform 0.3s; }
+   .faq-item.active .faq-toggle-icon { transform: rotate(45deg); color: #0b1536; }
+   .faq-answer { display: none; padding: 30px 20px; background: #f9f9f9; align-items: flex-start; }
+   .faq-item.active .faq-answer { display: flex; }
+   .faq-a-icon { display: inline-block; width: 30px; height: 30px; background: #dcb37b; color: #fff; text-align: center; line-height: 30px; border-radius: 50%; margin-right: 15px; font-weight: 700; font-size: 16px; flex-shrink: 0; }
+   .faq-a-text { font-size: 16px; color: #555; line-height: 1.6; padding-top: 3px; }
+
+/* STEP 3664 */
+   .faq-question:hover { background: #fff; }
+
+/* STEP 3670 */
+   .faq-answer { display: none; padding: 30px 20px; background: #f9f9f9; align-items: flex-start; border-top: 1px solid #eee; }
+
+/* STEP 3682 */
+   .faq-question { padding: 20px; font-size: 20px; font-weight: 600; color: #333; cursor: pointer; display: flex; align-items: center; background: #fff; border-radius: 0; transition: background 0.3s; }
+   .faq-question:hover { background: #fff; }
+   .faq-q-icon { display: inline-block; width: 30px; height: 30px; background: #0b1536; color: #fff; text-align: center; line-height: 30px; border-radius: 50%; margin-right: 15px; font-weight: 700; font-size: 16px; flex-shrink: 0; }
+   .faq-toggle-icon { margin-left: auto; font-size: 24px; font-weight: 400; color: #999; transition: transform 0.3s; }
+   .faq-item.active .faq-toggle-icon { transform: rotate(45deg); color: #0b1536; }
+   .faq-answer { display: none; padding: 30px 20px; background: #f9f9f9; align-items: flex-start; border-top: 1px solid #eee; }
+   .faq-item.active .faq-answer { display: flex; }
+   .faq-a-icon { display: inline-block; width: 30px; height: 30px; background: #dcb37b; color: #fff; text-align: center; line-height: 30px; border-radius: 50%; margin-right: 15px; font-weight: 700; font-size: 16px; flex-shrink: 0; }
+   .faq-a-text { font-size: 20px; color: #555; line-height: 1.6; padding-top: 3px; }
+
+/* STEP 3750 */
+   .discomfort-num { background: #0b1536; color: #fff; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; margin-right: 15px; border-radius: 0; flex-shrink: 0; }
+   .discomfort-text { font-size: 20px; color: #333; }
+
+/* STEP 3980 */
+   .ae-pro-item { display: flex; align-items: center; background: #f9f9f9; padding: 20px 30px; border-radius: 10px; font-size: 20px; font-weight: 400; color: #111; }
+
+/* STEP 3980 */
+   .ca-features-box { background: #f9f9f9; border-radius: 0; padding: 40px; text-align: left; }
+
+/* STEP 3980 */
+   .ca-process-bg { background: #f9f9f9; padding: 80px 0; }
+
+/* STEP 3980 */
+   .symp-item { background: #f9f9f9; padding: 15px 25px; border-radius: 10px; display: flex; align-items: center; font-size: 16px; color: #111; text-align: left; }
+
+/* STEP 4700 */
+   .tmj-inj-list { display: flex; flex-direction: column; gap: 40px; max-width: 1000px; margin: 0 auto; text-align: left; }
+
+/* STEP 4706 */
+   .tmj-inj-list { display: flex; flex-direction: column; gap: 40px; max-width: 1000px; margin: 0 auto; text-align: left; }
+   .tmj-inj-item { display: flex; align-items: flex-start; gap: 30px; background: transparent; padding: 0; border: none; }
+   .tmj-inj-icon { width: 120px; height: 120px; border-radius: 50%; background: #eee; flex-shrink: 0; }
+   .tmj-inj-text { flex: 1; }
+   .tmj-inj-item .inj-title { font-size: 22px; font-weight: 700; color: #0b1536; margin-bottom: 10px; display: inline-block; border-bottom: 2px solid #0b1536; padding-bottom: 5px; }
+   .tmj-inj-item .inj-desc { font-size: 18px; color: #444; line-height: 1.6; word-break: keep-all; letter-spacing: -0.5px; }
+
+/* STEP 4721 */
+   .inj-overlay-img { position: absolute; top: 50%; left: calc(50% + 10px); transform: translate(-50%, -50%); width: 140%; max-width: none; z-index: 2; pointer-events: none; }
+
+/* STEP 4727 */
+   .inj-overlay-img { position: absolute; top: 50%; left: calc(50% + 10px); transform: translate(-50%, -50%); width: 100%; max-width: none; z-index: 2; pointer-events: none; }
+
+/* STEP 4733 */
+   .tmj-inj-item { display: flex; align-items: center; gap: 30px; background: transparent; padding: 0; border: none; }
+
+/* STEP 4748 */
+   .tmj-inj-item { display: flex; align-items: center; gap: 30px; background: transparent; padding: 0; border: none; }
+   .tmj-inj-icon { position: relative; width: 120px; height: 120px; border-radius: 50%; background: #f5f5f5; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+
+/* STEP 4854 */
+   .action-img { position: relative; width: 160px; height: 160px; background: #f5f5f5; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; }
+   .action-overlay-img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; max-width: none; z-index: 2; pointer-events: none; }
+
+/* STEP 4911 */
+   .cta-buttons { display: flex; flex-direction: column; justify-content: flex-start; gap: 10px; }
+   .btn-large { width: 100%; max-width: 300px; padding: 12px 0; font-size: 20px; border-radius: 8px; }
+   .tmj-cta-content { text-align: left; max-width: 450px; }
+
+/* STEP 4994 */
+   .tmj-cta-content { text-align: left; max-width: 450px; margin: 0 auto; transform: translateX(-400px); }
+
+/* STEP 5000 */
+   .tmj-cta-content { text-align: left; max-width: 450px; margin: 0 auto; transform: translateX(-350px); }
+
+/* STEP 5034 */
+   .action-img { position: relative; width: 160px; height: 160px; background: transparent; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; }

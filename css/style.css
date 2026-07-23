@@ -1,0 +1,1021 @@
+/* ==========================================================================
+   CSS Variables & Reset (Strict Figma Mapping)
+   ========================================================================== */
+   @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+   :root {
+       --font-family: 'Pretendard', sans-serif;
+       --header-height: 160px;
+       --max-width: 1920px;
+       
+       /* Colors */
+       --bg-white: #ffffff;
+       --text-black: #000000;
+       --border-line: #e5e5e5;
+       --card-bg: #f9f9f9;
+   }
+   
+   * { margin: 0; padding: 0; box-sizing: border-box; }
+   html { scroll-behavior: smooth; font-size: 10px; overflow-x: hidden; width: 100%; max-width: 100%; }
+   body { font-family: var(--font-family); background-color: var(--bg-white); color: var(--text-black); overflow-x: hidden; width: 100%; max-width: 100%; }
+   a { text-decoration: none; color: inherit; }
+   ul { list-style: none; }
+   button { background: none; border: none; cursor: pointer; font-family: inherit; }
+   
+   /* ==========================================================================
+      Layout
+      ========================================================================== */
+   .container { max-width: var(--max-width); margin: 0 auto; padding: 0 40px; }
+   .section { padding: 100px 0; scroll-margin-top: var(--header-height); }
+   
+   /* ==========================================================================
+      Typography (Strictly from Figma)
+      ========================================================================== */
+   .section-subtitle { font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 10px; color: #C69D5D; letter-spacing: 1px; }
+   .section-title { font-size: 60px; font-weight: 800; text-align: center; margin-bottom: 60px; color: #111; line-height: 1.2; letter-spacing: -2px; }
+   .section-desc { font-size: 30px; font-weight: 400; text-align: center; margin-bottom: 80px; line-height: 1.5; }
+   .section-highlight { font-size: 30px; font-weight: 700; text-align: center; margin-bottom: 30px; }
+   
+   /* ==========================================================================
+      Header & Navigation
+      ========================================================================== */
+   .header { position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height); background: rgba(255,255,255,0.95); border-bottom: 1px solid var(--border-line); z-index: 1000; }
+   .header-inner { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 40px; }
+   
+   .logo { display: flex; align-items: center; justify-content: center; margin-top: 25px; margin-bottom: 32px; }
+   .logo-img { max-height: 35px; width: auto; object-fit: contain; } /* Adjust max-height based on your logo */
+   
+   .nav { width: 100%; display: flex; justify-content: center; margin-bottom: 20px; }
+   .nav-menu { display: flex; justify-content: space-between; width: 100%; max-width: 1300px; }
+   .nav-menu li a { font-size: 19px; font-weight: 400; color: #000; white-space: nowrap; transition: color 0.2s; }
+   .nav-menu li a:hover { color: #555; }
+   
+   .hamburger-btn { display: none; width: 40px; height: 30px; position: absolute; right: 40px; top: 50%; transform: translateY(-50%); z-index: 1001; }
+   .hamburger-btn span { position: absolute; width: 100%; height: 3px; background: #000; left: 0; transition: 0.3s; }
+   .hamburger-btn span:nth-child(1) { top: 0; }
+   .hamburger-btn span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+   .hamburger-btn span:nth-child(3) { bottom: 0; }
+   
+   .hamburger-btn.active span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
+   .hamburger-btn.active span:nth-child(2) { opacity: 0; }
+   .hamburger-btn.active span:nth-child(3) { bottom: 50%; transform: translateY(50%) rotate(-45deg); }
+   
+   /* ==========================================================================
+      Tabs
+      ========================================================================== */
+   .tab-container { margin-top: 60px; }
+   .tab-buttons { display: flex; justify-content: center; gap: 20px; margin-bottom: 80px; }
+   
+   .tab-btn { padding: 25px 50px; font-size: 30px; font-weight: 700; color: #888; border: 2px solid #ccc; border-radius: 23px; transition: 0.3s; }
+   .tab-btn.active { background: #000; color: #fff; border-color: #000; }
+
+   .tab-buttons.text-style { display: flex; width: 100%; max-width: 1000px; margin: 0 auto 20px; gap: 0; border-bottom: 2px solid #ddd; position: relative; }
+   .tab-buttons.text-style .tab-btn { flex: 1; text-align: center; background: transparent; border: none; padding: 20px 0; color: #555; font-weight: 500; font-size: 24px; border-radius: 0; position: relative; transition: all 0.2s; }
+   .tab-buttons.text-style .tab-btn.active { color: #122b5e; font-weight: 700; background: transparent; border: none; }
+   .tab-buttons.text-style .active-indicator { position: absolute; bottom: -2px; left: 0; height: 4px; background: #122b5e; transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: 2; pointer-events: none; }
+
+   
+   .tab-pane { display: none; }
+   .tab-pane.active { display: block; animation: fadeIn 0.4s; }
+   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+   
+   /* ==========================================================================
+      Placeholders & Cards
+      ========================================================================== */
+   .placeholder-box { width: 100%; min-height: 500px; background: var(--card-bg); border: 2px dashed #ccc; border-radius: 23px; display: flex; align-items: center; justify-content: center; font-size: 30px; color: #888; margin: 0 auto; max-width: 1600px; }
+   .hero-placeholder { height: 80vh; border: none; background: #e0f2fe; color: #0284c7; }
+   
+   .card-placeholder { background: var(--card-bg); padding: 100px; border-radius: 23px; text-align: center; font-size: 40px; font-weight: 700; max-width: 1600px; margin: 0 auto; border: 1px solid var(--border-line); }
+   
+   /* ==========================================================================
+      Footer
+      ========================================================================== */
+   .footer { padding: 100px 0; border-top: 1px solid var(--border-line); }
+   .footer-links { display: flex; justify-content: center; gap: 50px; }
+   .footer-links a { font-size: 25px; font-weight: 400; }
+   
+   /* ==========================================================================
+      Responsive (Mobile specific requests)
+      ========================================================================== */
+   @media screen and (max-width: 1024px) {
+       /* Hamburger toggle */
+       .nav-menu { display: none; flex-direction: column; position: absolute; top: var(--header-height); left: 0; width: 100%; background: #fff; padding: 20px 40px; border-bottom: 1px solid var(--border-line); }
+       .nav-menu.active { display: flex; }
+       .nav-menu li a { font-size: 24px; padding: 15px 0; display: block; }
+       .hamburger-btn { display: block; }
+       
+       /* Scaling down massive typography safely */
+       .section-title { font-size: 50px; }
+       .section-subtitle, .section-desc, .section-highlight { font-size: 20px; }
+       .tab-btn { font-size: 18px; padding: 15px 30px; }
+       
+       /* 2-line layout or horizontal scroll for tabs as requested */
+       .tab-buttons { flex-wrap: wrap; justify-content: flex-start; gap: 2px; }
+       .tab-btn { flex: 1 1 calc(50% - 10px); text-align: center; }
+       
+       .placeholder-box { font-size: 20px; min-height: 300px; }
+       .card-placeholder { font-size: 24px; padding: 50px 20px; }
+   }
+
+   /* 추가된 섹션 디자인 (특별함, 의료진, 임플란트) */
+   /* 공통 클래스 보완 */
+   .mb-20 { margin-bottom: 20px !important; }
+   .mb-35 { margin-bottom: 35px !important; }
+   .mb-40 { margin-bottom: 40px !important; }
+   .mb-45 { margin-bottom: 45px !important; }
+   .mb-50 { margin-bottom: 50px !important; }
+   .mb-60 { margin-bottom: 60px !important; }
+   .mb-80 { margin-bottom: 80px !important; }
+   .mt-20 { margin-top: 20px !important; }
+   .mt-40 { margin-top: 40px !important; }
+   .mt-50 { margin-top: 50px !important; }
+   .mt-60 { margin-top: 60px !important; }
+   .mt-80 { margin-top: 80px !important; }
+   .mt-100 { margin-top: 100px !important; }
+
+   /* 2. 자인치과 소개 */
+   .intro-section { padding-top: var(--header-height); margin-bottom: 30px; }
+   .intro-container { display: flex; align-items: stretch; max-width: 100%; margin: 0; min-height: 700px; width: 100%; }
+   .intro-left-img { flex: 1.2; background: url('../image/intro_left.jpg') no-repeat center/cover; }
+   .intro-right-content { flex: 1; padding: 100px 5%; display: flex; flex-direction: column; justify-content: center; background: #fff; }
+   .intro-subtitle { font-size: 20px; color: #dcb37b; font-weight: 600; letter-spacing: 1px; margin-bottom: 10px; }
+   .intro-title { font-size: 60px; font-weight: 800; color: #111; line-height: 1.2; margin-bottom: 50px; margin-top: 0; letter-spacing: -2px; }
+   .intro-title .gold-text { color: #dcb37b; }
+   .intro-desc-1 { font-size: 20px; color: #555; line-height: 1.7; margin-bottom: 20px; }
+   .intro-desc-2 { font-size: 20px; color: #555; line-height: 1.7; margin-bottom: 25px; }
+   .intro-desc-3 { font-size: 20px; color: #555; line-height: 1.7; }
+   .intro-desc-3 .gold-text { color: #dcb37b; font-weight: 700; }
+
+   /* 3. 자인치과 특별함 */
+   #special { padding-bottom: 80px; }
+   .special-top { background: #0b1732; color: #fff; padding: 60px 0 0 0; margin-top: 20px; margin-bottom: 110px; }
+   .special-top-flex { display: flex; align-items: center; justify-content: space-between; gap: 50px; margin-bottom: 0; max-width: 1000px; margin-left: auto; margin-right: auto; }
+   .special-top-flex.reverse { margin-bottom: -90px; margin-top: -40px; }
+   .special-top-flex.reverse .special-top-text { margin-top: -20px; }
+   .special-top-flex:first-child .special-top-text { margin-top: 35px; }
+   .special-top-flex:first-child .special-top-text h3 { font-size: 33px; }
+   .special-top-text { flex: 1; text-align: left; }
+   .special-top-text h3 { font-size: 28px; font-weight: 700; margin-bottom: 5px; line-height: 1.4; color:#fff; letter-spacing: -1px; }
+   .special-top-text h3 strong { font-weight: 800; color: #dcb37b; }
+   .special-top-text p { font-size: 20px; line-height: 1.7; margin-bottom: 20px; color: #d0d4df; }
+   .special-top-text p.highlight-gold { color: #dcb37b; font-weight: 600; }
+   .special-top-img { width: 450px; height: 450px; border-radius: 20px; flex-shrink: 0; }
+   .special-top-flex:nth-child(1) .special-top-img { background: url('../image/special_right1.png') no-repeat center/contain; }
+   .special-top-flex:nth-child(2) .special-top-img { background: url('../image/special_right2.png') no-repeat center/contain; }
+
+   .tscan-content { text-align: center; margin-top: 0px; }
+   .tab-hero-container { position: relative; max-width: 1000px; margin: 0 auto 80px; }
+   .tab-hero-bg { width: 100%; display: block; border-radius: 0; }
+   .tab-hero-device { position: absolute; z-index: 2; }
+   .device-rayface { bottom: -12%; left: calc(8% - 80px); width: 50%; }
+   .device-panorama { bottom: -10%; left: calc(-3% + 30px); width: 34%; }
+   .device-tscan { bottom: -18%; left: 0%; width: 42%; }
+   .tscan-badge { display: inline-block; background: #122b5e; color: #fff; padding: 5px 30px; border-radius: 30px; font-size: 20px; font-weight: 700; margin-bottom: 20px; }
+   .tscan-content h4 { font-size: 28px; font-weight: 700; color: #111; margin-bottom: 40px; }
+   .tscan-desc { font-size: 20px; line-height: 1.8; color: #444; margin-bottom: 50px; }
+
+   .tscan-boxes { display: flex; flex-direction: column; gap: 20px; max-width: 1000px; margin: 0 auto 40px; }
+   .tscan-box { display: flex; background: #f8f9fa; border-radius: 10px; padding: 20px 30px; text-align: left; align-items: flex-start; }
+   .tscan-box h5 { font-size: 20px; font-weight: 700; color: #122b5e; width: 200px; flex-shrink: 0; position: relative; padding-left: 20px; margin: 8px 0 0 0; }
+   .tscan-box h5::before { content: ''; position: absolute; left: 0; top: 6px; width: 8px; height: 8px; border-radius: 50%; border: 3px solid #122b5e; }
+   .tscan-box ul { list-style: none; padding: 0; margin: 0; flex: 1; }
+   .tscan-box ul li { font-size: 20px; color: #333; line-height: 1.8; position: relative; padding-left: 12px; margin-bottom: 5px; }
+   .tscan-box ul li::before { content: '·'; position: absolute; left: 0; top: 0; font-weight: bold; color: #666; }
+   .tscan-footer { font-size: 22px; font-weight: 700; color: #111; margin-top: 40px; }
+
+   /* 4. 의료진 소개 */
+   #doctors { background: #fff; }
+   .doctors-list { display: flex; flex-direction: column; gap: 80px; margin-top: 50px; }
+   .doctor-card { display: flex; align-items: center; justify-content: space-between; max-width: 1000px; width: 100%; margin: 0 auto; gap: 40px; position: relative; padding: 60px 0; z-index: 1; }
+   .doctor-card::before { content: ''; position: absolute; left: 50%; top: calc(50% + 25px); transform: translate(-50%, -50%); width: 100vw; height: 410px; background: #f8f9fa; z-index: -1; }
+   .doctor-card.reverse { flex-direction: row-reverse; margin-top: -100px; }
+   .doc-img { width: 340px; height: 420px; background: #e9ecef; flex-shrink: 0; }
+   .doc-img img { width: 100%; height: 100%; object-fit: cover; }
+   .doc-info { flex: none; width: 620px; text-align: left; transform: translateY(25px); }
+   .doc-name { font-size: 20px; font-weight: 500; color: #333; margin-bottom: 15px; border-bottom: 2px solid #122b5e; padding-bottom: 10px; display: block; width: 100%; }
+   .doc-name strong { font-size: 40px; color: #122b5e; font-weight: 800; margin-right: 15px; letter-spacing: -1px; }
+   .doc-history { list-style: none; padding: 0; margin: 0; }
+   .doc-history li { font-size: 20px; color: #111; line-height: 1.6; position: relative; padding-left: 14px; margin-bottom: 4px; letter-spacing: -0.5px; }
+   .doc-history li::before { content: '·'; position: absolute; left: 0; top: 0; font-weight: bold; color: #111; }
+
+   /* 5. 임플란트 */
+   .implant-intro { text-align: center; margin-bottom: 50px; }
+   .implant-intro .implant-desc { font-size: 20px; line-height: 1.6; color: #333; margin-bottom: 20px; }
+   .implant-intro .implant-desc.highlight { color: #122b5e; }
+   .implant-intro .implant-desc.highlight strong { font-weight: 700; }
+
+   .implant-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1000px; margin: 0 auto; }
+   .ig-item { display: flex; background: #fff; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 0; overflow: hidden; }
+   .ig-img { width: 200px; flex-shrink: 0; background: #f0f0f0; background-size: cover; background-position: center; }
+   .ig-text { padding: 30px; flex: 1; text-align: left; }
+   .ig-text h4 { font-size: 20px; font-weight: 700; color: #111; margin-bottom: 15px; line-height: 1.4; margin-top:0; word-break: keep-all; }
+   .ig-text p { font-size: 18px; color: #555; line-height: 1.6; margin-bottom:0;}
+
+   .text-blue { color: #122b5e; }
+   .text-center { text-align: center !important; }
+
+   .tab-buttons.line-style { background: transparent; padding: 0; display: flex; border-bottom: 2px solid #ddd; border-radius: 0; max-width: 800px; margin: 0 auto 40px; }
+   .tab-buttons.line-style .tab-btn { flex: 1; background: transparent; color: #555; border-radius: 0; padding: 15px 0; font-size: 18px; font-weight: 600; position: relative; }
+   .tab-buttons.line-style .tab-btn.active { background: transparent; color: #122b5e; }
+   .tab-buttons.line-style .tab-btn.active::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 100%; height: 3px; background: #122b5e; }
+
+   .implant-tab-hero { width: 100%; max-width: 1000px; height: 548px; background: #eee; margin: 0 auto 50px; border-radius: 0; }
+   .implant-tab-title { font-size: 26px; font-weight: 700; color: #111; text-align: center; margin-bottom: 20px; }
+   .implant-tab-desc { font-size: 20px; line-height: 1.6; color: #444; text-align: center; margin-bottom: 30px; }
+
+   .sinus-info-box { background: #f9f9f9; border-radius: 15px; padding: 25px 40px; max-width: 1000px; margin: 0 auto; display: flex; align-items: flex-start; gap: 20px; text-align: left; }
+   .sinus-badge { background: #122b5e; color: #fff; font-size: 20px; font-weight: 700; padding: 8px 20px; border-radius: 8px; white-space: nowrap; flex-shrink: 0; line-height: 1.4; }
+   .sinus-desc { font-size: 20px; color: #111; line-height: 1.6; padding-top: 5px; }
+
+   .implant-target-box { background: #f9f9f9; border-radius: 15px; padding: 40px; max-width: 1000px; margin: 0 auto; text-align: left; }
+   .implant-target-box ul { list-style: none; padding: 0; margin: 0; }
+   .implant-target-box ul li { display: flex; align-items: center; font-size: 20px; color: #111; margin-bottom: 15px; }
+   .implant-target-box ul li:last-child { margin-bottom: 0; }
+   .implant-target-box ul li .num { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: #122b5e; color: #fff; font-size: 14px; font-weight: bold; border-radius: 0; margin-right: 15px; }
+
+   .implant-pros { max-width: 1000px; margin: 0 auto; list-style: none; padding: 0 40px; text-align: left; }
+   .implant-pros li { display: flex; margin-bottom: 10px; align-items: flex-start; }
+   .implant-pros li .pro-title { width: 300px; flex-shrink: 0; font-size: 20px; font-weight: 700; color: #111; display: flex; align-items: center; }
+   .implant-pros li .pro-title .num { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: #122b5e; color: #fff; font-size: 14px; font-weight: bold; border-radius: 0; margin-right: 15px; }
+   .implant-pros li .pro-desc { flex: 1; font-size: 20px; color: #444; line-height: 1.6; padding-top: 2px; }
+
+
+   .implant-process-section { background: #f9f9f9; padding: 80px 0; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; }
+   .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1000px; margin: 40px auto 0; }
+   .process-item { text-align: center; }
+   .process-item .process-img { width: 100%; height: 300px; background: #ddd; margin-bottom: 0; } 
+   .process-item .process-step { background: #122b5e; color: #fff; padding: 12px 0; font-size: 18px; font-weight: 700; margin-bottom: 20px; }
+   .process-item .process-step.bg-gold { background: #dcb37b; }
+   .process-item p { font-size: 18px; color: #444; line-height: 1.6; word-break: keep-all; letter-spacing: -0.5px; }
+
+   /* 6. 심미치료 */
+   .aesthetic-intro { text-align: center; margin-bottom: 50px; }
+   .aesthetic-intro p { font-size: 20px; line-height: 1.7; color: #444; }
+   .aesthetic-intro .mb-10 { margin-bottom: 10px; }
+   .aesthetic-intro .highlight { color: #122b5e; font-size: 20px; }
+   .aesthetic-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1000px; margin: 0 auto; }
+   .ae-card { background: #fff; border: 1px solid #eee; text-align: center; overflow: hidden; border-radius: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+   .ae-img { width: 100%; height: 250px; background: #eee; }
+   .ae-text { padding: 30px; }
+   .ae-text h4 { font-size: 20px; font-weight: 700; color: #122b5e; margin-bottom: 10px; margin-top:0;}
+   .ae-text p { font-size: 18px; color: #555; line-height: 1.6; margin:0; word-break: keep-all; letter-spacing: -0.5px;}
+
+   .ae-tab-hero { display: flex; gap: 2px; width: 100%; max-width: 1000px; height: 498px; margin: 0 auto 50px; }
+   .ae-half-img { flex: 1; height: 100%; background: #ddd; }
+   .ae-info-section { text-align: center; margin-bottom: 40px; }
+   .ae-info-section h4 { font-size: 26px; font-weight: 700; color: #111; margin-bottom: 20px; }
+   .ae-info-section p { font-size: 20px; line-height: 1.6; color: #444; }
+
+   .ae-cause-list { display: flex; flex-direction: column; gap: 2px; max-width: 1000px; margin: 0 auto; padding-left: 30px; }
+   .ae-cause-item { display: flex; align-items: flex-start; background: transparent; padding: 5px 0; border-radius: 0; border-bottom: none; text-align: left; }
+   .ae-cause-item:last-child { border-bottom: none; }
+   .ae-cause-item.no-bg { background: transparent; padding: 5px 0; border-bottom: none; border-radius: 0; }
+   .ae-cause-item.no-bg:last-child { border-bottom: none; }
+   .num-badge { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: #122b5e; color: #fff; font-size: 14px; font-weight: bold; border-radius: 0; margin-right: 15px; flex-shrink: 0; margin-top: 4px; }
+   .cause-title { width: 260px; font-size: 20px; font-weight: 700; color: #111; flex-shrink: 0; line-height: 1.6; }
+   .cause-title.badge-title { width: 280px; display:flex; align-items:flex-start; }
+   .cause-desc { flex: 1; font-size: 20px; color: #222; line-height: 1.6; }
+   .flex-1 { flex: 1; }
+
+   .ae-pros-list { display: flex; flex-direction: column; gap: 15px; max-width: 1000px; margin: 10px auto 0; text-align: left; }
+   .ae-pros-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 1000px; margin: 40px auto 0; text-align: left; }
+   .ae-pro-item { display: flex; align-items: center; background: #f9f9f9; padding: 20px 30px; border-radius: 10px; font-size: 20px; font-weight: 400; color: #111; }
+
+   /* 7. 투명교정 */
+   .bg-light { background-color: #f9f9f9 !important; }
+   .ca-intro { text-align: center; margin-bottom: 40px; }
+   .ca-intro .highlight-blue { color: #122b5e; font-size: 20px; font-weight: 700; margin-bottom: 0; }
+   .ca-intro p { font-size: 20px; line-height: 1.6; color: #444; }
+   .ca-hero-img { width: 100%; max-width: 1000px; height: 548px; background: #ddd; margin: 0 auto; border-radius: 0; }
+   
+   .ca-info-section { text-align: center; max-width: 1000px; margin-left: auto; margin-right: auto; }
+   .ca-info-section h4 { font-size: 26px; font-weight: 700; color: #111; margin-bottom: 20px; }
+   .ca-info-section p { font-size: 20px; line-height: 1.7; color: #444; }
+
+   .ca-features-box { background: #f9f9f9; border-radius: 15px; padding: 40px; text-align: left; }
+   .ca-features-box ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px; }
+   .ca-features-box ul li { display: flex; align-items: flex-start; }
+   .feat-title { width: 200px; font-size: 20px; font-weight: 700; color: #111; display: flex; align-items: center; flex-shrink: 0;}
+   .feat-desc { flex: 1; font-size: 20px; color: #444; padding-top: 1px; padding-left: 10px; }
+   .ca-note { font-size: 13px !important; color: #888 !important; text-align: center; margin-top: 20px !important; }
+
+   .ca-recommend-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; }
+   .ca-rec-item { text-align: center; }
+   .ca-rec-img { width: 100%; height: 160px; background: #ddd; margin-bottom: 0; background-position: center calc(50% + 15px) !important; }
+   .ca-rec-title { padding: 12px 0; color: #fff; font-size: 17px; font-weight: 700; margin-bottom: 15px; }
+   .ca-rec-title.bg-blue { background: #122b5e; }
+   .ca-rec-title.bg-gold { background: #dcb37b; }
+   .ca-rec-item p { font-size: 18px; color: #444; line-height: 1.5; }
+
+   .ca-process-bg { background: #f9f9f9; padding: 80px 0; }
+   .ca-process-list { display: flex; flex-direction: column; gap: 20px; max-width: 1000px; margin: 0 auto; }
+   .ca-proc-item { display: flex; align-items: stretch; background: #fff; padding: 0; border-radius: 0; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+   .ca-proc-img { width: 160px; background: #eee; position: relative; flex-shrink: 0; }
+   .proc-num { position: absolute; top: 0; left: 0; width: 30px; height: 30px; font-size: 17px; background: #122b5e; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+   .proc-num.bg-gold { background: #dcb37b; }
+   .ca-proc-text { padding: 30px 50px 30px 40px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+   .ca-proc-text h5 { font-size: 20px; font-weight: 700; color: #111; margin-bottom: 10px; margin-top:0; }
+   .ca-proc-text p { font-size: 18px; color: #555; line-height: 1.5; margin:0;}
+
+   /* 8. 치아보존/잇몸보존 */
+   .con-hero-img { width: 100%; max-width: 1000px; height: 548px; background: #ddd; margin: 0 auto 50px; border-radius: 0; }
+   .con-info-section { text-align: center; max-width: 1000px; margin-left: auto; margin-right: auto; }
+   .con-info-section h4 { font-size: 26px; font-weight: 700; color: #111; margin-bottom: 20px; }
+   .con-info-section p { font-size: 20px; line-height: 1.6; color: #444; }
+   
+   .py-80 { padding-top: 80px; padding-bottom: 80px; }
+   .pb-80 { padding-bottom: 80px; }
+   
+   .con-method-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
+   .con-method-item { text-align: center; }
+   .con-method-item .method-img { width: 100%; height: 300px; background: #ddd; margin-bottom: 0; }
+   .con-method-item.prev-item .method-img { height: 280px; }
+   .method-title { padding: 15px 0; color: #fff; font-size: 18px; font-weight: 700; margin-bottom: 20px; }
+   .method-title.bg-blue { background: #122b5e; }
+   .method-title.bg-gold { background: #dcb37b; }
+   .con-method-item p { font-size: 18px; color: #444; line-height: 1.6; word-break: keep-all; }
+   #con-1 .con-method-item p { font-size: 18px; }
+   #con-1 .con-method-item .method-img { height: 300px; }
+   #con-1 .con-method-item.prev-item .method-img { height: 280px; }
+
+   .con-jain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1000px; margin: 0 auto; }
+   .jain-card { background: #fff; border: 1px solid #eaeaea; text-align: center; border-radius: 0; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+   .jain-card .jc-img { width: 100%; height: 270px; background: #eee; }
+   .jain-card .jc-text { padding: 30px; }
+   .jain-card .jc-text h5 { font-size: 20px; font-weight: 700; color: #122b5e; margin-bottom: 15px; margin-top:0;}
+   .jain-card .jc-text p { font-size: 18px; color: #555; line-height: 1.6; margin:0;}
+
+   /* 9. 턱관절 진료 */
+   .tmj-hero { background: url('../image/jain_section8_hero.png') no-repeat center/cover; min-height: 500px; padding: 50px 0; display: flex; align-items: center; justify-content: flex-start; position: relative; }
+   .tmj-hero::before { content: ''; position: absolute; top:0; left:0; width:100%; height:100%; background: transparent; }
+   .tmj-hero-content { position: relative; z-index: 1; max-width: 500px; text-align: left; margin-left: -500px; }
+   .tmj-badge { background: #122b5e; color: #fff; padding: 10px 22px; display: inline-block; font-size: 18px; margin-bottom: 5px; }
+   .tmj-hero-content h2 { font-size: 46px; font-weight: 700; color: #122b5e; margin-top: 0; margin-bottom: 20px; }
+   .tmj-hero-content p { font-size: 20px; color: #333; line-height: 1.6; margin-bottom: 10px; }
+   .tmj-hero-list { list-style: none; padding: 0; display: grid; grid-template-columns: 160px 1fr; gap: 10px 25px; }
+   .tmj-hero-list li { display: flex; align-items: center; font-size: 21px; font-weight: 400; color: #111; background: none; padding: 5px 0; }
+   .chk-icon { width: 37px; height: 37px; background: #122b5e; border-radius: 50%; margin-right: 12px; display: inline-block; position: relative; flex-shrink: 0; }
+   
+   .tmj-info-section { max-width: 1000px; margin-left: auto; margin-right: auto; }
+   .tmj-info-section h4 { font-size: 26px; font-weight: 700; color: #111; margin-bottom: 20px; }
+   .tmj-info-section p { font-size: 20px; line-height: 1.6; color: #444; }
+   .tmj-info-section p strong { color: #122b5e; font-weight: 700; }
+
+   .tmj-cause-icons { display: flex; justify-content: center; gap: 15px; max-width: 1050px; margin-left: auto; margin-right: auto; }
+   .tc-icon-item { text-align: center; width: 182px; }
+   .tc-img { width: 182px; height: 182px; background: #f5f5f5; border-radius: 12px; margin: 0 auto 2px; }
+   .tc-title { background: #122b5e; color: #fff; padding: 10px 0; border-radius: 30px; font-size: 17px; }
+
+   .tmj-symp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; max-width: 1000px; margin: 0 auto; }
+   .symp-item { background: #f9f9f9; padding: 15px 25px; border-radius: 10px; display: flex; align-items: center; font-size: 20px; color: #111; text-align: left; }
+   
+   .tmj-diag-grid { display: flex; justify-content: center; gap: 20px; }
+   .diag-item { text-align: center; width: 320px; }
+   .diag-img { width: 100%; height: 210px; background: #eee; margin-bottom: 0; }
+   .diag-title { background: #122b5e; color: #fff; padding: 10px 0; font-size: 20px; }
+
+   
+   .tmj-inj-list { display: flex; flex-direction: column; gap: 40px; max-width: 1000px; margin: 0 auto; text-align: left; }
+   .tmj-inj-item { display: flex; align-items: center; gap: 30px; background: transparent; padding: 0; border: none; }
+   .tmj-inj-icon { position: relative; width: 120px; height: 120px; border-radius: 50%; background: #f5f5f5; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+   .inj-overlay-img { position: absolute; top: 50%; left: calc(50% + 10px); transform: translate(-50%, -50%); width: 100%; max-width: none; z-index: 2; pointer-events: none; }
+   .tmj-inj-text { flex: 1; }
+   .tmj-inj-item .inj-title { font-size: 22px; font-weight: 700; color: #122b5e; margin-bottom: 10px; display: inline-block; border-bottom: 2px solid #122b5e; padding-bottom: 5px; }
+   .tmj-inj-item .inj-desc { font-size: 18px; color: #444; line-height: 1.6; word-break: keep-all; letter-spacing: -0.5px; }
+
+   
+
+
+
+
+
+
+
+.tmj-tab-hero {
+    border-radius: 0 !important;
+    height: 548px;
+    overflow: hidden;
+}
+.tmj-tab-hero img {
+    border-radius: 0 !important;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.tmj-tab-badge {
+    display: inline-block;
+    background: #122b5e;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.tmj-injection-grid { display: flex; flex-direction: column; gap: 40px; max-width: 900px; margin: 0 auto; text-align: left; }
+.tmj-injection-grid .injection-item { display: flex; align-items: center; gap: 40px; }
+.tmj-injection-grid .injection-img-wrap { position: relative; width: 120px; height: 120px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.tmj-injection-grid .injection-circle { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 50%; background: #f4f6f8; z-index: 1; }
+.tmj-injection-grid .injection-img-wrap img { position: relative; z-index: 2; width: 80%; }
+.tmj-injection-grid .injection-content { flex: 1; }
+.tmj-injection-grid .injection-title { font-size: 22px; font-weight: 700; color: #122b5e; margin-bottom: 15px; display: inline-block; border-bottom: 2px solid #122b5e; padding-bottom: 8px; }
+.tmj-injection-grid .injection-divider { display: none; }
+.tmj-injection-grid .injection-desc { font-size: 18px; color: #444; line-height: 1.6; word-break: keep-all; }
+
+/* 불편함 리스트 */
+.discomfort-container { position: relative; background: #f9f9f9; border-radius: 10px; padding: 40px 40px 30px; max-width: 1000px; margin: 40px auto 0; text-align: left; }
+.discomfort-title-badge { position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); background: #122b5e; color: #fff; font-size: 18px; font-weight: 700; padding: 6px 24px; border-radius: 30px; }
+.discomfort-list { display: flex; flex-direction: column; gap: 12px; }
+.discomfort-item { display: flex; align-items: center; gap: 15px; }
+.discomfort-num { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: #122b5e; color: #fff; font-size: 14px; font-weight: bold; border-radius: 0; flex-shrink: 0; }
+.discomfort-text { font-size: 20px; color: #111; }
+
+/* 지르코니아 장점 리스트 */
+.zirconia-adv-list { display: flex; flex-direction: column; gap: 15px; margin: 0 auto; max-width: 900px; }
+.zirconia-adv-item { background: #fff; border-radius: 10px; padding: 20px 30px; display: flex; align-items: center; gap: 15px; text-align: left; }
+.zirconia-adv-text { font-size: 20px; color: #111; }
+.zirconia-adv-text strong { font-weight: 700; color: #111; }
+
+/* Before/After Section */
+.ba-images { display: flex; max-width: 1000px; margin: 0 auto; gap: 2px; justify-content: center; }
+.ba-box { flex: 1; display: flex; flex-direction: column; }
+.ba-img { background-color: #ddd !important; aspect-ratio: 4 / 3; width: 100%; }
+.ba-label { padding: 15px 0; text-align: center; font-size: 18px; font-weight: 500; }
+.lbl-before { background-color: #dcb37b; color: #111; }
+.lbl-after { background-color: #122b5e; color: #fff; }
+
+/* FAQ Accordion */
+.faq-list { max-width: 1000px; margin: 0 auto; border-top: 2px solid #111; border-bottom: 2px solid #111; }
+.faq-item { border-bottom: 1px solid #ddd; }
+.faq-item:last-child { border-bottom: none; }
+.faq-question { padding: 20px; display: flex; align-items: center; cursor: pointer; font-size: 18px; font-weight: 500; color: #111; background: #fff; transition: background 0.2s; }
+.faq-question:hover { background: #fafafa; }
+.faq-q-icon { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; background: #122b5e; color: #fff; font-weight: bold; margin-right: 15px; flex-shrink: 0; font-size: 16px; }
+.faq-toggle-icon { display: none; }
+.faq-answer { display: none; padding: 25px 20px 25px 20px; background: #f4f4f4; border-top: 1px solid #eee; align-items: flex-start; }
+.faq-item.active .faq-answer { display: flex; }
+.faq-a-icon { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; background: #dcb37b; color: #fff; font-weight: bold; margin-right: 15px; flex-shrink: 0; font-size: 16px; }
+.faq-a-text { font-size: 17px; line-height: 1.6; color: #333; padding-top: 2px; }
+
+/* Floating Banner */
+.floating-banner {
+    display: none; /* Temporarily hidden */
+    position: fixed;
+    right: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    transition: transform 0.3s ease;
+}
+.floating-banner:hover {
+    transform: translateY(calc(-50% - 5px));
+}
+.floating-banner img {
+    width: 100%;
+    max-width: 115px;
+    height: auto;
+    /* Removed border-radius and box-shadow */
+}
+
+@media (max-width: 768px) {
+    .floating-banner {
+        display: none;
+    }
+}
+
+/* Custom HTML Floating Banner */
+.custom-floating-banner {
+    position: fixed;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 105px;
+    background: transparent;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.floating-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+
+.floating-menu li {
+    border-bottom: 1px solid #eee;
+}
+
+.floating-menu li:last-child {
+    border-bottom: none;
+}
+
+.floating-menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s;
+}
+
+.floating-menu a:hover {
+    background: #f9f9f9;
+}
+
+.floating-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.floating-menu span {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    word-break: keep-all;
+    line-height: 1.2;
+}
+
+.floating-top {
+    display: block;
+    margin: 0 -1px -1px -1px;
+    background: #1c2b59;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0 0 15px 15px;
+}
+.floating-top:hover {
+    background: #111b3d;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .custom-floating-banner {
+        display: none; /* Hide on mobile */
+    }
+}
+
+.intro-right-content p.intro-desc-1,
+.intro-right-content p.intro-desc-2,
+.intro-right-content p.intro-desc-3 {
+    text-align: left;
+    word-break: keep-all;
+    padding-right: 160px; /* 플로팅 배너 가림 방지 */
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .intro-right-content p.intro-desc-1,
+    .intro-right-content p.intro-desc-2,
+    .intro-right-content p.intro-desc-3 {
+        padding-right: 0;
+    }
+}
+
+
+/* ==========================================================================
+   MOBILE RESPONSIVE OVERHAUL & ISOLATION STYLES (PC UNTOUCHED)
+   ========================================================================== */
+
+/* 1. PC Hide Rules (Guarantees 0% Impact on Desktop > 1024px) */
+@media screen and (min-width: 1025px) {
+    .hamburger-btn {
+        display: none !important;
+    }
+    .mobile-bottom-bar {
+        display: none !important;
+    }
+}
+
+/* 2. Mobile Bottom Quick Bar Styles */
+.mobile-bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #e5e5e5;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+.mobile-bottom-bar .m-bar-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333333;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.mobile-bottom-bar .m-bar-btn img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    margin-bottom: 2px;
+}
+
+.mobile-bottom-bar .m-bar-btn.m-top-btn {
+    color: #122b5e;
+}
+
+.mobile-bottom-bar .m-bar-btn.m-top-btn .top-arrow {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+/* 3. Hamburger Button Styles */
+.hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1002;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #122b5e;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-btn.active span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* 4. Responsive Overrides for Tablet (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    :root {
+        --header-height: 80px;
+    }
+    
+    .header {
+        height: 80px !important;
+    }
+    
+    .header-inner {
+        height: 80px !important;
+        padding: 0 20px !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-logo img {
+        width: 180px !important;
+        height: auto !important;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: #ffffff;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        z-index: 1001;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .nav-menu.active {
+        display: flex !important;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .nav-menu li a {
+        font-size: 18px !important;
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+}
+
+/* 5. Comprehensive Mobile Overrides (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    body {
+        padding-bottom: 65px !important; /* Safety padding for bottom bar */
+    }
+
+    /* Remove 125 hard line breaks on mobile so text flows naturally */
+    br {
+        display: none !important;
+    }
+
+    /* Hide desktop floating right banner on mobile */
+    .custom-floating-banner, .floating-banner {
+        display: none !important;
+    }
+
+    /* Global Containment for Fixed Px Containers */
+    .container, .section, main, div, section {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Override Inline & Fixed Widths */
+    *[style*="width: 1000px"],
+    *[style*="width: 900px"],
+    *[style*="width: 800px"],
+    *[style*="width: 620px"],
+    *[style*="width: 450px"],
+    *[style*="width: 340px"],
+    *[style*="width: 330px"],
+    *[style*="width: 300px"],
+    *[style*="width: 220px"],
+    *[style*="max-width: 1000px"],
+    *[style*="max-width: 920px"],
+    *[style*="max-width: 900px"],
+    *[style*="max-width: 800px"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Override Inline & Fixed Heights */
+    *[style*="height: 548px"],
+    *[style*="height: 498px"],
+    *[style*="height: 420px"],
+    *[style*="height: 250px"],
+    *[style*="height: 270px"],
+    *[style*="min-height: 500px"] {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    /* Section 1: Intro */
+    .intro-container {
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+    }
+
+    .intro-right-content {
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .intro-right-content p.intro-desc-1,
+    .intro-right-content p.intro-desc-2,
+    .intro-right-content p.intro-desc-3 {
+        padding-right: 0 !important;
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 20px !important;
+        word-break: keep-all !important;
+    }
+
+    /* Section 2: 5D Special Analysis */
+    .special-top-flex {
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 0 20px !important;
+    }
+
+    .special-top-img {
+        width: 100% !important;
+        max-width: 320px !important;
+        height: auto !important;
+        aspect-ratio: 1/1 !important;
+        margin: 0 auto !important;
+    }
+
+    .tab-hero-container, .implant-tab-hero, .ae-tab-hero, .ca-hero-img, .con-hero-img {
+        height: auto !important;
+        min-height: 220px !important;
+        aspect-ratio: 16/9 !important;
+        background-size: cover !important;
+    }
+
+    .tscan-boxes {
+        padding: 0 20px !important;
+    }
+
+    .tscan-box h5 {
+        width: 100% !important;
+        margin-bottom: 6px !important;
+    }
+
+    /* Section 3: Doctors */
+    .doctor-card {
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 30px 20px !important;
+    }
+
+    .doctor-card::before {
+        width: 100% !important;
+        left: 0 !important;
+        transform: none !important;
+        border-radius: 15px !important;
+    }
+
+    .doctor-card.reverse {
+        margin-top: 0 !important;
+        flex-direction: column !important;
+    }
+
+    .doc-img {
+        width: 100% !important;
+        max-width: 300px !important;
+        height: auto !important;
+        aspect-ratio: 340/420 !important;
+        margin: 0 auto !important;
+    }
+
+    .doc-info {
+        width: 100% !important;
+        transform: none !important;
+    }
+
+    .doc-history li {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+    }
+
+    /* Section 4: Implant */
+    .implant-grid, .aesthetic-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 20px !important;
+    }
+
+    .pro-title {
+        width: 100% !important;
+        margin-bottom: 8px !important;
+        font-size: 18px !important;
+    }
+
+    .implant-pros li {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 6px !important;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        padding: 0 20px !important;
+    }
+
+    .sinus-info-box, .implant-target-box {
+        padding: 20px !important;
+        flex-direction: column !important;
+    }
+
+    /* Section 6: Clear Aligner 7 Steps */
+    div[style*="display:flex"][style*="flex-direction:column"][style*="gap:15px"] {
+        padding: 0 20px !important;
+    }
+
+    div[style*="width:220px"] {
+        width: 100% !important;
+        min-height: auto !important;
+    }
+
+    /* Section 7: Conservation */
+    .con-method-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 20px !important;
+    }
+
+    /* Section 8: TMJ */
+    .tmj-hero {
+        padding: 40px 20px !important;
+        min-height: 300px !important;
+    }
+
+    div[style*="width:330px"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        font-size: 16px !important;
+    }
+
+    div[style*="gap:60px"] {
+        gap: 20px !important;
+        padding: 0 20px !important;
+    }
+
+    .tmj-symp-grid, .tmj-diag-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        padding: 0 20px !important;
+    }
+
+    /* Section 9: Clinic Tour */
+    .tour-slider {
+        padding: 0 20px !important;
+        position: relative !important;
+    }
+
+    .tour-arrow.left {
+        left: 10px !important;
+    }
+
+    .tour-arrow.right {
+        right: 10px !important;
+    }
+
+    .tour-thumbs {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px !important;
+    }
+
+    .tour-thumb {
+        width: calc(25% - 8px) !important;
+        height: auto !important;
+        aspect-ratio: 1/1 !important;
+    }
+
+    .tour-thumb img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    /* Section 10: Location */
+    #location .container > div {
+        flex-direction: column !important;
+    }
+
+    #location div[style*="min-width: 50%"] {
+        width: 100% !important;
+        min-height: 320px !important;
+    }
+
+    /* Global Headings Scaling for Mobile */
+    h2 {
+        font-size: 26px !important;
+        line-height: 1.3 !important;
+    }
+
+    h3 {
+        font-size: 22px !important;
+    }
+
+    h4 {
+        font-size: 20px !important;
+    }
+}

@@ -1379,5 +1379,6 @@
         object-fit: contain !important;
         display: block !important;
         margin: auto 0 !important;
+        transform: translateY(6px) !important;
     }
 }

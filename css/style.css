@@ -4143,3 +4143,15 @@
         padding-bottom: 20px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: DISCOMFORT TITLE BADGE (ZIRCONIA & MAIN DISCOMFORT) FONT SIZE 19PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .discomfort-title-badge,
+    .discomfort-container .discomfort-title-badge {
+        font-size: 19px !important;
+    }
+}

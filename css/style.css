@@ -1701,3 +1701,68 @@
         background-size: contain !important;
     }
 }
+
+
+/* ==========================================================================
+   SECTION 2 (#special) 7 EXPLICIT LAYOUT DIRECTIVES (PC PRESERVED)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1 & 2. Section 2 Subtitle: Font Size 20px & Color #dcb37b (Matches Section 1 Intro), Gap Reduced */
+    #special .section-subtitle {
+        font-size: 20px !important;
+        color: #dcb37b !important;
+        margin-bottom: 4px !important;
+    }
+
+    #special .section-title {
+        margin-top: 0 !important;
+        margin-bottom: 25px !important;
+    }
+
+    /* 3. Hide forced <br> tags in navy box paragraphs so text flows naturally */
+    .special-top-text p br {
+        display: none !important;
+    }
+
+    .special-top-text p {
+        font-size: 17px !important;
+        line-height: 1.65 !important;
+        color: #e0e4ee !important;
+        word-break: keep-all !important;
+    }
+
+    /* 4. Move special_right1 UP by 60px */
+    .special-top-flex:nth-child(1) .special-top-img {
+        margin-top: -60px !important;
+    }
+
+    /* 5. Move separator line below special_right1 UP by 60px */
+    .special-top-flex.reverse {
+        margin-top: -20px !important;
+        padding-top: 20px !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    }
+
+    /* 6. Move special_right2 UP by 120px */
+    .special-top-flex:nth-child(2) .special-top-img {
+        margin-top: -120px !important;
+    }
+
+    /* 7. Reduce bottom navy box padding below special_right2 */
+    .special-top {
+        width: 100vw !important;
+        position: relative !important;
+        left: 50% !important;
+        margin-left: -50vw !important;
+        margin-right: -50vw !important;
+        background: #0b1732 !important;
+        padding-top: 35px !important;
+        padding-bottom: 10px !important; /* Reduced bottom padding */
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        color: #ffffff !important;
+        border-radius: 0 !important;
+        box-sizing: border-box !important;
+    }
+}

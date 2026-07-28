@@ -3069,3 +3069,16 @@
         color: #DCB37B !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: WIDEN SPACING BETWEEN .pro-title AND .pro-desc BY ~5PX (MARGIN-TOP: 9PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .implant-pros li .pro-desc,
+    #implant .implant-pros li .pro-desc {
+        margin-top: 9px !important; /* Increased by 5px from 4px to 9px */
+        padding-top: 0 !important;
+    }
+}

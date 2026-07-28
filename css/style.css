@@ -1452,4 +1452,11 @@
         font-size: 17px !important;
         word-break: keep-all !important;
     }
+/* Section 1 Intro Description Paragraphs -> 17px */
+    .intro-right-content p,
+    .intro-right-content p.intro-desc-1,
+    .intro-right-content p.intro-desc-2,
+    .intro-right-content p.intro-desc-3 {
+        font-size: 17px !important;
+    }
 }

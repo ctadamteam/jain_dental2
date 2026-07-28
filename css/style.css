@@ -1999,3 +1999,17 @@
         margin-bottom: 4px !important; /* Slightly narrowed from 8px to 4px */
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SCALE DOWN RAY PANORAMA / 3D CT DEVICE IMAGE BY 20% ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #special-2 .tscan-img img,
+    .tab-pane#special-2 .tscan-img img,
+    img[src*="raypanorama-1.png"] {
+        transform: scale(0.8) !important; /* Scaled down by 20% */
+        transform-origin: left bottom !important;
+    }
+}

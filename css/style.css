@@ -1541,3 +1541,40 @@
         border-bottom: 1px solid #f2f2f2 !important;
     }
 }
+
+
+/* ==========================================================================
+   SECTION 1 INTRO MOBILE LAYOUT ADJUSTMENTS (PC PRESERVED)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. Intro Container & Desk Image: Remove top margin, remove border-radius, increase height to 267px */
+    .intro-container {
+        padding-top: 0 !important;
+    }
+
+    .intro-left-img {
+        width: 100% !important;
+        height: 267px !important; /* 230px + 37px */
+        aspect-ratio: auto !important;
+        border-radius: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 25px !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
+    /* 2. English Subtitle Top Margin +10px */
+    .intro-subtitle {
+        margin-top: 15px !important;
+        margin-bottom: 2px !important;
+        text-align: center !important;
+    }
+
+    /* 3. Main Title Bottom Margin +10px (20px -> 30px) */
+    .intro-title {
+        margin-bottom: 30px !important;
+        line-height: 1.2 !important;
+        text-align: center !important;
+    }
+}

@@ -2895,3 +2895,41 @@
         line-height: 1.55 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: ADJUST .pro-desc SPACING DOWN (+4PX) & ENFORCE EXACT 17PX ON NUMBER BADGE ADJACENT TEXT
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* Enforce exact 17px bold on number badge adjacent titles & lists */
+    .implant-target-box ul li,
+    .implant-pros li .pro-title,
+    #implant .implant-pros li .pro-title {
+        font-size: 17px !important;
+        font-weight: 700 !important;
+        line-height: 1.4 !important;
+        color: #111111 !important;
+    }
+
+    .implant-pros li {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0 !important;
+        margin-bottom: 22px !important;
+    }
+
+    .implant-pros li .pro-title {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .implant-pros li .pro-desc {
+        margin-top: 4px !important; /* Adjusted down to +4px for natural, comfortable grouping */
+        padding-top: 0 !important;
+        font-size: 17px !important;
+        line-height: 1.6 !important;
+        color: #444444 !important;
+    }
+}

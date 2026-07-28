@@ -3744,3 +3744,14 @@
         margin-top: -15px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SYNC SECTION 7 (#CONSERVATION) SIDE PADDING TO 15PX (SAME AS SECTION 5)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #conservation .container {
+        padding: 0 15px !important;
+    }
+}

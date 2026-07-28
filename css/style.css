@@ -3399,3 +3399,22 @@
         margin-top: 6px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SECTION 6 RECOMMEND CARDS: IMAGE HEIGHT 167PX (-13PX), TITLE 18PX, DESC 17PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-rec-img {
+        height: 167px !important; /* Reduced height by 13px (180px - 13px = 167px) */
+    }
+
+    .ca-rec-title {
+        font-size: 18px !important; /* Title font size: 18px */
+    }
+
+    .ca-rec-item p {
+        font-size: 17px !important; /* Description font size: 17px */
+    }
+}

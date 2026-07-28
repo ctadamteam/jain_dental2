@@ -4054,3 +4054,28 @@
         line-height: 1.5 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE SIDE PADDING FOR DISCOMFORT BOX & NARROW GAP BETWEEN NUMBER BADGE AND TEXT
+   ========================================================================== */
+
+.discomfort-item {
+    gap: 10px !important;
+}
+
+.discomfort-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .discomfort-item {
+        gap: 10px !important;
+    }
+
+    .discomfort-container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}

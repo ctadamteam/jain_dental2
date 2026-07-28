@@ -2565,3 +2565,25 @@
         color: #555555 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: UPDATE SECTION 4 IMPLANT TAB BUTTONS FONT-SIZE TO 21PX (MATCHING SECTION 2)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #implant .tab-buttons .tab-btn,
+    #implant .tab-btn {
+        font-size: 21px !important; /* Updated from 17px to 21px to match Section 2 */
+        font-weight: 700 !important;
+        padding: 12px 6px !important;
+        color: #666666 !important;
+        word-break: keep-all !important;
+    }
+
+    #implant .tab-buttons .tab-btn.active,
+    #implant .tab-btn.active {
+        color: #0b1732 !important;
+        font-weight: 800 !important;
+    }
+}

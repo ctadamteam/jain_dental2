@@ -3942,3 +3942,15 @@
         font-size: 19px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: OVERRIDE SPECIFICITY TO GUARANTEE 19PX FONT SIZE FOR #CONSERVATION TABS ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #conservation .tab-buttons.text-style .tab-btn,
+    #conservation .tab-buttons.text-style button.tab-btn {
+        font-size: 19px !important;
+    }
+}

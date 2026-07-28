@@ -3368,3 +3368,34 @@
 .ca-info-section .implant-target-box {
     padding-bottom: 12px !important;
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: CONVERT SECTION 6 CA-RECOMMEND-GRID TO 2X3 GRID ON MOBILE WITH OPTIMIZED IMAGE HEIGHT
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-recommend-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+    }
+
+    .ca-rec-img {
+        height: 180px !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
+    .ca-rec-title {
+        font-size: 16px !important;
+        padding: 10px 5px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .ca-rec-item p {
+        font-size: 15px !important;
+        line-height: 1.4 !important;
+        word-break: keep-all !important;
+        margin-top: 6px !important;
+    }
+}

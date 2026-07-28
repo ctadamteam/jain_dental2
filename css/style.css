@@ -1182,3 +1182,144 @@
         height: calc(100dvh - 70px) !important;
     }
 }
+
+
+/* ==========================================================================
+   PERFECT MOBILE OVERHAUL (PC 100% UNTOUCHED & PRESERVED)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. Word Gluing Prevention (Convert <br> to Standard Space) */
+    br {
+        display: inline !important;
+        content: " " !important;
+    }
+
+    /* 2. Header & Logo Size (135px Balanced Size) */
+    .header {
+        height: 70px !important;
+    }
+
+    .header-inner {
+        height: 70px !important;
+        padding: 0 15px !important;
+    }
+
+    .header-logo img {
+        width: 135px !important;
+        height: auto !important;
+    }
+
+    .hamburger-btn {
+        right: 15px !important;
+        width: 24px !important;
+        height: 18px !important;
+    }
+
+    /* Clean X Close Icon for Active Mobile Menu */
+    .hamburger-btn.active span:nth-child(1) {
+        transform: translateY(7.5px) rotate(45deg) !important;
+    }
+    .hamburger-btn.active span:nth-child(2) {
+        opacity: 0 !important;
+    }
+    .hamburger-btn.active span:nth-child(3) {
+        transform: translateY(-7.5px) rotate(-45deg) !important;
+    }
+
+    /* GNB Menu Drawer with Safety Bottom Padding */
+    .nav-menu {
+        top: 70px !important;
+        height: calc(100dvh - 70px) !important;
+        padding: 25px 20px 95px 20px !important; /* 95px bottom padding prevents bottom item cutoff */
+        box-sizing: border-box !important;
+    }
+
+    .nav-menu li a {
+        font-size: 16px !important;
+        padding: 14px 0 !important;
+    }
+
+    /* 3. Section 1 Intro Desk Photo & Typography */
+    .intro-container {
+        padding: 30px 15px !important;
+        flex-direction: column !important;
+    }
+
+    .intro-left-img {
+        width: 100% !important;
+        height: 230px !important;
+        aspect-ratio: 16 / 9 !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        margin-bottom: 25px !important;
+        border-radius: 12px !important;
+        flex: none !important;
+    }
+
+    .intro-title {
+        font-size: 25px !important;
+        line-height: 1.35 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .intro-right-content p.intro-desc-1,
+    .intro-right-content p.intro-desc-2,
+    .intro-right-content p.intro-desc-3 {
+        font-size: 15px !important;
+        line-height: 1.65 !important;
+        margin-bottom: 18px !important;
+    }
+
+    /* 4. Section 2 (#special) 100% PC Design Reproduction */
+    #special {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+        background: #ffffff !important;
+    }
+
+    .special-top {
+        background: #0b1732 !important;
+        padding: 35px 20px !important;
+        color: #ffffff !important;
+        border-radius: 16px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .special-top-text h3 {
+        color: #ffffff !important;
+        font-size: 23px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .special-top-text p {
+        color: #e0e0e0 !important;
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .special-top-text p.highlight-gold {
+        color: #dcb37b !important;
+    }
+
+    .special-bottom, .tab-hero-container, .tscan-boxes {
+        background: #ffffff !important;
+        color: #333333 !important;
+        padding: 15px 0 !important;
+    }
+
+    .tscan-box {
+        background: #f8f9fa !important;
+        border: 1px solid #e5e5e5 !important;
+        border-radius: 12px !important;
+        padding: 18px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .tscan-box h5 {
+        color: #122b5e !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+    }
+}

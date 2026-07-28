@@ -1336,3 +1336,48 @@
         margin-bottom: 0 !important;
     }
 }
+
+
+/* ==========================================================================
+   MOBILE LOGO 10% ENLARGED (170px) & PERFECT VERTICAL CENTERING (PC UNTOUCHED)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 70px !important;
+    }
+
+    .header-inner {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        height: 70px !important;
+        padding: 0 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .logo {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 100% !important;
+    }
+
+    .logo a {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 100% !important;
+    }
+
+    .logo-img, .logo img {
+        width: 170px !important;
+        max-height: 38px !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: auto 0 !important;
+    }
+}

@@ -2838,3 +2838,18 @@
         color: #444444 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: HIDE ALL FORCED <BR> LINE BREAKS IN SECTION 4 IMPLANT TABS ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #implant p br,
+    #implant .implant-tab-desc br,
+    #implant .sinus-desc br,
+    #implant .sinus-info-box br,
+    #implant .implant-intro br {
+        display: none !important;
+    }
+}

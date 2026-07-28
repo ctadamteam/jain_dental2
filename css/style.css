@@ -1446,6 +1446,16 @@
     .intro-title, .section-title {
         margin-top: 0 !important;
     }
+/* Center align & reduce line spacing for Intro Title & Subtitle on Mobile */
+    .intro-subtitle {
+        text-align: center !important;
+        margin-bottom: 2px !important;
+    }
+    .intro-title {
+        text-align: center !important;
+        line-height: 1.2 !important;
+        margin-bottom: 20px !important;
+    }
 /* Tab Buttons Font Size -> 21px */
     .tab-btn, .tab-buttons .tab-btn, .tab-buttons.text-style .tab-btn, .tab-buttons.line-style .tab-btn {
         font-size: 21px !important;

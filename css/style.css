@@ -1862,3 +1862,15 @@
         padding-top: 25px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: MOVE CONTENT BELOW SEPARATOR LINE DOWN BY 30PX (PADDING-TOP 25PX -> 55PX)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* Move ONLY text & image below separator line DOWN by 30px */
+    .special-top-flex.reverse {
+        padding-top: 55px !important; /* +30px padding-top pushes contents down while line stays fixed */
+    }
+}

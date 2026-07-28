@@ -1874,3 +1874,17 @@
         padding-top: 55px !important; /* +30px padding-top pushes contents down while line stays fixed */
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE NAVY BOX BOTTOM VERTICAL HEIGHT BELOW SPECIAL_RIGHT2 BY 15PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .special-top {
+        padding-bottom: 0px !important;
+    }
+    .special-top-flex.reverse .special-top-img {
+        margin-bottom: -15px !important;
+    }
+}

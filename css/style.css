@@ -4113,3 +4113,16 @@
         word-break: keep-all !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT SECTION 6 CLEAR ALIGNER IMPLANT-PROS LIST 5PX TO THE LEFT ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #clear-aligner .implant-pros,
+    #clear-aligner ul.implant-pros {
+        position: relative !important;
+        left: -5px !important;
+    }
+}

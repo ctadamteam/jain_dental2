@@ -4227,3 +4227,36 @@
         padding-right: 2px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: UNIFORM COLOR BOX HEIGHT ONLY FOR SECTION 7 TAB 3 (EMDOGAIN) PROCESS STEPS
+   ========================================================================== */
+
+#con-3 .process-item .process-step {
+    min-height: 58px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    line-height: 1.3 !important;
+    padding: 6px 4px !important;
+}
+
+@media screen and (max-width: 768px) {
+    #con-3 .process-item .process-step {
+        font-size: 18px !important;
+        letter-spacing: -0.5px !important;
+        min-height: 58px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        white-space: normal !important;
+        word-break: keep-all !important;
+        line-height: 1.3 !important;
+        padding: 6px 4px !important;
+    }
+}

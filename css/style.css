@@ -3850,3 +3850,62 @@
         pointer-events: none !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SECTION 7 (#CONSERVATION) 15PX FONT (SAME AS SECTION 5) & 2-LINE WRAP FOR EMDOGAIN TAB
+   ========================================================================== */
+
+/* PC (>1024px): Hide line break in tab button */
+.tab-btn .m-tab-br {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .tab-btn .m-tab-br {
+        display: block !important;
+    }
+
+    #conservation .tab-buttons.text-style {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        border-bottom: 2px solid #eeeeee !important;
+        margin: 15px auto 25px auto !important;
+        padding: 0 !important;
+        overflow: visible !important;
+    }
+
+    #conservation .tab-buttons.text-style .tab-btn {
+        flex: 1 !important;
+        font-size: 15px !important; /* 100% identical to Section 5 */
+        padding: 6px 2px !important;
+        color: #666666 !important;
+        background: transparent !important;
+        border: none !important;
+        border-bottom: none !important;
+        border-radius: 0 !important;
+        text-align: center !important;
+        line-height: 1.25 !important;
+        white-space: normal !important;
+    }
+
+    #conservation .tab-buttons.text-style .tab-btn.active {
+        color: #122b5e !important;
+        font-weight: 700 !important;
+        border-bottom: none !important;
+    }
+
+    #conservation .active-indicator {
+        display: block !important;
+        position: absolute !important;
+        bottom: -2px !important;
+        height: 4px !important;
+        background: #122b5e !important;
+        transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        z-index: 2 !important;
+        pointer-events: none !important;
+    }
+}

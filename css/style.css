@@ -3267,3 +3267,16 @@
         padding-top: 32px !important; /* Shifted DOWN by 10px more */
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SET .AE-PRO-ITEM CONTENT FONT SIZE TO 17PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ae-pro-item,
+    #aesthetic .ae-pro-item {
+        font-size: 17px !important;
+        line-height: 1.5 !important;
+    }
+}

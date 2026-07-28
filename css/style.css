@@ -2443,3 +2443,19 @@
         max-width: 100% !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SET DOCTOR HISTORY LIST ITEMS FONT-SIZE TO 17PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .doc-history li,
+    .doctor-card .doc-history li {
+        font-size: 17px !important; /* Updated from 16px to 17px */
+        line-height: 1.5 !important;
+        color: #111111 !important;
+        word-break: keep-all !important;
+        margin-bottom: 4px !important;
+    }
+}

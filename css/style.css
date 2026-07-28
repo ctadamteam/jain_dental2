@@ -3353,3 +3353,18 @@
         padding: 0 15px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE GREY BOX BOTTOM INNER PADDING & REMOVE LAST-CHILD MARGIN-BOTTOM
+   ========================================================================== */
+
+.implant-pros li:last-child,
+#clear-aligner .implant-pros li:last-child {
+    margin-bottom: 0 !important;
+}
+
+#clear-aligner .implant-target-box,
+.ca-info-section .implant-target-box {
+    padding-bottom: 12px !important;
+}

@@ -4172,3 +4172,24 @@
         gap: 10px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT ZIRCONIA ADVANTAGE BADGES 2, 3, 4 UP BY 13PX
+   ========================================================================== */
+
+.zirconia-adv-item:nth-child(2) .discomfort-num,
+.zirconia-adv-item:nth-child(3) .discomfort-num,
+.zirconia-adv-item:nth-child(4) .discomfort-num {
+    position: relative !important;
+    top: -13px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .zirconia-adv-item:nth-child(2) .discomfort-num,
+    .zirconia-adv-item:nth-child(3) .discomfort-num,
+    .zirconia-adv-item:nth-child(4) .discomfort-num {
+        position: relative !important;
+        top: -13px !important;
+    }
+}

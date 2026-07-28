@@ -3530,3 +3530,18 @@
         background-repeat: no-repeat !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: ZOOM JAIN_SECTION6_1_2.PNG BY 10% (BACKGROUND-SIZE: 110% AUTO)
+   ========================================================================== */
+
+.ca-recommend-grid .ca-rec-item:nth-child(2) .ca-rec-img {
+    background-size: 110% auto !important;
+}
+
+@media screen and (max-width: 768px) {
+    .ca-recommend-grid .ca-rec-item:nth-child(2) .ca-rec-img {
+        background-size: 110% auto !important;
+    }
+}

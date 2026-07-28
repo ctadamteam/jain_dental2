@@ -3564,3 +3564,66 @@
         z-index: 2 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: FIX SECTION 6 CLEAR ALIGNER PROCESS STEP CARDS ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-proc-item,
+    #clear-aligner .ca-proc-item {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        border-radius: 12px !important;
+        overflow: hidden !important;
+        margin-bottom: 15px !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    .ca-proc-img,
+    #clear-aligner .ca-proc-img,
+    div[style*="width:220px"] {
+        width: 100% !important;
+        height: 180px !important;
+        min-height: 180px !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
+    .proc-num {
+        top: 10px !important;
+        left: 10px !important;
+        width: 28px !important;
+        height: 28px !important;
+        line-height: 28px !important;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        border-radius: 4px !important;
+    }
+
+    .ca-proc-text,
+    #clear-aligner .ca-proc-text {
+        padding: 20px 18px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .ca-proc-text h5 {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        margin-bottom: 8px !important;
+        color: #0b2559 !important;
+    }
+
+    .ca-proc-text p {
+        font-size: 15px !important;
+        line-height: 1.55 !important;
+        color: #555555 !important;
+        word-break: keep-all !important;
+    }
+
+    .ca-proc-text p br {
+        display: none !important;
+    }
+}

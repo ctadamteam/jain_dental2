@@ -1438,6 +1438,10 @@
     .tscan-box h5, .tscan-badge, .implant-tab-title, .ig-text h4 {
         font-size: 21px !important;
     }
+/* Tab Buttons Font Size -> 21px */
+    .tab-btn, .tab-buttons .tab-btn, .tab-buttons.text-style .tab-btn, .tab-buttons.line-style .tab-btn {
+        font-size: 21px !important;
+    }
 
     /* 3. General Body Text -> 17px Only */
     p, li, .intro-desc-1, .intro-desc-2, .intro-desc-3,

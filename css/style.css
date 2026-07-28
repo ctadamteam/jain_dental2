@@ -1768,40 +1768,21 @@
 }
 
 
-/* Force 20px & Gold Color for JAIN DENTAL CLINIC English Subtitle Across All Sections */
-@media screen and (max-width: 768px) {
-    .section-subtitle, .intro-subtitle, #special .section-subtitle {
-        font-size: 20px !important;
-        color: #dcb37b !important;
-    }
-}
 
 
 /* ==========================================================================
-   ALL SECTION JAIN DENTAL CLINIC ENGLISH SUBTITLE 100% UNIFIED SPEC
+   DEFINITIVE 20PX UNIFIED SPEC FOR ALL ENGLISH SUBTITLES (CACHE-BUSTED)
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
-    .section-subtitle, .intro-subtitle, #special .section-subtitle {
+    .section-subtitle, 
+    .intro-subtitle, 
+    #special .section-subtitle,
+    section .section-subtitle,
+    p.section-subtitle,
+    p.intro-subtitle {
         font-family: inherit !important;
-        font-size: 20px !important;
-        font-weight: 600 !important;
-        color: #dcb37b !important;
-        letter-spacing: 1px !important;
-        text-transform: uppercase !important;
-        text-align: center !important;
-    }
-}
-
-
-/* ==========================================================================
-   PERFECT SECTION 1 MATCH: 20PX UNIFIED SPEC FOR ALL ENGLISH SUBTITLES
-   ========================================================================== */
-
-@media screen and (max-width: 768px) {
-    .section-subtitle, .intro-subtitle, #special .section-subtitle {
-        font-family: inherit !important;
-        font-size: 20px !important; /* Matches Section 1 20px spec */
+        font-size: 20px !important; /* Strictly forced 20px across all mobile viewports */
         font-weight: 600 !important;
         color: #dcb37b !important;
         letter-spacing: 1px !important;

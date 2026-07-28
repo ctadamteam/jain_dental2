@@ -1578,3 +1578,56 @@
         text-align: center !important;
     }
 }
+
+
+/* ==========================================================================
+   SECTION 2 (5D ANALYSIS): 1 SINGLE SEAMLESS DARK NAVY BOX WITHOUT RADIUS (PC PRESERVED)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. Single Seamless Dark Navy Box with Zero Border-Radius & Wide Side Padding */
+    .special-top {
+        background: #0b1732 !important;
+        padding: 40px 15px !important;
+        color: #ffffff !important;
+        border-radius: 0 !important; /* Zero border-radius per user instruction */
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+        width: calc(100% + 30px) !important;
+        box-sizing: border-border-box !important;
+    }
+
+    .special-top-flex {
+        flex-direction: column !important;
+        gap: 35px !important;
+        padding: 0 !important; /* Remove double padding so text spreads out cleanly */
+    }
+
+    .special-top-flex.reverse {
+        margin-top: 40px !important;
+        margin-bottom: 0 !important;
+        padding-top: 35px !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.12) !important; /* Subtle inner separator */
+    }
+
+    .special-top-text {
+        width: 100% !important;
+    }
+
+    .special-top-text p {
+        font-size: 17px !important;
+        line-height: 1.65 !important;
+        color: #e0e4ee !important;
+        word-break: keep-all !important;
+    }
+
+    /* 2. special_right2 Graphic Image Enlarged to 380px */
+    .special-top-img {
+        width: 100% !important;
+        max-width: 380px !important; /* Prominent size per user instruction */
+        height: auto !important;
+        aspect-ratio: 1/1 !important;
+        margin: 15px auto 0 auto !important;
+        background-size: contain !important;
+    }
+}

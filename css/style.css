@@ -2353,3 +2353,24 @@
         padding: 0 10px !important; /* Reduced side padding to 10px */
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE IMPLANT GRID SIDE PADDING OUTSIDE CARDS TO EXACTLY 5PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #implant > .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .implant-grid,
+    #implant .implant-grid {
+        padding: 0 5px !important; /* Reduced side margin outside cards to 5px */
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}

@@ -3909,3 +3909,16 @@
         pointer-events: none !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: UPDATE TEXT-STYLE TAB BUTTON FONT SIZE TO 19PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .tab-buttons.text-style .tab-btn,
+    #aesthetic .tab-buttons.text-style .tab-btn,
+    #conservation .tab-buttons.text-style .tab-btn {
+        font-size: 19px !important;
+    }
+}

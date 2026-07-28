@@ -4204,5 +4204,7 @@
     #conservation #con-3 .implant-target-box {
         position: relative !important;
         left: -15px !important;
+        top: -15px !important;
+        margin-top: 0 !important;
     }
 }

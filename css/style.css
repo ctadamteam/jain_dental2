@@ -2933,3 +2933,16 @@
         color: #444444 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SET .implant-target-box ul li FONT WEIGHT TO REGULAR (400) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .implant-target-box ul li,
+    #implant .implant-target-box ul li {
+        font-weight: 400 !important; /* Changed from 700 (Bold) to 400 (Regular) */
+        color: #333333 !important;
+    }
+}

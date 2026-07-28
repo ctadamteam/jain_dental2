@@ -4040,3 +4040,17 @@
     display: none !important;
     content: none !important;
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: DISCOMFORT BOX TEXT FONT SIZE 17PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .discomfort-text,
+    .discomfort-item .discomfort-text,
+    .discomfort-container .discomfort-text {
+        font-size: 17px !important;
+        line-height: 1.5 !important;
+    }
+}

@@ -4155,3 +4155,20 @@
         font-size: 19px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE INTERNAL PADDING & GAP FOR ZIRCONIA ADVANTAGE CARDS (.ZIRCONIA-ADV-ITEM)
+   ========================================================================== */
+
+.zirconia-adv-item {
+    padding: 16px 20px !important;
+    gap: 12px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .zirconia-adv-item {
+        padding: 14px 16px !important;
+        gap: 10px !important;
+    }
+}

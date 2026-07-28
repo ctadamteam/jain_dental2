@@ -2795,3 +2795,26 @@
         background-position: center !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE GAP BETWEEN NUMBER BADGES (.num, .num-badge) AND ADJACENT TEXT (15PX -> 8PX)
+   ========================================================================== */
+
+.implant-target-box ul li .num,
+.implant-pros li .pro-title .num,
+.num-badge,
+.num,
+.proc-num {
+    margin-right: 8px !important; /* Reduced from 15px to 8px to bring number badge and text closer */
+}
+
+@media screen and (max-width: 768px) {
+    .implant-target-box ul li .num,
+    .implant-pros li .pro-title .num,
+    .num-badge,
+    .num,
+    .proc-num {
+        margin-right: 8px !important;
+    }
+}

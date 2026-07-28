@@ -3627,3 +3627,73 @@
         display: none !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SECTION 6 PROCESS CARDS: 1-COLUMN, NO BORDER-RADIUS (0), REDUCED SIDE PADDING (10PX)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-process-list,
+    #clear-aligner .ca-process-list,
+    #clear-aligner .ca-process-section .container {
+        padding: 0 10px !important;
+    }
+
+    .ca-proc-item,
+    #clear-aligner .ca-proc-item {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        border-radius: 0 !important;
+        overflow: hidden !important;
+        margin-bottom: 15px !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04) !important;
+    }
+
+    .ca-proc-img,
+    #clear-aligner .ca-proc-img,
+    div[style*="width:220px"] {
+        width: 100% !important;
+        height: 180px !important;
+        min-height: 180px !important;
+        border-radius: 0 !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
+    .proc-num {
+        top: 0 !important;
+        left: 0 !important;
+        width: 26px !important;
+        height: 26px !important;
+        line-height: 26px !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        border-radius: 0 !important;
+    }
+
+    .ca-proc-text,
+    #clear-aligner .ca-proc-text {
+        padding: 20px 15px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .ca-proc-text h5 {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        margin-bottom: 8px !important;
+        color: #0b2559 !important;
+    }
+
+    .ca-proc-text p {
+        font-size: 15px !important;
+        line-height: 1.55 !important;
+        color: #555555 !important;
+        word-break: keep-all !important;
+    }
+
+    .ca-proc-text p br {
+        display: none !important;
+    }
+}

@@ -1478,3 +1478,37 @@
         font-size: 17px !important;
     }
 }
+
+
+/* ==========================================================================
+   MOBILE GNB MENU OVERHAUL: CLEAN X CLOSE ICON & 19.5px MENU FONT (PC PRESERVED)
+   ========================================================================== */
+
+@media screen and (max-width: 1024px) {
+    /* 1. Symmetrical Clean X Close Icon */
+    .hamburger-btn.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg) !important;
+        width: 100% !important;
+    }
+    .hamburger-btn.active span:nth-child(2) {
+        opacity: 0 !important;
+    }
+    .hamburger-btn.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg) !important;
+        width: 100% !important;
+    }
+
+    /* 2. Mobile Menu Font Size 19.5px & Weight 600 & Touch Padding */
+    .nav-menu li a {
+        font-size: 19.5px !important;
+        font-weight: 600 !important;
+        padding: 16px 0 !important;
+        color: #111111 !important;
+        display: block !important;
+        letter-spacing: -0.5px !important;
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid #f2f2f2 !important;
+    }
+}

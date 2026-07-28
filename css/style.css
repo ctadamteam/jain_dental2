@@ -3977,3 +3977,22 @@
         display: none !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: HIDE FORCED BR BREAKS & ENABLE KEEP-ALL FOR CLEAR ALIGNER INTRO DESC ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #clear-aligner p br,
+    #clear-aligner .section-desc br,
+    #clear-aligner div p br {
+        display: none !important;
+    }
+
+    #clear-aligner p,
+    #clear-aligner .section-desc {
+        word-break: keep-all !important;
+        overflow-wrap: break-word !important;
+    }
+}

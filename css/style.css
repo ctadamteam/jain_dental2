@@ -1888,3 +1888,78 @@
         margin-bottom: -15px !important;
     }
 }
+
+
+/* ==========================================================================
+   SECTION 2 TAB EQUIPMENT IMAGES RESTORATION & TSCAN-BOX 1-COLUMN STACK (MOBILE)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. Restore Tab Main Cover Images & Device Graphics */
+    .tscan-img {
+        height: 240px !important;
+        background-size: contain !important;
+        background-position: center center !important;
+        margin: 0 auto 30px !important;
+        border-radius: 8px !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .tscan-img img {
+        bottom: 0 !important;
+        left: 10px !important;
+        max-height: 85% !important;
+        max-width: 45% !important;
+        clip-path: none !important;
+        transform: none !important;
+        object-fit: contain !important;
+        position: absolute !important;
+    }
+
+    /* 2. Convert tscan-box from 2-column row to 1-column vertical stack (No text clipping) */
+    .tscan-boxes {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto 30px auto !important;
+        padding: 0 !important;
+    }
+
+    .tscan-box {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        background: #f8f9fa !important;
+        border: 1px solid #e5e5e5 !important;
+        border-radius: 12px !important;
+        padding: 20px 18px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .tscan-box h5 {
+        width: 100% !important;
+        margin-top: 0 !important;
+        margin-bottom: 14px !important;
+        padding-left: 16px !important;
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        color: #122b5e !important;
+    }
+
+    .tscan-box ul {
+        width: 100% !important;
+        flex: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .tscan-box ul li {
+        font-size: 15px !important;
+        line-height: 1.65 !important;
+        color: #333333 !important;
+        word-break: keep-all !important;
+        margin-bottom: 8px !important;
+    }
+}

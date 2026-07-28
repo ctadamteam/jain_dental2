@@ -3280,3 +3280,15 @@
         line-height: 1.5 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE .AE-PRO-ITEM LEFT PADDING BY ~10PX (PADDING-LEFT: 18PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ae-pro-item,
+    #aesthetic .ae-pro-item {
+        padding-left: 18px !important; /* Shifted badge and text LEFT by 12px */
+    }
+}

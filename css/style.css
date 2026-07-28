@@ -4126,3 +4126,20 @@
         left: -5px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: ADJUST TOP AND BOTTOM PADDING FOR DISCOMFORT BOX (.DISCOMFORT-CONTAINER)
+   ========================================================================== */
+
+.discomfort-container {
+    padding-top: 32px !important;
+    padding-bottom: 22px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .discomfort-container {
+        padding-top: 30px !important;
+        padding-bottom: 20px !important;
+    }
+}

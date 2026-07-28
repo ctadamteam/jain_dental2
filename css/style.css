@@ -3471,3 +3471,17 @@
         margin-top: -3px !important; /* Seamlessly overlaps image bottom edge by 3px to eliminate white line gap */
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT INNER BACKGROUND IMAGE DOWN BY 10PX INSIDE .CA-REC-IMG
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-rec-img {
+        height: 147px !important;
+        background-position: center calc(50% + 10px) !important; /* Container stays 147px, inner image moves down by 10px */
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+}

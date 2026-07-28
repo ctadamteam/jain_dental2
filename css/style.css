@@ -2266,3 +2266,16 @@
         margin-bottom: 3px !important; /* Narrowed from 6px to 3px */
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: MOVE SECTION 4 IMPLANT (#IMPLANT) UP ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #implant,
+    section#implant {
+        padding-top: 20px !important;
+        margin-top: -30px !important;
+    }
+}

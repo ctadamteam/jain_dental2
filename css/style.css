@@ -2155,3 +2155,98 @@
         word-break: keep-all !important;
     }
 }
+
+
+/* ==========================================================================
+   CLEAN & STABLE 100% FULL-BLEED DOCTOR CARDS & EXPANDED PHOTO (MOBILE)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. Unset container padding for #doctors section */
+    #doctors > .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /* 2. Doctor Card Container */
+    .doctor-card,
+    .doctor-card.reverse {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 60px !important;
+        width: 100% !important;
+        position: relative !important;
+        background: transparent !important;
+    }
+
+    .doctor-card::before {
+        display: none !important;
+    }
+
+    /* 3. Clean 100% Expanded Profile Photo (No offset / no right shift) */
+    .doc-img {
+        width: 100% !important;
+        max-width: 100% !important;
+        left: 0 !important;
+        margin: 0 !important;
+        transform: none !important;
+        position: relative !important;
+        height: auto !important;
+        aspect-ratio: 340/400 !important;
+        overflow: hidden !important;
+        background: #e9ecef !important;
+    }
+
+    .doc-img img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        border-radius: 0 !important;
+        display: block !important;
+    }
+
+    /* 4. Clean 100% Full-Bleed Grey Box (0px round, 0px side margins, no right shift) */
+    .doc-info {
+        width: 100% !important;
+        left: 0 !important;
+        margin: 0 !important;
+        transform: none !important;
+        position: relative !important;
+        background: #f8f9fa !important;
+        border-radius: 0 !important;
+        padding: 30px 20px 35px 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .doc-name {
+        font-size: 18px !important;
+        color: #333333 !important;
+        font-weight: 500 !important;
+        border-bottom: 2px solid #122b5e !important;
+        padding-bottom: 12px !important;
+        margin-bottom: 18px !important;
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .doc-name strong {
+        font-size: 26px !important;
+        color: #122b5e !important;
+        font-weight: 800 !important;
+        margin-right: 12px !important;
+        letter-spacing: -0.5px !important;
+    }
+
+    .doc-history li {
+        font-size: 16px !important;
+        color: #111111 !important;
+        line-height: 1.65 !important;
+        margin-bottom: 6px !important;
+        word-break: keep-all !important;
+    }
+}

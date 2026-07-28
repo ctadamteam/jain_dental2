@@ -2946,3 +2946,15 @@
         color: #333333 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT .implant-target-box UP BY ~10PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .implant-target-box,
+    #implant .implant-target-box {
+        margin-top: 10px !important; /* Reduced margin-top by 10px~15px to shift box up */
+    }
+}

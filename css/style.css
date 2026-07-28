@@ -1086,3 +1086,99 @@
         white-space: normal !important;
     }
 }
+
+
+/* ==========================================================================
+   100% PC DESIGN ELEMENT REPRODUCTION ON MOBILE (PC UNTOUCHED)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. BR Tag Space Restoration (Prevents Word Gluing) */
+    br {
+        display: inline !important;
+        content: " " !important;
+    }
+
+    /* 2. Section 2 (#special) Exact PC Design Reproduction */
+    #special {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+        background: #ffffff !important; /* Base section background is clean white like PC */
+    }
+
+    .special-top {
+        background: #0b1732 !important; /* Top 5D analysis part is dark navy like PC */
+        padding: 40px 20px !important;
+        color: #ffffff !important;
+    }
+
+    .special-top-text h3 {
+        color: #ffffff !important;
+        font-size: 24px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .special-top-text p {
+        color: #e0e0e0 !important;
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .special-top-text p.highlight-gold {
+        color: #dcb37b !important;
+    }
+
+    /* Bottom Equipment Tabs Part on Mobile - Clean White background like PC */
+    .special-bottom, .tab-hero-container, .tscan-boxes {
+        background: #ffffff !important;
+        color: #333333 !important;
+        padding: 20px 10px !important;
+    }
+
+    .tab-buttons.text-style {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        max-width: 100% !important;
+        margin: 20px auto !important;
+        border-bottom: 2px solid #eee !important;
+    }
+
+    .tab-buttons.text-style .tab-btn {
+        font-size: 15px !important;
+        padding: 10px 8px !important;
+        color: #666666 !important;
+    }
+
+    .tab-buttons.text-style .tab-btn.active {
+        color: #122b5e !important;
+        font-weight: 700 !important;
+    }
+
+    .tscan-box {
+        background: #f8f9fa !important;
+        border: 1px solid #e5e5e5 !important;
+        border-radius: 12px !important;
+        padding: 20px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .tscan-box h5 {
+        color: #122b5e !important;
+        font-size: 17px !important;
+        font-weight: 700 !important;
+    }
+
+    .tscan-box ul li {
+        font-size: 14px !important;
+        color: #444444 !important;
+        line-height: 1.5 !important;
+    }
+
+    /* 3. GNB Dynamic Viewport Height */
+    .nav-menu {
+        top: 70px !important;
+        height: calc(100dvh - 70px) !important;
+    }
+}

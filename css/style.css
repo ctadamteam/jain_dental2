@@ -458,7 +458,7 @@
 .ba-images { display: flex; max-width: 1000px; margin: 0 auto; gap: 2px; justify-content: center; }
 .ba-box { flex: 1; display: flex; flex-direction: column; }
 .ba-img { background-color: #ddd !important; aspect-ratio: 4 / 3; width: 100%; }
-.ba-label { padding: 15px 0; text-align: center; font-size: 18px; font-weight: 500; }
+.ba-label { padding: 8px 0; text-align: center; font-size: 18px; font-weight: 500; }
 .lbl-before { background-color: #dcb37b; color: #111; }
 .lbl-after { background-color: #122b5e; color: #fff; }
 

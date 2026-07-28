@@ -3460,3 +3460,14 @@
         background-repeat: no-repeat !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: OVERLAP .CA-REC-TITLE BY -3PX TO ELIMINATE ANY IMAGE GAP LINE 100%
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-rec-title {
+        margin-top: -3px !important; /* Seamlessly overlaps image bottom edge by 3px to eliminate white line gap */
+    }
+}

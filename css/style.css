@@ -4193,3 +4193,16 @@
         top: -13px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT SECTION 7 TAB 3 (EMDOGAIN) IMPLANT-TARGET-BOX 5PX TO THE LEFT ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #con-3 .implant-target-box,
+    #conservation #con-3 .implant-target-box {
+        position: relative !important;
+        left: -5px !important;
+    }
+}

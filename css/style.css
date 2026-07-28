@@ -2486,3 +2486,18 @@
         word-break: keep-all !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: IMPLANT FEATURE CARD TITLE FONT-SIZE UPDATE TO 20PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ig-text h4 {
+        font-size: 20px !important; /* Updated from 21px to 20px */
+        line-height: 1.4 !important;
+        margin-top: 0 !important;
+        margin-bottom: 12px !important;
+        word-break: keep-all !important;
+    }
+}

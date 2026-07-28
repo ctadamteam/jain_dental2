@@ -2046,3 +2046,22 @@
         line-height: 1.45 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: MOVE TAB FOOTERS (.TSCAN-FOOTER) UP BY AN ADDITIONAL 20PX (+10PX -> -10PX)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .tscan-footer,
+    .tab-pane .tscan-footer,
+    p.tscan-footer {
+        margin-top: -10px !important; /* Shifted UP by an additional 20px */
+        font-size: 18px !important;
+        margin-bottom: 20px !important;
+        font-weight: 700 !important;
+        color: #111111 !important;
+        text-align: center !important;
+        line-height: 1.45 !important;
+    }
+}

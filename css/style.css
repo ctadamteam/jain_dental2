@@ -2853,3 +2853,18 @@
         display: none !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SET .sinus-badge ("상악동이란?") AND .sinus-desc FONT-SIZE TO 17PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .sinus-badge,
+    #implant .sinus-badge,
+    .sinus-desc,
+    #implant .sinus-desc {
+        font-size: 17px !important;
+        line-height: 1.6 !important;
+    }
+}

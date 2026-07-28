@@ -3996,3 +3996,17 @@
         overflow-wrap: break-word !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SECTION 7 CONSERVATION CAUSE PRO-DESC FONT SIZE 17PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .implant-pros .pro-desc,
+    #conservation .implant-pros .pro-desc {
+        font-size: 17px !important;
+        line-height: 1.55 !important;
+        word-break: keep-all !important;
+    }
+}

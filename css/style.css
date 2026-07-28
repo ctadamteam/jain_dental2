@@ -2341,3 +2341,15 @@
         word-break: keep-all !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE IMPLANT GRID SIDE PADDING FROM 20PX TO 10PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .implant-grid,
+    #implant .implant-grid {
+        padding: 0 10px !important; /* Reduced side padding to 10px */
+    }
+}

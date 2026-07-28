@@ -56,9 +56,22 @@
    .hamburger-btn span:nth-child(2) { top: 50%; transform: translateY(-50%); }
    .hamburger-btn span:nth-child(3) { bottom: 0; }
    
-   .hamburger-btn.active span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
-   .hamburger-btn.active span:nth-child(2) { opacity: 0; }
-   .hamburger-btn.active span:nth-child(3) { bottom: 50%; transform: translateY(50%) rotate(-45deg); }
+   .hamburger-btn.active span:nth-child(1) {
+    top: 50% !important;
+    left: 0 !important;
+    transform: translateY(-50%) rotate(45deg) !important;
+    width: 100% !important;
+}
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0 !important;
+}
+.hamburger-btn.active span:nth-child(3) {
+    top: 50% !important;
+    bottom: auto !important;
+    left: 0 !important;
+    transform: translateY(-50%) rotate(-45deg) !important;
+    width: 100% !important;
+}
    
    /* ==========================================================================
       Tabs
@@ -676,15 +689,20 @@
 }
 
 .hamburger-btn.active span:nth-child(1) {
-    transform: translateY(8.5px) rotate(45deg);
+    top: 50% !important;
+    left: 0 !important;
+    transform: translateY(-50%) rotate(45deg) !important;
+    width: 100% !important;
 }
-
 .hamburger-btn.active span:nth-child(2) {
-    opacity: 0;
+    opacity: 0 !important;
 }
-
 .hamburger-btn.active span:nth-child(3) {
-    transform: translateY(-8.5px) rotate(-45deg);
+    top: 50% !important;
+    bottom: auto !important;
+    left: 0 !important;
+    transform: translateY(-50%) rotate(-45deg) !important;
+    width: 100% !important;
 }
 
 /* 4. Responsive Overrides for Tablet (max-width: 1024px) */
@@ -1218,14 +1236,21 @@
 
     /* Clean X Close Icon for Active Mobile Menu */
     .hamburger-btn.active span:nth-child(1) {
-        transform: translateY(7.5px) rotate(45deg) !important;
-    }
-    .hamburger-btn.active span:nth-child(2) {
-        opacity: 0 !important;
-    }
-    .hamburger-btn.active span:nth-child(3) {
-        transform: translateY(-7.5px) rotate(-45deg) !important;
-    }
+    top: 50% !important;
+    left: 0 !important;
+    transform: translateY(-50%) rotate(45deg) !important;
+    width: 100% !important;
+}
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0 !important;
+}
+.hamburger-btn.active span:nth-child(3) {
+    top: 50% !important;
+    bottom: auto !important;
+    left: 0 !important;
+    transform: translateY(-50%) rotate(-45deg) !important;
+    width: 100% !important;
+}
 
     /* GNB Menu Drawer with Safety Bottom Padding */
     .nav-menu {
@@ -1236,8 +1261,7 @@
     }
 
     .nav-menu li a {
-        font-size: 16px !important;
-        padding: 14px 0 !important;
+        font-size: 19.5px !important; font-weight: 600 !important; padding: 16px 0 !important;
     }
 
     /* 3. Section 1 Intro Desk Photo & Typography */
@@ -1487,16 +1511,21 @@
 @media screen and (max-width: 1024px) {
     /* 1. Symmetrical Clean X Close Icon */
     .hamburger-btn.active span:nth-child(1) {
-        transform: translateY(7px) rotate(45deg) !important;
-        width: 100% !important;
-    }
-    .hamburger-btn.active span:nth-child(2) {
-        opacity: 0 !important;
-    }
-    .hamburger-btn.active span:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg) !important;
-        width: 100% !important;
-    }
+    top: 50% !important;
+    left: 0 !important;
+    transform: translateY(-50%) rotate(45deg) !important;
+    width: 100% !important;
+}
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0 !important;
+}
+.hamburger-btn.active span:nth-child(3) {
+    top: 50% !important;
+    bottom: auto !important;
+    left: 0 !important;
+    transform: translateY(-50%) rotate(-45deg) !important;
+    width: 100% !important;
+}
 
     /* 2. Mobile Menu Font Size 19.5px & Weight 600 & Touch Padding */
     .nav-menu li a {

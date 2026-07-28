@@ -3004,3 +3004,33 @@
         letter-spacing: -0.6px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: EXACT LINE BREAK FOR TAB 2 TARGET ITEM 2 ("...식립해야 / 하는 경우")
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .implant-target-box ul li {
+        font-size: 16.5px !important;
+        letter-spacing: -1px !important;
+        word-break: keep-all !important;
+        align-items: flex-start !important;
+    }
+
+    .implant-target-box ul li .num {
+        margin-top: 2px !important;
+        margin-right: 6px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .implant-target-box ul li .target-text {
+        display: inline-block !important;
+        word-break: keep-all !important;
+    }
+
+    .implant-target-box ul li br.mobile-br {
+        display: block !important;
+        content: "" !important;
+    }
+}

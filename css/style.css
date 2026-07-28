@@ -1775,3 +1775,20 @@
         color: #dcb37b !important;
     }
 }
+
+
+/* ==========================================================================
+   ALL SECTION JAIN DENTAL CLINIC ENGLISH SUBTITLE 100% UNIFIED SPEC
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .section-subtitle, .intro-subtitle, #special .section-subtitle {
+        font-family: inherit !important;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        color: #dcb37b !important;
+        letter-spacing: 1px !important;
+        text-transform: uppercase !important;
+        text-align: center !important;
+    }
+}

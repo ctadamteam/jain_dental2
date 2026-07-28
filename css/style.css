@@ -1828,3 +1828,24 @@
         padding-top: 25px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVES: SPECIAL_RIGHT1 DOWN 10PX & SEPARATOR LINE UP 10PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. Move special_right1.jpg DOWN by 10px (-60px -> -50px) */
+    .special-top-flex:nth-child(1) .special-top-img {
+        margin-top: -50px !important;
+        max-width: 290px !important;
+        width: 90% !important;
+        transform: translateX(-20px) !important;
+    }
+
+    /* 2. Move separator line below UP by 10px (+20px -> +10px) */
+    .special-top-flex.reverse {
+        margin-top: 10px !important;
+        padding-top: 25px !important;
+    }
+}

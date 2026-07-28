@@ -3755,3 +3755,41 @@
         padding: 0 15px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SECTION 7 (#CONSERVATION) PRESERVE CLIENT APPROVED TEXT-STYLE TABS (2X2 GRID)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #conservation .tab-buttons.text-style {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px 10px !important;
+        border-bottom: none !important;
+        padding: 0 !important;
+        margin: 15px auto 25px auto !important;
+    }
+
+    #conservation .tab-buttons.text-style .tab-btn {
+        padding: 8px 0 !important;
+        font-size: 15px !important;
+        color: #666666 !important;
+        background: transparent !important;
+        border: none !important;
+        border-bottom: 2px solid #eeeeee !important;
+        border-radius: 0 !important;
+        text-align: center !important;
+        word-break: keep-all !important;
+    }
+
+    #conservation .tab-buttons.text-style .tab-btn.active {
+        color: #122b5e !important;
+        font-weight: 700 !important;
+        border-bottom: 3px solid #122b5e !important;
+    }
+
+    #conservation .active-indicator {
+        display: none !important;
+    }
+}

@@ -1792,3 +1792,19 @@
         text-align: center !important;
     }
 }
+
+
+/* ==========================================================================
+   SECTION 2 DARK NAVY BOX CARD TITLES (5D 정밀분석, 보이는 치아만이 아니라): 23PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .special-top-text h3,
+    .special-top-text h3 strong,
+    .special-top-text h3 span,
+    .special-top-flex h3,
+    .special-top h3 {
+        font-size: 23px !important; /* Strictly set to 23px per user directive */
+        line-height: 1.35 !important;
+    }
+}

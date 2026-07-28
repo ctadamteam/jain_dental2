@@ -2768,3 +2768,30 @@
         word-break: keep-all !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: ADD 10PX MORE SIDE PADDING (TOTAL 15PX) & INCREASE PROCESS IMAGE HEIGHT BY +50PX (TOTAL 180PX)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* Add 10px more side padding to treatment process section (total 15px) */
+    .implant-process-section,
+    #implant .implant-process-section {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+        width: calc(100% + 30px) !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Increase treatment process image height by 50px (130px -> 180px) */
+    .process-item .process-img,
+    #implant .process-item .process-img {
+        height: 180px !important; /* Increased by +50px for rich visual detail */
+        border-radius: 0 !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+}

@@ -2459,3 +2459,30 @@
         margin-bottom: 4px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: IMPLANT FEATURE CARDS TITLE 21PX (NO FORCED BR) & CONTENT 17PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ig-text h4 {
+        font-size: 21px !important; /* Updated card title font size to 21px */
+        line-height: 1.4 !important;
+        margin-top: 0 !important;
+        margin-bottom: 12px !important;
+        word-break: keep-all !important;
+    }
+
+    .ig-text h4 br {
+        display: none !important; /* Hide forced line breaks inside card titles */
+    }
+
+    .ig-text p {
+        font-size: 17px !important; /* Updated card content font size to 17px */
+        line-height: 1.65 !important;
+        color: #555555 !important;
+        margin-bottom: 0 !important;
+        word-break: keep-all !important;
+    }
+}

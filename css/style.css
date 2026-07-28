@@ -3149,3 +3149,20 @@
         margin-top: -15px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: MATCH SECTION 5 (#aesthetic) SIDE PADDING TO SECTION 4 (15PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #aesthetic .container,
+    #aesthetic .aesthetic-intro,
+    #aesthetic .aesthetic-grid,
+    #aesthetic .ae-card {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}

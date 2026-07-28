@@ -1382,3 +1382,41 @@
         transform: translateY(6px) !important;
     }
 }
+
+
+/* ==========================================================================
+   STANDARDIZED MOBILE TYPOGRAPHY (16.5px BODY TEXT ACROSS ALL SECTIONS)
+   (PC WEB VERSION 100% UNTOUCHED & PRESERVED)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* Global Mobile Body Paragraphs & List Items */
+    p, li, .intro-desc-1, .intro-desc-2, .intro-desc-3,
+    .special-top-text p, .tscan-box ul li,
+    .doctor-desc, .implant-desc, .feature-card p, .pro-card p,
+    .aesthetic-card p, .aligner-step p, .conservation-box p,
+    .tmj-card p, .tour-desc, .location-info p {
+        font-size: 16.5px !important;
+        line-height: 1.7 !important;
+        word-break: keep-all !important;
+    }
+
+    /* Fine Print / Credentials Sub-text */
+    .doctor-history li, .credentials li, .sub-text, .caption {
+        font-size: 14.5px !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Section Subheadings & Card Titles */
+    h3, h4, h5, .card-title, .feature-title, .pro-title, .tscan-box h5 {
+        font-size: 19px !important;
+        line-height: 1.4 !important;
+        font-weight: 700 !important;
+    }
+
+    /* Section Main Titles */
+    h2, .section-title, .intro-title {
+        font-size: 25px !important;
+        line-height: 1.35 !important;
+    }
+}

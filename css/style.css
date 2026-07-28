@@ -3720,3 +3720,15 @@
         word-break: keep-all !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE GAP BETWEEN [미리보는 치료과정] TITLE AND 7 CARDS (MARGIN-BOTTOM: 25PX)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-process-section h4,
+    #clear-aligner .ca-process-section h4 {
+        margin-bottom: 25px !important;
+    }
+}

@@ -2501,3 +2501,67 @@
         word-break: keep-all !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: HARMONIZE SECTION 4 IMPLANT TABS WITH SECTION 2 & FULL-BLEED GREY BOX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. Treatment Process Full-Bleed Grey Box Fix */
+    .implant-process-section,
+    #implant .implant-process-section {
+        position: static !important;
+        left: auto !important;
+        right: auto !important;
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+        width: calc(100% + 30px) !important;
+        max-width: none !important;
+        padding: 40px 15px !important;
+        background: #f8f9fa !important;
+        border-radius: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 2. Tab Buttons Font & Style Harmonization (matching Section 2) */
+    #implant .tab-buttons .tab-btn,
+    #implant .tab-btn {
+        font-size: 17px !important;
+        font-weight: 700 !important;
+        padding: 12px 8px !important;
+        color: #666666 !important;
+    }
+
+    #implant .tab-buttons .tab-btn.active,
+    #implant .tab-btn.active {
+        color: #0b1732 !important;
+        font-weight: 800 !important;
+    }
+
+    /* 3. Tab Main Hero Image Size Harmonization (matching Section 2) */
+    .implant-tab-hero,
+    #implant .implant-tab-hero {
+        height: 260px !important;
+        border-radius: 0 !important;
+        margin-bottom: 30px !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    /* 4. Tab Body Typography Harmonization (matching Section 2) */
+    .implant-tab-title,
+    #implant .implant-tab-title {
+        font-size: 20px !important;
+        font-weight: 700 !important;
+        line-height: 1.4 !important;
+        color: #0b1732 !important;
+    }
+
+    .implant-tab-desc,
+    #implant .implant-tab-desc {
+        font-size: 16px !important;
+        line-height: 1.65 !important;
+        color: #555555 !important;
+    }
+}

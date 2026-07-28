@@ -3954,3 +3954,26 @@
         font-size: 19px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SECTION 7 CON-INFO-SECTION TEXT FONT 17PX & HIDE FORCED BR BREAKS ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .con-info-section p,
+    .con-info-section .highlight-blue,
+    #conservation .con-info-section p,
+    #conservation .con-info-section .highlight-blue,
+    p[style*="font-size:20px"] {
+        font-size: 17px !important;
+        line-height: 1.6 !important;
+        word-break: keep-all !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .con-info-section p br,
+    #conservation .con-info-section p br {
+        display: none !important;
+    }
+}

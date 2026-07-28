@@ -4211,8 +4211,9 @@
 
 
 
+
 /* ==========================================================================
-   DIRECTIVE: PRESERVE COLOR BOX SIZE & 18PX FONT SIZE, FIT SINGLE LINE VIA LETTER SPACING ON MOBILE
+   DIRECTIVE: ROLLBACK PROCESS STEP TITLE BADGE FONT TO 16PX & SINGLE LINE FIT ON MOBILE
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
@@ -4220,12 +4221,10 @@
     .process-grid .process-step,
     #conservation .process-item .process-step,
     #implant .process-item .process-step {
-        font-size: 18px !important;
-        letter-spacing: -1.4px !important;
-        word-spacing: -2px !important;
+        font-size: 16px !important;
+        letter-spacing: -0.6px !important;
         white-space: nowrap !important;
-        overflow: visible !important;
-        padding-left: 1px !important;
-        padding-right: 1px !important;
+        padding-left: 2px !important;
+        padding-right: 2px !important;
     }
 }

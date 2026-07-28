@@ -1206,7 +1206,7 @@
     }
 
     .logo-img, .logo img, .header-logo img {
-        width: 135px !important;
+        width: 155px !important;
         height: auto !important;
     }
 
@@ -1326,8 +1326,8 @@
 
 @media screen and (max-width: 768px) {
     .logo-img, .logo img {
-        width: 130px !important;
-        max-height: 28px !important;
+        width: 155px !important;
+        max-height: 34px !important;
         height: auto !important;
         object-fit: contain !important;
     }

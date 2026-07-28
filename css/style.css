@@ -2013,3 +2013,17 @@
         transform-origin: left bottom !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SCALE UP RAYFACE DEVICE IMAGE BY 10% ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #special-1 .tscan-img img,
+    .tab-pane#special-1 .tscan-img img,
+    img[src*="rayface-1.png"] {
+        transform: scale(1.1) !important; /* Scaled up by 10% */
+        transform-origin: left bottom !important;
+    }
+}

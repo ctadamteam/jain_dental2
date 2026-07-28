@@ -1438,9 +1438,13 @@
     .tscan-box h5, .tscan-badge, .implant-tab-title, .ig-text h4 {
         font-size: 21px !important;
     }
-/* Mobile JAIN DENTAL CLINIC Subtitle Font Size -> 20px */
+/* Reduce Gap Between English Subtitle & Main Title on Mobile */
     .intro-subtitle, .section-subtitle {
         font-size: 20px !important;
+        margin-bottom: 4px !important;
+    }
+    .intro-title, .section-title {
+        margin-top: 0 !important;
     }
 /* Tab Buttons Font Size -> 21px */
     .tab-btn, .tab-buttons .tab-btn, .tab-buttons.text-style .tab-btn, .tab-buttons.line-style .tab-btn {

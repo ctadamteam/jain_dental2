@@ -2645,3 +2645,36 @@
         background-position: center !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE SIDE MARGINS/PADDING FOR IMPLANT PROS & TREATMENT PROCESS
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* Reduce side padding for "즉시 임플란트의 장점" (.implant-pros) */
+    .implant-pros,
+    #implant .implant-pros {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Reduce side padding for "즉시 임플란트 치료 과정" (.implant-process-section) */
+    .implant-process-section,
+    #implant .implant-process-section {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+        width: calc(100% + 30px) !important;
+        box-sizing: border-box !important;
+    }
+
+    .implant-process-section .process-grid {
+        gap: 16px 8px !important; /* Slightly tighter grid gap for 2x2 grid */
+        padding: 0 !important;
+    }
+}

@@ -4210,15 +4210,22 @@
 }
 
 
+
 /* ==========================================================================
    DIRECTIVE: PRESERVE COLOR BOX SIZE & 18PX FONT SIZE, FIT SINGLE LINE VIA LETTER SPACING ON MOBILE
+   ========================================================================== */
 
 @media screen and (max-width: 768px) {
     .process-item .process-step,
-    .process-grid .process-step {
+    .process-grid .process-step,
+    #conservation .process-item .process-step,
+    #implant .process-item .process-step {
         font-size: 18px !important;
-        letter-spacing: -1.1px !important;
-        word-spacing: -1px !important;
+        letter-spacing: -1.4px !important;
+        word-spacing: -2px !important;
         white-space: nowrap !important;
+        overflow: visible !important;
+        padding-left: 1px !important;
+        padding-right: 1px !important;
     }
 }

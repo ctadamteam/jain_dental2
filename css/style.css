@@ -3255,3 +3255,15 @@
         padding-bottom: 15px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT .AE-TEXT DOWN BY 10PX MORE (PADDING-TOP: 32PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ae-text,
+    #aesthetic .ae-text {
+        padding-top: 32px !important; /* Shifted DOWN by 10px more */
+    }
+}

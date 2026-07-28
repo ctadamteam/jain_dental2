@@ -2587,3 +2587,61 @@
         font-weight: 800 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: OPTION B (2X2 GRID FOR TREATMENT PROCESS) & TYPOGRAPHY UPDATE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. Sub-Headings -> 21px */
+    .implant-tab-title {
+        font-size: 21px !important;
+        font-weight: 700 !important;
+        line-height: 1.4 !important;
+        color: #0b1732 !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* 2. Treatment Process Step Badges -> 19px */
+    .process-item .process-step {
+        font-size: 19px !important;
+        font-weight: 700 !important;
+        padding: 10px 4px !important;
+        line-height: 1.3 !important;
+        word-break: keep-all !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* 3. Body Text & Details -> 17px */
+    .implant-tab-desc,
+    .implant-target-box ul li,
+    .implant-pros li .pro-title,
+    .implant-pros li .pro-desc,
+    .process-item p {
+        font-size: 17px !important;
+        line-height: 1.6 !important;
+        color: #333333 !important;
+        word-break: keep-all !important;
+    }
+
+    /* 4. Option B: 2x2 Grid Layout for Treatment Process */
+    .implant-process-section .process-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px 12px !important;
+        width: 100% !important;
+    }
+
+    .process-item {
+        width: 100% !important;
+        margin-bottom: 0 !important;
+    }
+
+    .process-item .process-img {
+        height: 130px !important;
+        border-radius: 0 !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+}

@@ -2678,3 +2678,49 @@
         padding: 0 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: TOP-LEFT SQUARE COLORED NUMBER BADGES (01, 02, 03, 04) ON PROCESS IMAGES
+   ========================================================================== */
+
+.process-item {
+    position: relative !important;
+}
+
+.process-item .process-img {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.process-item .process-img::before {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 36px !important;
+    height: 36px !important;
+    background: #0b1732 !important; /* Deep Navy Signature Color */
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 0 !important; /* Sharp 0px corners */
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2) !important;
+    z-index: 5 !important;
+    letter-spacing: 0 !important;
+}
+
+.process-item:nth-child(1) .process-img::before { content: '01' !important; }
+.process-item:nth-child(2) .process-img::before { content: '02' !important; }
+.process-item:nth-child(3) .process-img::before { content: '03' !important; }
+.process-item:nth-child(4) .process-img::before { content: '04' !important; }
+
+@media screen and (max-width: 768px) {
+    .process-item .process-img::before {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 15px !important;
+    }
+}

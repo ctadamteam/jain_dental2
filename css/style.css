@@ -2419,3 +2419,27 @@
         max-width: 100% !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: ADD 5PX MORE SIDE PADDING (TOTAL 15PX) ACROSS SECTION 4 IMPLANT
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #implant > .container,
+    #implant .container {
+        padding-left: 15px !important; /* Total 15px side padding (10px + 5px) */
+        padding-right: 15px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .implant-grid,
+    #implant .implant-grid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}

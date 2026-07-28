@@ -3292,3 +3292,13 @@
         padding-left: 18px !important; /* Shifted badge and text LEFT by 12px */
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT TAB 2 (#ae-2) BADGE 1 AND BADGE 4 UP BY 16PX
+   ========================================================================== */
+
+#ae-2 .ae-pros-list .ae-pro-item:nth-child(1) .num-badge,
+#ae-2 .ae-pros-list .ae-pro-item:nth-child(4) .num-badge {
+    transform: translateY(-16px) !important;
+}

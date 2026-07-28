@@ -1770,8 +1770,10 @@
 
 
 
+
+
 /* ==========================================================================
-   DEFINITIVE 20PX UNIFIED SPEC FOR ALL ENGLISH SUBTITLES (CACHE-BUSTED)
+   DEFINITIVE 18PX UNIFIED SPEC FOR ALL SECTION ENGLISH SUBTITLES (MOBILE ONLY)
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
@@ -1782,7 +1784,7 @@
     p.section-subtitle,
     p.intro-subtitle {
         font-family: inherit !important;
-        font-size: 20px !important; /* Strictly forced 20px across all mobile viewports */
+        font-size: 18px !important; /* Strictly set to 18px per user directive */
         font-weight: 600 !important;
         color: #dcb37b !important;
         letter-spacing: 1px !important;

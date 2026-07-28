@@ -3166,3 +3166,20 @@
         box-sizing: border-box !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: HIDE ALL FORCED <BR> TAGS IN SECTION 5 INTRO (.aesthetic-intro) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #aesthetic .aesthetic-intro br,
+    .aesthetic-intro br {
+        display: none !important;
+    }
+
+    .aesthetic-intro p {
+        word-break: keep-all !important;
+        line-height: 1.65 !important;
+    }
+}

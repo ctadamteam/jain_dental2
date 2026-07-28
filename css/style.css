@@ -4029,3 +4029,14 @@
         background-color: #ffffff !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: HIDE NUMBER BADGES (01, 02, 03, 04) FOR SECTION 7 PREVENTION CARDS
+   ========================================================================== */
+
+.con-prev-section .process-item .process-img::before,
+#conservation .con-prev-section .process-item .process-img::before {
+    display: none !important;
+    content: none !important;
+}

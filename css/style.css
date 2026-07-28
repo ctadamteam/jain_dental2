@@ -1420,3 +1420,32 @@
         line-height: 1.35 !important;
     }
 }
+
+
+/* ==========================================================================
+   MOBILE FONT-SIZE ONLY ADJUSTMENTS (COLORS & WEIGHTS 100% PRESERVED)
+   (PC WEB VERSION 100% UNTOUCHED & PRESERVED)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. Main Titles -> 32px Only */
+    h2, .section-title, .intro-title, .special-top-text h3 {
+        font-size: 32px !important;
+    }
+
+    /* 2. Subtitles & Card Headings -> 21px Only */
+    h3, h4, h5, .section-subtitle, .card-title, .feature-title, .pro-title, 
+    .tscan-box h5, .tscan-badge, .implant-tab-title, .ig-text h4 {
+        font-size: 21px !important;
+    }
+
+    /* 3. General Body Text -> 17px Only */
+    p, li, .intro-desc-1, .intro-desc-2, .intro-desc-3,
+    .special-top-text p, .tscan-box ul li, .tscan-desc,
+    .doctor-desc, .implant-desc, .feature-card p, .pro-card p,
+    .aesthetic-card p, .aligner-step p, .conservation-box p,
+    .tmj-card p, .tour-desc, .location-info p {
+        font-size: 17px !important;
+        word-break: keep-all !important;
+    }
+}

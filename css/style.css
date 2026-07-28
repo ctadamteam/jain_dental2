@@ -2250,3 +2250,19 @@
         word-break: keep-all !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SLIGHTLY NARROW THE GAP BETWEEN DOCTOR HISTORY LIST ITEMS (MARGIN-BOTTOM 6PX -> 3PX)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .doc-history li,
+    .doctor-card .doc-history li {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+        color: #111111 !important;
+        word-break: keep-all !important;
+        margin-bottom: 3px !important; /* Narrowed from 6px to 3px */
+    }
+}

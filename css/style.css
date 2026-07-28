@@ -3225,3 +3225,20 @@
         padding: 20px 15px 15px 15px !important; /* Reduced bottom padding from 30px to 15px to make vertical height compact */
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE .AE-CARD VERTICAL HEIGHT BY ~20PX (.AE-IMG HEIGHT: 190PX, .AE-TEXT PADDING: 15PX 10PX 10PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ae-img,
+    #aesthetic .ae-img {
+        height: 190px !important; /* Reduced image height by 20px for compact box vertical size */
+    }
+
+    .ae-text,
+    #aesthetic .ae-text {
+        padding: 15px 10px 10px 10px !important;
+    }
+}

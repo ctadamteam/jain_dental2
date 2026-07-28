@@ -2027,3 +2027,22 @@
         transform-origin: left bottom !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SET ALL TAB FOOTERS (.TSCAN-FOOTER) TO 18PX AND MOVE UP BY 30PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .tscan-footer,
+    .tab-pane .tscan-footer,
+    p.tscan-footer {
+        font-size: 18px !important; /* Set to 18px per user directive */
+        margin-top: 10px !important; /* Moved UP by 30px (40px -> 10px) */
+        margin-bottom: 20px !important;
+        font-weight: 700 !important;
+        color: #111111 !important;
+        text-align: center !important;
+        line-height: 1.45 !important;
+    }
+}

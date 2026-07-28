@@ -3123,3 +3123,16 @@
         margin-top: -15px !important; /* Shifted box UP by ~15px */
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT .sinus-desc UP BY ~8PX (MARGIN-TOP: -8PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .sinus-desc,
+    #implant .sinus-desc {
+        margin-top: -8px !important;
+        padding-top: 0 !important;
+    }
+}

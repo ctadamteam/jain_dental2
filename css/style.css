@@ -3207,3 +3207,21 @@
         line-height: 1.6 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE .AESTHETIC-GRID OUTSIDE PADDING BY 5PX (0PX) & REDUCE .AE-TEXT BOTTOM PADDING (15PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #aesthetic .aesthetic-grid,
+    .aesthetic-grid {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .ae-text,
+    #aesthetic .ae-text {
+        padding: 20px 15px 15px 15px !important; /* Reduced bottom padding from 30px to 15px to make vertical height compact */
+    }
+}

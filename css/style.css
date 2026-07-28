@@ -2985,3 +2985,22 @@
         box-sizing: border-box !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: TAB 2 TARGET ITEM 2 CUSTOM LINE BREAK ("...식립해야 / 하는 경우")
+   ========================================================================== */
+
+.mobile-br {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-br {
+        display: inline !important;
+    }
+
+    .implant-target-box ul li {
+        letter-spacing: -0.6px !important;
+    }
+}

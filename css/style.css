@@ -3418,3 +3418,17 @@
         font-size: 17px !important; /* Description font size: 17px */
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: ALIGN .CA-REC-IMG FLUSH DOWN TO COLOR BOX (BACKGROUND-POSITION: CENTER BOTTOM)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-rec-img {
+        height: 167px !important;
+        background-position: center bottom !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+}

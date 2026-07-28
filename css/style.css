@@ -1963,3 +1963,21 @@
         margin-bottom: 8px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SET ALL TAB BOX LIST ITEMS (.TSCAN-BOX UL LI) FONT SIZE TO 17PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .tscan-box ul li,
+    .tscan-boxes ul li,
+    .tscan-box li,
+    .tab-pane .tscan-box ul li {
+        font-size: 17px !important; /* Strictly set to 17px per user directive */
+        line-height: 1.65 !important;
+        color: #333333 !important;
+        word-break: keep-all !important;
+        margin-bottom: 8px !important;
+    }
+}

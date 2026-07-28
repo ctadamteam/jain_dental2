@@ -3242,3 +3242,16 @@
         padding: 15px 10px 10px 10px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT .AE-TEXT TITLE & DESC BLOCK DOWN SLIGHTLY (PADDING-TOP: 22PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ae-text,
+    #aesthetic .ae-text {
+        padding-top: 22px !important; /* Shifted text block DOWN slightly */
+        padding-bottom: 15px !important;
+    }
+}

@@ -3485,3 +3485,14 @@
         background-repeat: no-repeat !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE .CA-REC-IMG HEIGHT BY ANOTHER 10PX (147PX -> 137PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-rec-img {
+        height: 137px !important; /* Reduced height by another 10px (147px -> 137px) */
+    }
+}

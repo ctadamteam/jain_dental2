@@ -3183,3 +3183,27 @@
         line-height: 1.65 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE SIDE PADDING OUTSIDE .AE-CARD TO 5PX & HIDE <BR> IN .AE-TEXT ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #aesthetic .aesthetic-grid,
+    .aesthetic-grid {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .ae-text br,
+    #aesthetic .ae-text br {
+        display: none !important;
+    }
+
+    .ae-text p,
+    #aesthetic .ae-text p {
+        word-break: keep-all !important;
+        line-height: 1.6 !important;
+    }
+}

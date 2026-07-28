@@ -3468,7 +3468,7 @@
 
 @media screen and (max-width: 768px) {
     .ca-rec-title {
-        margin-top: -3px !important; /* Seamlessly overlaps image bottom edge by 3px to eliminate white line gap */
+        margin-top: -10px !important; /* Seamlessly overlaps image bottom edge by 3px to eliminate white line gap */
     }
 }
 
@@ -3543,5 +3543,24 @@
 @media screen and (max-width: 768px) {
     .ca-recommend-grid .ca-rec-item:nth-child(2) .ca-rec-img {
         background-size: 110% auto !important;
+    }
+}
+
+
+/* ==========================================================================
+   DIRECTIVE: OVERLAP ALL 6 RECOMMENDATION COLOR TITLE BOXES UP BY 10PX ON TOP OF IMAGE
+   ========================================================================== */
+
+.ca-rec-title {
+    margin-top: -10px !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .ca-rec-title {
+        margin-top: -10px !important;
+        position: relative !important;
+        z-index: 2 !important;
     }
 }

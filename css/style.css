@@ -3111,3 +3111,15 @@
         box-sizing: border-box !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT TAB 2 & TAB 3 TARGET BOXES UP BY ~15PX (MARGIN-TOP: -15PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #implant-2 .implant-target-box,
+    #implant-3 .implant-target-box {
+        margin-top: -15px !important; /* Shifted box UP by ~15px */
+    }
+}

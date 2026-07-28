@@ -3096,3 +3096,18 @@
         box-sizing: border-box !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: TAB 2 & TAB 3 TARGET BOXES SPECIFICALLY REDUCE SIDE PADDING TO 5PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #implant-2 .implant-target-box,
+    #implant-3 .implant-target-box {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}

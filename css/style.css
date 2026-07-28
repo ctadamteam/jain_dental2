@@ -3432,3 +3432,17 @@
         background-repeat: no-repeat !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT RECOMMENDATION CARD IMAGES DOWN TO CENTER 85% TO ELIMINATE TOP GAP ABOVE COLOR BOX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-rec-img {
+        height: 167px !important;
+        background-position: center 85% !important; /* Pushes background image DOWN by 85% position */
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+}

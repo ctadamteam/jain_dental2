@@ -4099,3 +4099,17 @@
         display: none !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: ZIRCONIA ADVANTAGE CARDS TEXT FONT SIZE 17PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .zirconia-adv-text,
+    .zirconia-adv-item .zirconia-adv-text {
+        font-size: 17px !important;
+        line-height: 1.5 !important;
+        word-break: keep-all !important;
+    }
+}

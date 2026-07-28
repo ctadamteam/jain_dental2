@@ -2395,3 +2395,27 @@
         max-width: 100% !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: APPLY UNIFIED 10PX SIDE PADDING ACROSS ENTIRE SECTION 4 IMPLANT
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #implant > .container,
+    #implant .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .implant-grid,
+    #implant .implant-grid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}

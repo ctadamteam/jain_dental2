@@ -3922,3 +3922,23 @@
         font-size: 19px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: UPDATE ALL TAB BUTTON FONT SIZES ACROSS ALL SECTIONS TO 19PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .tab-btn,
+    .tab-buttons .tab-btn,
+    .tab-buttons.text-style .tab-btn,
+    .tab-buttons.line-style .tab-btn,
+    #special .tab-buttons .tab-btn,
+    #implant .tab-buttons .tab-btn,
+    #aesthetic .tab-buttons .tab-btn,
+    #clear-aligner .tab-buttons .tab-btn,
+    #conservation .tab-buttons .tab-btn,
+    #tmj .tab-buttons .tab-btn {
+        font-size: 19px !important;
+    }
+}

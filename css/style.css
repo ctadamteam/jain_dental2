@@ -1808,3 +1808,23 @@
         line-height: 1.35 !important;
     }
 }
+
+
+/* ==========================================================================
+   SECTION 2 DIRECTIVES: IMAGE 1 (-10% SIZE, -20PX LEFT) & BLOCK 2 (+40PX DOWN)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. First attached image (special_right1.jpg): 10% smaller, moved 20px left */
+    .special-top-flex:nth-child(1) .special-top-img {
+        max-width: 290px !important;
+        width: 90% !important;
+        transform: translateX(-20px) !important;
+    }
+
+    /* 2. Second attached block (.special-top-flex.reverse): moved 40px down */
+    .special-top-flex.reverse {
+        margin-top: 20px !important; /* Moved down by 40px (-20px -> +20px) */
+        padding-top: 25px !important;
+    }
+}

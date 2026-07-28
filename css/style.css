@@ -3034,3 +3034,17 @@
         content: "" !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: RESTORE LETTER-SPACING TO NORMAL (-0.2PX) FOR .implant-target-box ul li
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .implant-target-box ul li,
+    #implant .implant-target-box ul li {
+        font-size: 17px !important;
+        letter-spacing: -0.2px !important; /* Restored from -1px to comfortable normal spacing */
+        line-height: 1.45 !important;
+    }
+}

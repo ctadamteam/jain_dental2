@@ -3342,3 +3342,14 @@
         margin-top: -15px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SYNC SECTION 6 (#CLEAR-ALIGNER) SIDE PADDING TO MATCH SECTION 5 (15PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #clear-aligner .container {
+        padding: 0 15px !important;
+    }
+}

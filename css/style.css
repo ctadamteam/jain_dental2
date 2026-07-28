@@ -2818,3 +2818,23 @@
         margin-right: 8px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SET ALL DESCRIPTION PARAGRAPHS IN SECTION 4 IMPLANT TABS TO 17PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .implant-tab-desc,
+    .implant-tab-desc p,
+    #implant .implant-tab-desc,
+    .sinus-box p,
+    .implant-target-desc,
+    .implant-intro p,
+    .implant-target-box p,
+    #implant p {
+        font-size: 17px !important;
+        line-height: 1.65 !important;
+        color: #444444 !important;
+    }
+}

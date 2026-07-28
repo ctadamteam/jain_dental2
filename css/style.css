@@ -705,7 +705,7 @@
         justify-content: space-between;
     }
 
-    .header-logo img {
+    .logo-img, .logo img, .header-logo img {
         width: 180px !important;
         height: auto !important;
     }
@@ -1205,7 +1205,7 @@
         padding: 0 15px !important;
     }
 
-    .header-logo img {
+    .logo-img, .logo img, .header-logo img {
         width: 135px !important;
         height: auto !important;
     }
@@ -1321,5 +1321,18 @@
         color: #122b5e !important;
         font-size: 16px !important;
         font-weight: 700 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo-img, .logo img {
+        width: 130px !important;
+        max-height: 28px !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+    .logo {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
     }
 }

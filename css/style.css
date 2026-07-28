@@ -3515,3 +3515,18 @@
         background-repeat: no-repeat !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE .CA-REC-IMG HEIGHT BY 20PX (137PX -> 117PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-rec-img {
+        height: 117px !important; /* Reduced height by 20px (137px -> 117px) */
+        background-color: transparent !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+}

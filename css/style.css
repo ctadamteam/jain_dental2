@@ -2724,3 +2724,47 @@
         font-size: 15px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: FINE-TUNE TREATMENT PROCESS STEP BADGES (10% SMALLER, SEMIBOLD), 18PX TITLES, & NO BR DESCRIPTIONS
+   ========================================================================== */
+
+/* Step Number Badge 10% Size Reduction & Semibold */
+.process-item .process-img::before {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important; /* Semibold font weight */
+}
+
+@media screen and (max-width: 768px) {
+    /* Mobile Step Number Badge 10% Reduction (29px x 29px) & Semibold */
+    .process-item .process-img::before {
+        width: 29px !important;
+        height: 29px !important;
+        font-size: 14px !important;
+        font-weight: 600 !important; /* Semibold font weight */
+    }
+
+    /* Step Title 18px & Reduced Vertical Padding */
+    .process-item .process-step {
+        font-size: 18px !important; /* Updated from 19px to 18px */
+        font-weight: 700 !important;
+        padding: 7px 4px !important; /* Reduced top/bottom padding */
+        line-height: 1.3 !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Step Description: Hide forced <br> line breaks */
+    .process-item p br {
+        display: none !important; /* Remove forced line breaks in step description */
+    }
+
+    .process-item p {
+        font-size: 17px !important;
+        line-height: 1.55 !important;
+        color: #333333 !important;
+        word-break: keep-all !important;
+    }
+}

@@ -4010,3 +4010,22 @@
         word-break: keep-all !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SECTION 7 CONSERVATION PREVENTION SECTION BACKGROUND COLOR -> WHITE (#FFFFFF)
+   ========================================================================== */
+
+.implant-process-section.con-prev-section,
+#conservation .implant-process-section.con-prev-section {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+@media screen and (max-width: 768px) {
+    .implant-process-section.con-prev-section,
+    #conservation .implant-process-section.con-prev-section {
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+    }
+}

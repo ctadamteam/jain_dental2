@@ -3082,3 +3082,17 @@
         padding-top: 0 !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: ADD INNER PADDING (20PX 18PX) TO .implant-target-box SO BADGES SIT INSIDE GREY BOX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .implant-target-box,
+    #implant .implant-target-box {
+        padding: 20px 18px !important; /* Inner padding so badges sit nicely inside the grey box */
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}

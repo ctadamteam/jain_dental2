@@ -1849,3 +1849,16 @@
         padding-top: 25px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: MOVE SEPARATOR LINE UP BY 20PX (+10PX -> -10PX)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* Move separator line UP by 20px */
+    .special-top-flex.reverse {
+        margin-top: -10px !important; /* Shifted UP 20px */
+        padding-top: 25px !important;
+    }
+}

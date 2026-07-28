@@ -4079,3 +4079,23 @@
         padding-right: 15px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: HIDE FORCED BR BREAKS & SET FONT 17PX FOR DISCOMFORT CONTAINER P ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .discomfort-container p,
+    #conservation .discomfort-container p {
+        font-size: 17px !important;
+        line-height: 1.6 !important;
+        word-break: keep-all !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .discomfort-container p br,
+    #conservation .discomfort-container p br {
+        display: none !important;
+    }
+}

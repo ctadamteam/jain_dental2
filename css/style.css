@@ -3697,3 +3697,26 @@
         display: none !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SECTION 6 PROCESS CARDS: TITLE FONT 21PX, CONTENT FONT 17PX
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ca-proc-text h5,
+    #clear-aligner .ca-proc-text h5 {
+        font-size: 21px !important;
+        font-weight: 700 !important;
+        margin-bottom: 8px !important;
+        color: #0b2559 !important;
+    }
+
+    .ca-proc-text p,
+    #clear-aligner .ca-proc-text p {
+        font-size: 17px !important;
+        line-height: 1.55 !important;
+        color: #555555 !important;
+        word-break: keep-all !important;
+    }
+}

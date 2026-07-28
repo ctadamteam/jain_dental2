@@ -1981,3 +1981,21 @@
         margin-bottom: 8px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SLIGHTLY NARROW THE GAP BETWEEN TAB BOX LIST ITEMS (MARGIN-BOTTOM 8PX -> 4PX)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .tscan-box ul li,
+    .tscan-boxes ul li,
+    .tscan-box li,
+    .tab-pane .tscan-box ul li {
+        font-size: 17px !important;
+        line-height: 1.5 !important;
+        color: #333333 !important;
+        word-break: keep-all !important;
+        margin-bottom: 4px !important; /* Slightly narrowed from 8px to 4px */
+    }
+}

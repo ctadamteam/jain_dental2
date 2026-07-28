@@ -2970,3 +2970,18 @@
         margin-top: 0px !important; /* Reduced margin-top by another 10px to shift box higher */
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: REDUCE SIDE PADDING OF .implant-target-box BY ~5PX-10PX (PADDING 0 5PX) ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .implant-target-box,
+    #implant .implant-target-box {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}

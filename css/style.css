@@ -1766,3 +1766,12 @@
         box-sizing: border-box !important;
     }
 }
+
+
+/* Force 20px & Gold Color for JAIN DENTAL CLINIC English Subtitle Across All Sections */
+@media screen and (max-width: 768px) {
+    .section-subtitle, .intro-subtitle, #special .section-subtitle {
+        font-size: 20px !important;
+        color: #dcb37b !important;
+    }
+}

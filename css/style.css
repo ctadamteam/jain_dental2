@@ -31,7 +31,7 @@
    /* ==========================================================================
       Typography (Strictly from Figma)
       ========================================================================== */
-   .section-subtitle { font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 10px; color: #C69D5D; letter-spacing: 1px; }
+   .section-subtitle { font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 10px; color: #DCB37B; letter-spacing: 1px; }
    .section-title { font-size: 60px; font-weight: 800; text-align: center; margin-bottom: 60px; color: #111; line-height: 1.2; letter-spacing: -2px; }
    .section-desc { font-size: 30px; font-weight: 400; text-align: center; margin-bottom: 80px; line-height: 1.5; }
    .section-highlight { font-size: 30px; font-weight: 700; text-align: center; margin-bottom: 30px; }
@@ -3046,5 +3046,26 @@
         font-size: 17px !important;
         letter-spacing: -0.2px !important; /* Restored from -1px to comfortable normal spacing */
         line-height: 1.45 !important;
+    }
+}
+
+
+/* ==========================================================================
+   DIRECTIVE: ENFORCE JAIN DENTAL CLINIC SUBTITLE COLOR #DCB37B ACROSS ALL SECTIONS
+   ========================================================================== */
+
+.section-subtitle,
+.intro-subtitle,
+#implant .section-subtitle,
+#implant p.section-subtitle {
+    color: #DCB37B !important;
+}
+
+@media screen and (max-width: 768px) {
+    .section-subtitle,
+    .intro-subtitle,
+    #implant .section-subtitle,
+    #implant p.section-subtitle {
+        color: #DCB37B !important;
     }
 }

@@ -4472,3 +4472,72 @@
         padding-right: 10px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SECTION 8 TMJ HERO LEFT ALIGNMENT & SHIFT WOMAN IMAGE 10PX LEFT ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #tmj .tmj-hero,
+    .tmj-hero {
+        min-height: auto !important;
+        padding: 40px 10px !important;
+        background-position: 68% center !important; /* Move woman image ~10px more to the left */
+        background-size: cover !important;
+    }
+
+    #tmj .tmj-hero-content,
+    .tmj-hero-content {
+        margin-left: 0 !important;
+        max-width: 68% !important; /* Leave space for woman on the right */
+        text-align: left !important;
+        padding-left: 0 !important;
+    }
+
+    #tmj .tmj-badge,
+    .tmj-badge {
+        width: auto !important;
+        max-width: 100% !important;
+        font-size: 14.5px !important;
+        padding: 8px 12px !important;
+        white-space: nowrap !important;
+        margin: 0 0 15px 0 !important;
+        display: inline-block !important;
+        text-align: left !important;
+    }
+
+    #tmj .tmj-hero-content h2,
+    .tmj-hero-content h2 {
+        font-size: 28px !important;
+        margin-top: 10px !important;
+        margin-bottom: 12px !important;
+        text-align: left !important;
+    }
+
+    #tmj .tmj-hero-content p,
+    .tmj-hero-content p {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+        word-break: keep-all !important;
+        text-align: left !important;
+        margin-bottom: 20px !important;
+    }
+
+    #tmj .tmj-hero-list,
+    .tmj-hero-list {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px 8px !important;
+        margin-top: 15px !important;
+        justify-items: start !important;
+        justify-content: flex-start !important;
+    }
+
+    #tmj .tmj-hero-list li,
+    .tmj-hero-list li {
+        font-size: 15px !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        white-space: nowrap !important;
+    }
+}

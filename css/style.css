@@ -4509,8 +4509,8 @@
 
     #tmj .tmj-behavior-container,
     .tmj-behavior-container {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
         box-sizing: border-box !important;
     }
 }
@@ -4669,9 +4669,9 @@
 
     #tmj .tmj-behavior-desc,
     .tmj-behavior-desc {
-        font-size: 16.5px !important;
+        font-size: 17px !important; /* Set description text size to 17px */
         line-height: 1.55 !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 22px !important;
         word-break: keep-all !important;
     }
 
@@ -4679,7 +4679,7 @@
     .tmj-behavior-grid {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important; /* 2x2 Grid Layout */
-        gap: 12px 6px !important; /* Tightened grid row & column gap */
+        gap: 16px 10px !important; /* Balanced grid gap matching tmj-cause section */
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 auto !important;
@@ -4699,15 +4699,15 @@
     #tmj .tmj-behavior-img-wrap,
     .tmj-behavior-img-wrap {
         width: 100% !important;
-        max-width: 72px !important; /* Slightly compact icon image size */
-        margin-bottom: 6px !important; /* Reduced margin below icon */
+        max-width: 95px !important; /* Enlarged 3D icons to 95px matching tmj-cause section proportion */
+        margin-bottom: 8px !important;
     }
 
     #tmj .tmj-behavior-btn,
     .tmj-behavior-btn {
-        font-size: 16px !important; /* 16px bold font size fitting nicely with 10px side margins */
+        font-size: 17px !important; /* 17px font size for button text as requested */
         font-weight: 600 !important;
-        padding: 9px 0 !important;
+        padding: 10px 0 !important;
         width: 100% !important;
         max-width: 100% !important;
         border-radius: 30px !important;

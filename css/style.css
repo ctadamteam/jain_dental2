@@ -4502,11 +4502,16 @@
     #tmj .tmj-injection-grid,
     #tmj .discomfort-container,
     #tmj .tmj-info-section,
-    .tmj-info-section,
-    #tmj .tmj-behavior-container,
-    .tmj-behavior-container {
+    .tmj-info-section {
         padding-left: 0 !important; /* Prevent double padding to align 100% with Section 6 */
         padding-right: 0 !important;
+    }
+
+    #tmj .tmj-behavior-container,
+    .tmj-behavior-container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        box-sizing: border-box !important;
     }
 }
 

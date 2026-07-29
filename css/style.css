@@ -4492,7 +4492,7 @@
 
     #tmj .tmj-hero-content,
     .tmj-hero-content {
-        margin-left: -50px !important; /* Shift whole block to the LEFT */
+        margin-left: -100px !important; /* Shift whole block to the LEFT */
         position: relative !important;
         left: -5px !important;
         max-width: 85% !important; /* UNSQUEEZED wide width so description expands to clean 2~3 lines */

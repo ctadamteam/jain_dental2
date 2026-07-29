@@ -4450,7 +4450,7 @@
     #tmj .tmj-injection-grid,
     .tmj-injection-grid {
         gap: 25px !important;
-        padding: 0 10px !important;
+        padding: 0 !important;
     }
 
     #tmj .tmj-injection-grid .injection-item,

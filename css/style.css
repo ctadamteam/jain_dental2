@@ -427,7 +427,7 @@
     padding: 10px 30px;
     border-radius: 50px;
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .tmj-injection-grid { display: flex; flex-direction: column; gap: 40px; max-width: 900px; margin: 0 auto; text-align: left; }
@@ -4444,6 +4444,12 @@
     .tmj-tab-badge {
         font-size: 17px !important;
         padding: 8px 20px !important;
+        margin-bottom: 8px !important;
+    }
+
+    #tmj .tmj-tab-badge + p,
+    .tmj-tab-badge + p {
+        margin-top: 8px !important;
     }
 
     /* 7. Treatment Tab 3 Injection 3 Grid: 1-column responsive cards */

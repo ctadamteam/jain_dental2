@@ -4381,6 +4381,7 @@
         grid-template-columns: 1fr !important;
         gap: 14px !important;
         padding: 0 !important;
+        margin-top: 25px !important;
     }
 
     #tmj .symp-item,
@@ -4479,7 +4480,6 @@
     }
 
     #tmj .container,
-    #tmj .tmj-symp-grid,
     #tmj .tmj-diag-grid,
     #tmj .tmj-injection-grid,
     #tmj .discomfort-container {

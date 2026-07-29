@@ -1077,78 +1077,121 @@
         width: 100% !important;
         min-width: 100% !important;
         flex: none !important;
-        padding: 40px 20px 35px 20px !important;
+        padding: 30px 18px 25px 18px !important;
         box-sizing: border-box !important;
+    }
+
+    #location .loc-top-row,
+    .loc-top-row {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 12px !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+    }
+
+    #location .loc-box-consult,
+    .loc-box-consult {
+        flex: 1 1 48% !important;
+        min-width: 0 !important;
+        width: 48% !important;
+    }
+
+    #location .loc-box-hours,
+    .loc-box-hours {
+        flex: 1 1 52% !important;
+        min-width: 0 !important;
+        width: 52% !important;
     }
 
     #location .loc-info h4,
     .loc-info h4 {
-        font-size: 21px !important;
-        margin-bottom: 14px !important;
-    }
-
-    #location .loc-info div[style*="gap: 50px"],
-    .loc-info div[style*="gap: 50px"] {
-        flex-direction: column !important;
-        gap: 28px !important;
-    }
-
-    #location .loc-info div[style*="min-width: 250px"],
-    .loc-info div[style*="min-width: 250px"] {
-        min-width: 100% !important;
-        width: 100% !important;
-    }
-
-    #location .loc-info div[style*="font-size: 34px"],
-    .loc-info div[style*="font-size: 34px"] {
-        font-size: 24px !important;
-        line-height: 1.35 !important;
+        font-size: 19px !important;
         margin-bottom: 10px !important;
     }
 
-    #location .loc-info p,
-    .loc-info p {
+    #location .loc-phone-numbers,
+    .loc-phone-numbers {
         font-size: 17px !important;
-        line-height: 1.6 !important;
+        font-weight: 700 !important;
+        line-height: 1.35 !important;
+        color: #ffffff !important;
+        margin-bottom: 8px !important;
+    }
+
+    #location .loc-consult-note,
+    .loc-consult-note {
+        font-size: 13px !important;
+        color: #C69D5D !important;
+        line-height: 1.4 !important;
+        margin-top: 6px !important;
+        margin-bottom: 0 !important;
         word-break: keep-all !important;
-        margin-top: 10px !important;
     }
 
-    #location .loc-info ul,
-    .loc-info ul {
-        font-size: 17px !important;
-        line-height: 2.1 !important;
+    #location .loc-box-hours ul,
+    .loc-box-hours ul {
+        font-size: 15.5px !important;
+        line-height: 1.9 !important;
     }
 
-    #location .loc-info ul li span[style*="width: 80px"],
-    .loc-info ul li span[style*="width: 80px"] {
-        width: 78px !important;
+    #location .loc-box-hours ul li span[style*="width"],
+    .loc-box-hours ul li span[style*="width"] {
+        width: 58px !important;
+        font-size: 14.5px !important;
+    }
+
+    #location .loc-bottom-row,
+    .loc-bottom-row {
+        margin-top: 22px !important;
+        padding-top: 18px !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    }
+
+    #location .loc-header-wrap,
+    .loc-header-wrap {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        margin-bottom: 10px !important;
+    }
+
+    #location .loc-kakao-btn,
+    .loc-kakao-btn {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: #C69D5D !important;
+        color: #000000 !important;
+        font-weight: 700 !important;
+        font-size: 13.5px !important;
+        padding: 5px 14px !important;
+        border-radius: 20px !important;
+        text-decoration: none !important;
+        margin: 0 !important;
+        width: auto !important;
+        height: auto !important;
+        line-height: 1.2 !important;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15) !important;
+    }
+
+    #location .loc-address-text,
+    .loc-address-text {
+        font-size: 16.5px !important;
+        line-height: 1.55 !important;
+        word-break: keep-all !important;
+        margin-bottom: 12px !important;
+        margin-top: 0 !important;
+    }
+
+    #location .loc-parking-info,
+    .loc-parking-info {
         font-size: 16px !important;
-    }
-
-    #location .loc-info div[style*="margin-top: 60px"],
-    .loc-info div[style*="margin-top: 60px"] {
-        margin-top: 32px !important;
-    }
-
-    #location .loc-info a[href*="kko.to"],
-    .loc-info a[href*="kko.to"] {
-        display: block !important;
-        width: 100% !important;
-        text-align: center !important;
-        padding: 13px 0 !important;
-        font-size: 16px !important;
-        margin-bottom: 20px !important;
-        box-sizing: border-box !important;
-        border-radius: 6px !important;
-    }
-
-    #location .loc-info div[style*="display: flex"][style*="align-items: center"],
-    .loc-info div[style*="display: flex"][style*="align-items: center"] {
-        font-size: 17px !important;
-        line-height: 1.5 !important;
-        flex-wrap: wrap !important;
+        line-height: 1.4 !important;
+        display: flex !important;
+        align-items: center !important;
         gap: 6px !important;
+        margin-top: 10px !important;
     }
 
     #location .loc-map,
@@ -1157,8 +1200,8 @@
         width: 100% !important;
         min-width: 100% !important;
         flex: none !important;
-        height: 340px !important;
-        min-height: 340px !important;
+        height: 250px !important;
+        min-height: 250px !important;
         position: relative !important;
     }
 

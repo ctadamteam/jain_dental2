@@ -4490,7 +4490,7 @@
 
     #tmj .tmj-hero-content,
     .tmj-hero-content {
-        margin-left: -40px !important; /* Entire content shifted 20px to the left */
+        margin-left: -90px !important; /* Entire content shifted 20px to the left */
         position: relative !important;
         left: -5px !important;
         max-width: 72% !important;

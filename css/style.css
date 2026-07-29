@@ -4375,18 +4375,31 @@
         white-space: nowrap !important;
     }
 
-    /* 4. Symptoms 6 Grid: 1-column responsive cards */
+    /* 4. Symptoms 6 Grid: Match Image 2 (레진치료 장점 ae-pro-item) layout while preserving outer margins */
     #tmj .tmj-symp-grid,
     .tmj-symp-grid {
         grid-template-columns: 1fr !important;
-        gap: 10px !important;
-        padding: 0 10px !important;
+        gap: 14px !important;
+        padding: 0 !important;
     }
 
     #tmj .symp-item,
     .symp-item {
-        font-size: 16px !important;
-        padding: 12px 15px !important;
+        display: flex !important;
+        align-items: center !important;
+        background: #f9f9f9 !important;
+        border-radius: 12px !important;
+        padding: 18px 20px !important;
+        font-size: 17px !important;
+        font-weight: 400 !important;
+        color: #111 !important;
+        line-height: 1.5 !important;
+    }
+
+    #tmj .symp-item .num-badge,
+    .symp-item .num-badge {
+        margin-right: 15px !important;
+        flex-shrink: 0 !important;
     }
 
     /* 5. Diagnosis 3 Grid: 1-column responsive cards */

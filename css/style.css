@@ -4331,7 +4331,7 @@
         word-break: keep-all !important;
     }
 
-    /* 3. Cause 5 Icons: Option B (No Grey Box + 1.5x Enlarged 3D Floating Icons) */
+    /* 3. Cause 5 Icons: 2 / 2 / 1 Equal-Width Pyramid Grid Layout */
     #tmj .tmj-cause-icons,
     .tmj-cause-icons {
         display: flex !important;
@@ -4341,20 +4341,11 @@
         padding: 0 !important;
     }
 
-    /* Row 1: Top 2 items get 48% width (치아상실·저작기능장애 170px ample space) */
-    #tmj .tc-icon-item:nth-child(1),
-    #tmj .tc-icon-item:nth-child(2),
-    .tc-icon-item:nth-child(1),
-    .tc-icon-item:nth-child(2) {
+    /* All 5 items get equal 48% width: 2 items per row, 5th item automatically centered on 3rd row */
+    #tmj .tc-icon-item,
+    .tc-icon-item {
         width: calc(48% - 4px) !important;
         max-width: 170px !important;
-    }
-
-    /* Row 2: Bottom 3 items get 31.5% width */
-    #tmj .tc-icon-item:nth-child(n+3),
-    .tc-icon-item:nth-child(n+3) {
-        width: calc(32% - 6px) !important;
-        min-width: 95px !important;
     }
 
     /* Remove Grey Box Background + Enlarge Image */

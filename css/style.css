@@ -1846,7 +1846,7 @@
 
     /* 2. Move separator line below UP by 10px (+20px -> +10px) */
     .special-top-flex.reverse {
-        margin-top: 10px !important;
+        margin-top: 25px !important; /* Shifted DOWN by 15px */
         padding-top: 25px !important;
     }
 }

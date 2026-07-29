@@ -4531,7 +4531,10 @@
         word-break: keep-all !important;
         text-align: left !important;
         margin-bottom: 16px !important;
-        max-width: 220px !important;
+        max-width: 100% !important;
+    }
+    #tmj .tmj-hero-content p br {
+        display: inline !important;
     }
 
     #tmj .tmj-hero-list,

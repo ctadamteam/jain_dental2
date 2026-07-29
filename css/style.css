@@ -4545,7 +4545,7 @@
         gap: 10px !important;
         margin-top: 18px !important;
         width: 100% !important;
-        max-width: 215px !important; /* Slim 1-column box width, leaving plenty of room before woman image */
+        max-width: 230px !important; /* Slim 1-column box width, leaving plenty of room before woman image */
         background: rgba(255, 255, 255, 0.5) !important; /* 50% opacity translucent glass container */
         border: 1px solid rgba(13, 43, 91, 0.16) !important;
         border-radius: 14px !important;
@@ -4564,8 +4564,8 @@
         border: none !important;
         border-radius: 0 !important;
         padding: 0 !important;
-        font-size: 15.5px !important; /* Scaled up icon text font size */
-        font-weight: 600 !important;
+        font-size: 17px !important; /* Exact 17px specified by user */
+        font-weight: 400 !important; /* Exact regular weight specified by user */
         color: #222222 !important; /* Crisp Black Text */
         box-shadow: none !important;
         white-space: nowrap !important;

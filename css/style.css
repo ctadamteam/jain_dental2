@@ -4502,7 +4502,9 @@
     #tmj .tmj-injection-grid,
     #tmj .discomfort-container,
     #tmj .tmj-info-section,
-    .tmj-info-section {
+    .tmj-info-section,
+    #tmj .tmj-behavior-container,
+    .tmj-behavior-container {
         padding-left: 0 !important; /* Prevent double padding to align 100% with Section 6 */
         padding-right: 0 !important;
     }
@@ -4649,12 +4651,6 @@
         padding-bottom: 40px !important;
     }
 
-    #tmj .tmj-behavior-container,
-    .tmj-behavior-container {
-        padding-left: 8px !important; /* Reduced side padding inside box to 8px */
-        padding-right: 8px !important;
-    }
-
     #tmj .tmj-behavior-title,
     .tmj-behavior-title {
         font-size: 22px !important;
@@ -4663,7 +4659,7 @@
 
     #tmj .tmj-behavior-desc,
     .tmj-behavior-desc {
-        font-size: 15px !important;
+        font-size: 17px !important; /* Unified to match icon button font 17px */
         line-height: 1.55 !important;
         margin-bottom: 25px !important;
     }

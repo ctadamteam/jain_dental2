@@ -4566,7 +4566,7 @@
         padding: 0 !important;
         font-size: 14px !important;
         font-weight: 600 !important;
-        color: #0d2b5b !important;
+        color: #222222 !important;
         box-shadow: none !important;
         white-space: nowrap !important;
     }
@@ -4590,6 +4590,6 @@
         width: 16px !important;
         height: 16px !important;
         object-fit: contain !important;
-        filter: invert(13%) sepia(48%) saturate(3500%) hue-rotate(202deg) brightness(90%) contrast(102%) !important; /* Crisp DEEP NAVY #0d2b5b icon */
+        filter: brightness(0) saturate(100%) invert(14%) sepia(85%) saturate(1600%) hue-rotate(195deg) brightness(95%) contrast(98%) !important; /* Crisp DEEP NAVY #0d2b5b icon */
     }
 }

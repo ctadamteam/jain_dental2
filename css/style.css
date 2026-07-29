@@ -4657,11 +4657,17 @@
         margin-bottom: 12px !important;
     }
 
+    #tmj .tmj-behavior-desc br,
+    .tmj-behavior-desc br {
+        display: none !important;
+    }
+
     #tmj .tmj-behavior-desc,
     .tmj-behavior-desc {
         font-size: 17px !important; /* Unified to match icon button font 17px */
-        line-height: 1.55 !important;
+        line-height: 1.6 !important;
         margin-bottom: 25px !important;
+        word-break: keep-all !important;
     }
 
     #tmj .tmj-behavior-grid,

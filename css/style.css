@@ -1084,24 +1084,18 @@
     #location .loc-top-row,
     .loc-top-row {
         display: flex !important;
-        flex-direction: row !important;
-        gap: 12px !important;
-        justify-content: space-between !important;
-        align-items: flex-start !important;
+        flex-direction: column !important;
+        gap: 20px !important;
     }
 
     #location .loc-box-consult,
     .loc-box-consult {
-        flex: 1 1 48% !important;
-        min-width: 0 !important;
-        width: 48% !important;
+        width: 100% !important;
     }
 
     #location .loc-box-hours,
     .loc-box-hours {
-        flex: 1 1 52% !important;
-        min-width: 0 !important;
-        width: 52% !important;
+        width: 100% !important;
     }
 
     #location .loc-info h4,
@@ -1112,11 +1106,12 @@
 
     #location .loc-phone-numbers,
     .loc-phone-numbers {
-        font-size: 17px !important;
+        font-size: 20px !important;
         font-weight: 700 !important;
         line-height: 1.35 !important;
         color: #ffffff !important;
         margin-bottom: 8px !important;
+        white-space: nowrap !important;
     }
 
     #location .loc-consult-note,

@@ -4337,13 +4337,13 @@
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
-        gap: 15px 10px !important;
-        padding: 0 10px !important;
+        gap: 15px 8px !important;
+        padding: 0 !important;
     }
 
     #tmj .tc-icon-item,
     .tc-icon-item {
-        width: calc(33.33% - 10px) !important;
+        width: calc(33.33% - 8px) !important;
         min-width: 95px !important;
     }
 
@@ -4356,8 +4356,9 @@
 
     #tmj .tc-title,
     .tc-title {
-        font-size: 13.5px !important;
-        padding: 6px 4px !important;
+        font-size: 12.5px !important;
+        letter-spacing: -0.5px !important;
+        padding: 6px 2px !important;
         white-space: nowrap !important;
     }
 
@@ -4452,14 +4453,18 @@
     }
 
     #tmj .container,
-    #tmj .tmj-info-section,
-    #tmj .tmj-cause-icons,
     #tmj .tmj-symp-grid,
     #tmj .tmj-diag-grid,
     #tmj .tmj-injection-grid,
     #tmj .discomfort-container {
-        padding-left: 15px !important; /* Synced to 15px side padding matching Section 6 (#clear-aligner) */
+        padding-left: 15px !important; /* Single 15px container padding matching Section 6 (#clear-aligner) */
         padding-right: 15px !important;
+    }
+
+    #tmj .tmj-info-section,
+    .tmj-info-section {
+        padding-left: 0 !important; /* Prevent double padding to align 100% with Section 6 */
+        padding-right: 0 !important;
     }
 }
 

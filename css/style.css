@@ -4487,8 +4487,8 @@
 @media screen and (max-width: 768px) {
     #tmj,
     section#tmj {
-        padding-top: 35px !important; /* Reduced top padding to shift Section 8 UPWARD */
-        margin-top: 0 !important;
+        padding-top: 15px !important; /* Shifted Section 9 UPWARD on mobile */
+        margin-top: -15px !important;
     }
 
     #tmj .container {

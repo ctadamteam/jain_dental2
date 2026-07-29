@@ -4476,14 +4476,14 @@
 
 
 /* ==========================================================================
-   DIRECTIVE: SECTION 8 TMJ HERO (STRUCTURE 2: SINGLE INTEGRATED GLASS CARD MODULE)
+   DIRECTIVE: SECTION 8 TMJ HERO (PLAN A: 1-COLUMN VERTICAL 4-LINES IN 50% GLASS CONTAINER + EXPANDED HERO & LARGER ICONS)
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
     #tmj .tmj-hero,
     .tmj-hero {
         min-height: auto !important;
-        padding: 45px 0 45px 10px !important;
+        padding: 55px 0 55px 10px !important; /* Expanded hero vertical height */
         background-position: 62% center !important; /* Woman image 100% fixed in current position */
         background-size: cover !important;
         opacity: 1 !important;
@@ -4540,16 +4540,16 @@
 
     #tmj .tmj-hero-list,
     .tmj-hero-list {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 12px 10px !important;
+        display: flex !important;
+        flex-direction: column !important; /* 1-Column Vertical 4-Lines */
+        gap: 10px !important;
         margin-top: 18px !important;
         width: 100% !important;
-        max-width: 235px !important; /* Single glass container fits cleanly in left beige area */
-        background: rgba(255, 255, 255, 0.5) !important; /* Single crisp translucent white glass card */
+        max-width: 175px !important; /* Slim 1-column box width, leaving plenty of room before woman image */
+        background: rgba(255, 255, 255, 0.5) !important; /* 50% opacity translucent glass container */
         border: 1px solid rgba(13, 43, 91, 0.16) !important;
-        border-radius: 14px !important; /* Sleek rounded rectangle module */
-        padding: 12px 14px !important;
+        border-radius: 14px !important;
+        padding: 14px 16px !important;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
         box-sizing: border-box !important;
     }
@@ -4560,36 +4560,36 @@
         flex-direction: row !important;
         align-items: center !important;
         justify-content: flex-start !important;
-        background: transparent !important; /* No separate individual pill backgrounds */
+        background: transparent !important;
         border: none !important;
         border-radius: 0 !important;
         padding: 0 !important;
-        font-size: 14px !important;
+        font-size: 15.5px !important; /* Scaled up icon text font size */
         font-weight: 600 !important;
-        color: #222222 !important;
+        color: #222222 !important; /* Crisp Black Text */
         box-shadow: none !important;
         white-space: nowrap !important;
     }
 
     #tmj .chk-icon,
     .chk-icon {
-        width: 20px !important;
-        height: 20px !important;
-        min-width: 20px !important;
-        background: transparent !important; /* No navy circle background */
+        width: 22px !important;
+        height: 22px !important;
+        min-width: 22px !important;
+        background: transparent !important;
         border-radius: 0 !important;
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        margin-right: 6px !important;
+        margin-right: 8px !important;
         margin-bottom: 0 !important;
     }
 
     #tmj .chk-icon img,
     .chk-icon img {
-        width: 16px !important;
-        height: 16px !important;
+        width: 18px !important; /* Scaled up inner image icon */
+        height: 18px !important;
         object-fit: contain !important;
-        filter: brightness(0) saturate(100%) invert(14%) sepia(85%) saturate(1600%) hue-rotate(195deg) brightness(95%) contrast(98%) !important; /* Crisp DEEP NAVY #0d2b5b icon */
+        filter: brightness(0) saturate(100%) invert(14%) sepia(85%) saturate(1600%) hue-rotate(195deg) brightness(95%) contrast(98%) !important; /* Deep Navy #0d2b5b icon */
     }
 }

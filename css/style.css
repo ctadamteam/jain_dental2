@@ -4720,6 +4720,7 @@
     /* Section 8 TMJ Consult Banner Mobile Responsive */
     #tmj .tmj-consult-banner,
     .tmj-consult-banner {
+        background-color: #0b2559 !important; /* Base navy color prevents white leakage at bottom */
         background-position: 73% -20px !important; /* Shifted background image UP by another 10px to -20px */
         background-size: 290% auto !important; /* Scaled up 2x to enlarge consultation elements clearly */
         min-height: 400px !important;
@@ -4727,8 +4728,8 @@
 
     #tmj .tmj-consult-banner > div:first-child,
     .tmj-consult-banner > div:first-child {
-        /* Navy gradient overlay: 15% opacity at top (shows tooth model clearly) to 85% opacity at bottom (for text/button contrast) */
-        background: linear-gradient(to bottom, rgba(11, 37, 89, 0.15) 0%, rgba(11, 37, 89, 0.85) 100%) !important;
+        /* Rich smooth navy gradient: starts gentle at top, darkens smoothly by 35%-50% to cover the white desk reflection seamlessly */
+        background: linear-gradient(to bottom, rgba(11, 37, 89, 0.35) 0%, rgba(11, 37, 89, 0.78) 35%, rgba(11, 37, 89, 0.94) 60%, rgba(11, 37, 89, 0.97) 100%) !important;
     }
 
     #tmj .tmj-consult-banner .container,

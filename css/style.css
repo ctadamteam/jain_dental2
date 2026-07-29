@@ -4641,4 +4641,70 @@
         width: 29px !important; /* -10% reduced */
         height: 29px !important;
     }
+
+    /* Section 8 TMJ Behavior Section (상담 및 행동요법) Mobile 2x2 Grid Layout & 17px Button Font */
+    #tmj .tmj-behavior-section,
+    .tmj-behavior-section {
+        padding-top: 35px !important;
+        padding-bottom: 40px !important;
+    }
+
+    #tmj .tmj-behavior-container,
+    .tmj-behavior-container {
+        padding-left: 8px !important; /* Reduced side padding inside box to 8px */
+        padding-right: 8px !important;
+    }
+
+    #tmj .tmj-behavior-title,
+    .tmj-behavior-title {
+        font-size: 22px !important;
+        margin-bottom: 12px !important;
+    }
+
+    #tmj .tmj-behavior-desc,
+    .tmj-behavior-desc {
+        font-size: 15px !important;
+        line-height: 1.55 !important;
+        margin-bottom: 25px !important;
+    }
+
+    #tmj .tmj-behavior-grid,
+    .tmj-behavior-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* 2x2 Grid Layout */
+        gap: 18px 10px !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    #tmj .tmj-behavior-item,
+    .tmj-behavior-item {
+        min-width: 0 !important;
+        width: 100% !important;
+        flex: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+    }
+
+    #tmj .tmj-behavior-img-wrap,
+    .tmj-behavior-img-wrap {
+        width: 100% !important;
+        max-width: 80px !important;
+        margin-bottom: 10px !important;
+    }
+
+    #tmj .tmj-behavior-btn,
+    .tmj-behavior-btn {
+        font-size: 17px !important; /* Requested exact 17px font size */
+        font-weight: 600 !important;
+        padding: 10px 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        border-radius: 30px !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+        box-sizing: border-box !important;
+    }
 }

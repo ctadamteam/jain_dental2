@@ -4331,19 +4331,29 @@
         word-break: keep-all !important;
     }
 
-    /* 3. Cause 5 Icons: 3-column / 2-column responsive grid */
+    /* 3. Cause 5 Icons: 2-column (Top 2) + 3-column (Bottom 3) Golden Ratio Grid */
     #tmj .tmj-cause-icons,
     .tmj-cause-icons {
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
-        gap: 15px 8px !important;
+        gap: 18px 8px !important;
         padding: 0 !important;
     }
 
-    #tmj .tc-icon-item,
-    .tc-icon-item {
-        width: calc(33.33% - 8px) !important;
+    /* Row 1: Top 2 items get 48% width (치아상실·저작기능장애 150px+ ample space) */
+    #tmj .tc-icon-item:nth-child(1),
+    #tmj .tc-icon-item:nth-child(2),
+    .tc-icon-item:nth-child(1),
+    .tc-icon-item:nth-child(2) {
+        width: calc(48% - 4px) !important;
+        max-width: 170px !important;
+    }
+
+    /* Row 2: Bottom 3 items get 31.5% width */
+    #tmj .tc-icon-item:nth-child(n+3),
+    .tc-icon-item:nth-child(n+3) {
+        width: calc(32% - 6px) !important;
         min-width: 95px !important;
     }
 
@@ -4356,9 +4366,9 @@
 
     #tmj .tc-title,
     .tc-title {
-        font-size: 12.5px !important;
-        letter-spacing: -0.5px !important;
-        padding: 6px 2px !important;
+        font-size: 13px !important;
+        letter-spacing: -0.4px !important;
+        padding: 6px 4px !important;
         white-space: nowrap !important;
     }
 

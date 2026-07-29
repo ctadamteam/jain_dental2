@@ -4679,11 +4679,11 @@
     .tmj-behavior-grid {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important; /* 2x2 Grid Layout */
-        gap: 16px 8px !important;
-        width: calc(100% + 14px) !important; /* Expands grid sideways */
-        max-width: calc(100% + 14px) !important;
-        margin-left: -7px !important; /* Reduces side margin specifically for attached 4-icon grid to 8px */
-        margin-right: -7px !important;
+        gap: 16px 6px !important;
+        width: calc(100% + 24px) !important; /* Expands grid further sideways */
+        max-width: calc(100% + 24px) !important;
+        margin-left: -12px !important; /* Reduces side margin specifically for attached 4-icon grid to ultra-thin 3px */
+        margin-right: -12px !important;
     }
 
     #tmj .tmj-behavior-item,

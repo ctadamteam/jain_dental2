@@ -1060,7 +1060,7 @@
 
     /* Section 11: Location (진료안내 · 오시는길) Option A (Info Top, Map Bottom) */
     #location .container[style*="margin-bottom"] {
-        margin-bottom: 30px !important;
+        margin-bottom: 25px !important;
     }
 
     #location .location-wrapper,
@@ -1077,22 +1077,22 @@
         width: 100% !important;
         min-width: 100% !important;
         flex: none !important;
-        padding: 42px 18px 25px 18px !important;
-        margin-top: 15px !important;
+        padding: 42px 18px 42px 18px !important;
+        margin-top: 0 !important;
         box-sizing: border-box !important;
     }
 
     #location .loc-inner-wrap,
     .loc-inner-wrap {
-        padding-top: 10px !important;
-        transform: translateY(6px) !important;
+        padding-top: 0 !important;
+        transform: translateY(-4px) !important;
     }
 
     #location .loc-top-row,
     .loc-top-row {
         display: flex !important;
         flex-direction: column !important;
-        gap: 20px !important;
+        gap: 28px !important;
     }
 
     #location .loc-box-consult,
@@ -1106,9 +1106,10 @@
     }
 
     #location .loc-info h4,
-    .loc-info h4 {
+    .loc-info h4,
+    .loc-title {
         font-size: 21px !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 14px !important;
     }
 
     #location .loc-phone-numbers,
@@ -1126,7 +1127,7 @@
         font-size: 13px !important;
         color: #C69D5D !important;
         line-height: 1.4 !important;
-        margin-top: 6px !important;
+        margin-top: 1px !important; /* Shifted UP by 5px (6px -> 1px) */
         margin-bottom: 0 !important;
         word-break: keep-all !important;
     }
@@ -1145,8 +1146,8 @@
 
     #location .loc-bottom-row,
     .loc-bottom-row {
-        margin-top: 22px !important;
-        padding-top: 18px !important;
+        margin-top: 30px !important;
+        padding-top: 24px !important;
         border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
     }
 
@@ -1155,7 +1156,7 @@
         display: flex !important;
         align-items: center !important;
         justify-content: space-between !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 6px !important;
     }
 
     #location .loc-kakao-btn,
@@ -4709,7 +4710,7 @@
     .tmj-hero {
         min-height: auto !important;
         padding: 32px 0 32px 10px !important; /* Slightly reduced hero vertical size */
-        background-position: 62% center !important; /* Woman image 100% fixed in current position */
+        background-position: calc(62% + 30px) center !important; /* Woman image shifted 30px to the right */
         background-size: cover !important;
         opacity: 1 !important;
         filter: none !important;

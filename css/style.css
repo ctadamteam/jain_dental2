@@ -4309,19 +4309,7 @@
         word-break: keep-all !important;
     }
 
-    #tmj .tmj-hero-list,
-    .tmj-hero-list {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 12px 10px !important;
-        margin-top: 20px !important;
-        justify-items: center !important;
-    }
 
-    #tmj .tmj-hero-list li,
-    .tmj-hero-list li {
-        font-size: 16px !important;
-        justify-content: center !important;
-    }
 
     /* 2. Hide forced <br> tags in Section 8 info text */
     #tmj .tmj-info-section p br,
@@ -4528,12 +4516,12 @@
 
     #tmj .tmj-hero-content p,
     .tmj-hero-content p {
-        margin-top: 20px !important; /* Shifted UP by 30px */
+        margin-top: 10px !important;
         font-size: 17px !important;
         line-height: 1.55 !important;
         word-break: keep-all !important;
         text-align: left !important;
-        margin-bottom: 18px !important;
+        margin-bottom: 4px !important; /* Reduced bottom margin so list moves UP immediately below text */
         max-width: 100% !important;
     }
 
@@ -4546,7 +4534,7 @@
         display: flex !important;
         flex-direction: column !important; /* 1-Column Vertical Pure List */
         gap: 2px !important; /* Ultra-compact vertical spacing */
-        margin-top: 2px !important; /* Shifted UP by another 10px */
+        margin-top: 0px !important; /* Zero margin top - moved UP tight under text */
         width: 100% !important;
         max-width: 175px !important;
         background: transparent !important; /* No background box */

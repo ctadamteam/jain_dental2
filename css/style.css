@@ -4720,8 +4720,8 @@
     /* Section 8 TMJ Consult Banner Mobile Responsive */
     #tmj .tmj-consult-banner,
     .tmj-consult-banner {
-        background-position: 85% center !important; /* Focuses on consultation scene with tooth model and patient */
-        background-size: cover !important;
+        background-position: 65% 15% !important; /* Zoomed out consultation scene showing tooth model, doctor's pen & patient */
+        background-size: 155% auto !important; /* Scaled down background image to reveal wide consultation context */
         min-height: 400px !important;
     }
 

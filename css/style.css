@@ -4476,7 +4476,7 @@
 
 
 /* ==========================================================================
-   DIRECTIVE: SECTION 8 TMJ HERO (CHOICE 1: BORDER-BOTTOM DIVIDERS + 10% SCALED DOWN 32PX NAVY ICONS & 15.5PX REGULAR TEXT)
+   DIRECTIVE: SECTION 8 TMJ HERO (NO DIVIDERS + INDIVIDUAL ICON SCALING: MATCHUM +20% 38PX, NON-SURGERY -10% 29PX)
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
@@ -4541,11 +4541,11 @@
     #tmj .tmj-hero-list,
     .tmj-hero-list {
         display: flex !important;
-        flex-direction: column !important; /* 1-Column Vertical List */
-        gap: 0 !important;
+        flex-direction: column !important; /* 1-Column Vertical Pure List */
+        gap: 12px !important; /* Clean vertical spacing with NO dividers */
         margin-top: 16px !important;
         width: 100% !important;
-        max-width: 170px !important; /* Extremely slim 1-column list width */
+        max-width: 175px !important;
         background: transparent !important; /* No background box */
         border: none !important;
         border-radius: 0 !important;
@@ -4561,26 +4561,20 @@
         align-items: center !important;
         justify-content: flex-start !important;
         background: transparent !important;
-        border: none !important;
-        border-bottom: 1px solid rgba(13, 43, 91, 0.12) !important; /* Subtle horizontal divider line */
-        padding: 8px 0 !important;
-        font-size: 15.5px !important; /* 10% scaled down font size from 17px */
+        border: none !important; /* NO horizontal divider lines */
+        padding: 0 !important;
+        font-size: 15.5px !important;
         font-weight: 400 !important; /* Regular weight */
         color: #222222 !important; /* Crisp Black Text */
         box-shadow: none !important;
         white-space: nowrap !important;
     }
 
-    #tmj .tmj-hero-list li:last-child,
-    .tmj-hero-list li:last-child {
-        border-bottom: none !important; /* No divider after last item */
-    }
-
     #tmj .chk-icon,
     .chk-icon {
-        width: 34px !important;
-        height: 34px !important;
-        min-width: 34px !important;
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
         background: transparent !important;
         border-radius: 0 !important;
         display: inline-flex !important;
@@ -4592,9 +4586,22 @@
 
     #tmj .chk-icon img,
     .chk-icon img {
-        width: 32px !important; /* 10% scaled down icon from 36px */
+        width: 32px !important; /* Standard 32px icon */
         height: 32px !important;
         object-fit: contain !important;
         filter: brightness(0) saturate(100%) invert(14%) sepia(85%) saturate(1600%) hue-rotate(195deg) brightness(95%) contrast(98%) !important; /* Deep Navy #0d2b5b icon */
+    }
+
+    /* Individual Icon Custom Scaling */
+    #tmj .chk-icon img[alt="맞춤형 치료"],
+    .chk-icon img[alt="맞춤형 치료"] {
+        width: 38px !important; /* +20% enlarged */
+        height: 38px !important;
+    }
+
+    #tmj .chk-icon img[alt="비수술 우선"],
+    .chk-icon img[alt="비수술 우선"] {
+        width: 29px !important; /* -10% reduced */
+        height: 29px !important;
     }
 }

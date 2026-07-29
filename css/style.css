@@ -4483,7 +4483,7 @@
     #tmj .tmj-hero,
     .tmj-hero {
         min-height: auto !important;
-        padding: 70px 0 70px 10px !important; /* +100px vertical hero height expansion */
+        padding: 45px 0 45px 10px !important; /* +100px vertical hero height expansion */
         background-position: 62% center !important; /* Woman image 100% fixed in current position */
         background-size: cover !important;
         opacity: 1 !important;

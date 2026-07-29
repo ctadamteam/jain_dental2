@@ -977,34 +977,79 @@
     .tmj-symp-grid, .tmj-diag-grid {
         grid-template-columns: 1fr !important;
         gap: 15px !important;
-        padding: 0 20px !important;
     }
 
-    /* Section 9: Clinic Tour */
+    /* Section 10: Clinic Tour */
+    #clinic-tour,
+    section#clinic-tour {
+        padding-top: 45px !important;
+        padding-bottom: 50px !important;
+    }
+
+    #clinic-tour .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
     .tour-slider {
-        padding: 0 20px !important;
+        margin-top: 20px !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
         position: relative !important;
     }
 
     .tour-arrow.left {
-        left: 10px !important;
+        left: 8px !important;
+        z-index: 5 !important;
+        background: rgba(255, 255, 255, 0.55) !important;
+        backdrop-filter: blur(2px) !important;
+        border-radius: 50% !important;
+        width: 38px !important;
+        height: 38px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
     }
 
     .tour-arrow.right {
-        right: 10px !important;
+        right: 8px !important;
+        z-index: 5 !important;
+        background: rgba(255, 255, 255, 0.55) !important;
+        backdrop-filter: blur(2px) !important;
+        border-radius: 50% !important;
+        width: 38px !important;
+        height: 38px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+    }
+
+    .tour-arrow svg {
+        width: 14px !important;
+        height: 24px !important;
+    }
+
+    .tour-arrow svg path {
+        stroke: #222222 !important;
+        stroke-width: 2.2 !important;
     }
 
     .tour-thumbs {
         display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 8px !important;
+        flex-wrap: nowrap !important;
+        justify-content: space-between !important;
+        gap: 6px !important;
+        margin-top: 8px !important;
     }
 
     .tour-thumb {
-        width: calc(25% - 8px) !important;
+        flex: 1 !important;
+        width: auto !important;
         height: auto !important;
-        aspect-ratio: 1/1 !important;
+        aspect-ratio: 4/3 !important;
+        border-radius: 4px !important;
+        overflow: hidden !important;
     }
 
     .tour-thumb img {

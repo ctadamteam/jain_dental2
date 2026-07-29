@@ -1292,7 +1292,8 @@
     .intro-right-content p.intro-desc-3 {
         font-size: 15px !important;
         line-height: 1.65 !important;
-        margin-bottom: 18px !important;
+        margin-top: 14px !important;
+        margin-bottom: 24px !important;
     }
 
     /* 4. Section 2 (#special) 100% PC Design Reproduction */
@@ -4543,7 +4544,7 @@
         display: flex !important;
         flex-direction: column !important; /* 1-Column Vertical Pure List */
         gap: 6px !important; /* Slightly tightened vertical spacing */
-        margin-top: 16px !important;
+        margin-top: 22px !important;
         width: 100% !important;
         max-width: 175px !important;
         background: transparent !important; /* No background box */
@@ -4595,8 +4596,8 @@
     /* Individual Icon Custom Scaling */
     #tmj .chk-icon img[alt="맞춤형 치료"],
     .chk-icon img[alt="맞춤형 치료"] {
-        width: 38px !important; /* +20% enlarged */
-        height: 38px !important;
+        width: 42px !important; /* +10% further enlarged (42px) */
+        height: 42px !important;
     }
 
     #tmj .chk-icon img[alt="비수술 우선"],

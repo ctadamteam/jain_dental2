@@ -4495,7 +4495,7 @@
         margin-left: 0 !important; /* Remove negative margin clipping */
         position: relative !important;
         left: 0 !important;
-        transform: translateX(-100px) !important; /* Shift position slightly left without clipping box width */
+        transform: translateX(-50px) !important; /* Shift position slightly left without clipping box width */
         width: 100% !important;
         max-width: 275px !important; /* UNSQUEEZED 275px width so description expands to clean 2 lines */
         text-align: left !important;

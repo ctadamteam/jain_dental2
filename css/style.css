@@ -4476,7 +4476,7 @@
 
 
 /* ==========================================================================
-   DIRECTIVE: SECTION 8 TMJ HERO (PROPOSAL 1: MODERN MINI PILL CARDS 2X2 GRID)
+   DIRECTIVE: SECTION 8 TMJ HERO (STRUCTURE 2: SINGLE INTEGRATED GLASS CARD MODULE)
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
@@ -4542,48 +4542,54 @@
     .tmj-hero-list {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
-        gap: 8px 8px !important;
-        margin-top: 16px !important;
-        max-width: 250px !important;
-        justify-items: start !important;
+        gap: 12px 10px !important;
+        margin-top: 18px !important;
+        width: 100% !important;
+        max-width: 235px !important; /* Single glass container fits cleanly in left beige area */
+        background: rgba(255, 255, 255, 0.9) !important; /* Single crisp translucent white glass card */
+        border: 1px solid rgba(13, 43, 91, 0.16) !important;
+        border-radius: 14px !important; /* Sleek rounded rectangle module */
+        padding: 12px 14px !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+        box-sizing: border-box !important;
     }
 
     #tmj .tmj-hero-list li,
     .tmj-hero-list li {
-        display: inline-flex !important;
-        flex-direction: row !important; /* Horizontal layout inside pill card */
+        display: flex !important;
+        flex-direction: row !important;
         align-items: center !important;
         justify-content: flex-start !important;
-        background: rgba(255, 255, 255, 0.88) !important; /* Translucent crisp white pill card */
-        border: 1px solid rgba(13, 43, 91, 0.15) !important;
-        border-radius: 20px !important; /* Smooth pill capsule curve */
-        padding: 6px 11px !important;
-        font-size: 13.5px !important;
+        background: transparent !important; /* No separate individual pill backgrounds */
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        font-size: 14px !important;
         font-weight: 600 !important;
         color: #0d2b5b !important;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
+        box-shadow: none !important;
         white-space: nowrap !important;
     }
 
     #tmj .chk-icon,
     .chk-icon {
-        width: 22px !important;
-        height: 22px !important;
-        min-width: 22px !important;
-        background: #0d2b5b !important; /* Deep navy circle */
-        border-radius: 50% !important;
+        width: 20px !important;
+        height: 20px !important;
+        min-width: 20px !important;
+        background: transparent !important; /* No navy circle background */
+        border-radius: 0 !important;
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        margin-right: 7px !important;
+        margin-right: 6px !important;
         margin-bottom: 0 !important;
     }
 
     #tmj .chk-icon img,
     .chk-icon img {
-        width: 12px !important;
-        height: 12px !important;
+        width: 16px !important;
+        height: 16px !important;
         object-fit: contain !important;
-        filter: brightness(0) invert(1) !important; /* Crisp white icon inside navy circle */
+        filter: invert(13%) sepia(48%) saturate(3500%) hue-rotate(202deg) brightness(90%) contrast(102%) !important; /* Crisp DEEP NAVY #0d2b5b icon */
     }
 }

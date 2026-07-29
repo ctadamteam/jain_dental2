@@ -4168,7 +4168,7 @@
 
 @media screen and (max-width: 768px) {
     .zirconia-adv-item {
-        padding: 14px 16px !important;
+        padding: 12px 10px !important;
         gap: 10px !important;
     }
 }
@@ -4545,10 +4545,10 @@
         gap: 10px !important;
         margin-top: 18px !important;
         width: 100% !important;
-        max-width: 230px !important; /* Slim 1-column box width, leaving plenty of room before woman image */
-        background: rgba(255, 255, 255, 0.5) !important; /* 50% opacity translucent glass container */
+        max-width: 198px !important; /* -32px width reduction */ /* Slim 1-column box width, leaving plenty of room before woman image */
+        background: rgba(255, 255, 255, 0.3) !important; /* 30% opacity */ /* 50% opacity translucent glass container */
         border: 1px solid rgba(13, 43, 91, 0.16) !important;
-        border-radius: 14px !important;
+        border-radius: 7px !important; /* 50% radius reduction */
         padding: 14px 16px !important;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
         box-sizing: border-box !important;

@@ -4476,14 +4476,14 @@
 
 
 /* ==========================================================================
-   DIRECTIVE: SECTION 8 TMJ HERO (17PX BADGE & DESCRIPTION + VERTICAL ICON TOP / TEXT BOTTOM GRID)
+   DIRECTIVE: SECTION 8 TMJ HERO (100PX TALLER HERO + SLIM BADGE PADDING + 17PX ICONS & CIRCLES)
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
     #tmj .tmj-hero,
     .tmj-hero {
         min-height: auto !important;
-        padding: 35px 0 35px 10px !important;
+        padding: 70px 0 70px 10px !important; /* +100px vertical hero height expansion */
         background-position: 62% center !important; /* Woman image 100% fixed in current position */
         background-size: cover !important;
         opacity: 1 !important;
@@ -4506,10 +4506,10 @@
     .tmj-badge {
         width: auto !important;
         max-width: 100% !important;
-        font-size: 17px !important; /* Exact 17px specified by user */
-        padding: 8px 14px !important;
+        font-size: 16.5px !important;
+        padding: 4px 10px !important; /* Slimmed inside badge padding */
         white-space: nowrap !important;
-        margin: 0 0 14px 0 !important;
+        margin: 0 0 5px 0 !important; /* Slimmed gap between badge and title */
         display: inline-block !important;
         text-align: left !important;
         box-sizing: border-box !important;
@@ -4519,14 +4519,14 @@
     .tmj-hero-content h2 {
         font-size: 28px !important;
         white-space: nowrap !important;
-        margin-top: 4px !important;
-        margin-bottom: 10px !important;
+        margin-top: 0 !important;
+        margin-bottom: 8px !important;
         text-align: left !important;
     }
 
     #tmj .tmj-hero-content p,
     .tmj-hero-content p {
-        font-size: 17px !important; /* Exact 17px specified by user */
+        font-size: 17px !important;
         line-height: 1.55 !important;
         word-break: keep-all !important;
         text-align: left !important;
@@ -4541,27 +4541,35 @@
     #tmj .tmj-hero-list,
     .tmj-hero-list {
         grid-template-columns: repeat(2, 1fr) !important;
-        gap: 16px 10px !important;
-        margin-top: 15px !important;
-        max-width: 180px !important;
+        gap: 18px 15px !important;
+        margin-top: 18px !important;
+        max-width: 220px !important;
         justify-items: center !important;
     }
 
     #tmj .tmj-hero-list li,
     .tmj-hero-list li {
         display: flex !important;
-        flex-direction: column !important; /* Icon TOP, Text BOTTOM vertical layout */
+        flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
-        font-size: 13.5px !important;
+        font-size: 17px !important; /* Exact 17px specified by user for 4 check icons */
+        font-weight: 500 !important;
         white-space: nowrap !important;
     }
 
     #tmj .chk-icon,
     .chk-icon {
-        width: 32px !important;
-        height: 32px !important;
+        width: 44px !important; /* Scaled up circle badge */
+        height: 44px !important;
         margin-right: 0 !important;
-        margin-bottom: 5px !important;
+        margin-bottom: 7px !important;
+    }
+
+    #tmj .chk-icon img,
+    .chk-icon img {
+        width: 26px !important; /* Scaled up inner image icon */
+        height: 26px !important;
+        object-fit: contain !important;
     }
 }

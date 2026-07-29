@@ -1058,14 +1058,108 @@
         object-fit: cover !important;
     }
 
-    /* Section 10: Location */
-    #location .container > div {
-        flex-direction: column !important;
+    /* Section 11: Location (진료안내 · 오시는길) Option A (Info Top, Map Bottom) */
+    #location .container[style*="margin-bottom"] {
+        margin-bottom: 30px !important;
     }
 
-    #location div[style*="min-width: 50%"] {
+    #location .location-wrapper,
+    .location-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
         width: 100% !important;
-        min-height: 320px !important;
+        margin: 0 auto !important;
+    }
+
+    #location .loc-info,
+    .loc-info {
+        order: 1 !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        flex: none !important;
+        padding: 40px 20px 35px 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    #location .loc-info h4,
+    .loc-info h4 {
+        font-size: 21px !important;
+        margin-bottom: 14px !important;
+    }
+
+    #location .loc-info div[style*="gap: 50px"],
+    .loc-info div[style*="gap: 50px"] {
+        flex-direction: column !important;
+        gap: 28px !important;
+    }
+
+    #location .loc-info div[style*="min-width: 250px"],
+    .loc-info div[style*="min-width: 250px"] {
+        min-width: 100% !important;
+        width: 100% !important;
+    }
+
+    #location .loc-info div[style*="font-size: 34px"],
+    .loc-info div[style*="font-size: 34px"] {
+        font-size: 24px !important;
+        line-height: 1.35 !important;
+        margin-bottom: 10px !important;
+    }
+
+    #location .loc-info p,
+    .loc-info p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        word-break: keep-all !important;
+        margin-top: 10px !important;
+    }
+
+    #location .loc-info ul,
+    .loc-info ul {
+        font-size: 15px !important;
+        line-height: 2.1 !important;
+    }
+
+    #location .loc-info ul li span[style*="width: 80px"],
+    .loc-info ul li span[style*="width: 80px"] {
+        width: 72px !important;
+        font-size: 14.5px !important;
+    }
+
+    #location .loc-info div[style*="margin-top: 60px"],
+    .loc-info div[style*="margin-top: 60px"] {
+        margin-top: 32px !important;
+    }
+
+    #location .loc-info a[href*="kko.to"],
+    .loc-info a[href*="kko.to"] {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 13px 0 !important;
+        font-size: 16px !important;
+        margin-bottom: 20px !important;
+        box-sizing: border-box !important;
+        border-radius: 6px !important;
+    }
+
+    #location .loc-info div[style*="display: flex"][style*="align-items: center"],
+    .loc-info div[style*="display: flex"][style*="align-items: center"] {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+    }
+
+    #location .loc-map,
+    .loc-map {
+        order: 2 !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        flex: none !important;
+        height: 340px !important;
+        min-height: 340px !important;
+        position: relative !important;
     }
 
     /* Global Headings Scaling for Mobile */

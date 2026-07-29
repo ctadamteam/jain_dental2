@@ -4476,61 +4476,65 @@
 
 
 /* ==========================================================================
-   DIRECTIVE: SECTION 8 TMJ HERO FINE TUNE: WOMAN IMAGE +5PX RIGHT, CONTENT -20PX LEFT
+   DIRECTIVE: SECTION 8 TMJ HERO OPTIMAL LAYOUT (100% ORIGINAL WOMAN OPACITY & UNSQUEEZED 1-LINE BADGE)
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
     #tmj .tmj-hero,
     .tmj-hero {
         min-height: auto !important;
-        padding: 40px 10px !important;
-        background-position: 62% center !important; /* Woman image moved 5px to the right */
+        padding: 35px 10px !important;
+        background-position: 65% center !important; /* Woman image 100% vivid on the right */
         background-size: cover !important;
+        opacity: 1 !important;
+        filter: none !important;
     }
 
     #tmj .tmj-hero-content,
     .tmj-hero-content {
-        margin-left: -90px !important; /* Entire content shifted 20px to the left */
+        margin-left: 0 !important; /* Remove negative margin squeezing */
         position: relative !important;
-        left: -5px !important;
-        max-width: 72% !important;
+        left: 0 !important;
+        max-width: 65% !important; /* Wide enough for 1-line text in left beige wall area */
         text-align: left !important;
-        padding-left: 0 !important;
+        padding-left: 5px !important;
     }
 
     #tmj .tmj-badge,
     .tmj-badge {
         width: auto !important;
         max-width: 100% !important;
-        font-size: 14px !important;
-        padding: 7px 10px !important;
-        white-space: nowrap !important;
-        margin: 0 0 15px 0 !important;
+        font-size: 13.5px !important;
+        padding: 7px 11px !important;
+        white-space: nowrap !important; /* Prevent badge from breaking into 2 lines */
+        margin: 0 0 14px 0 !important;
         display: inline-block !important;
         text-align: left !important;
+        box-sizing: border-box !important;
     }
 
     #tmj .tmj-hero-content h2,
     .tmj-hero-content h2 {
-        font-size: 28px !important;
-        margin-top: 10px !important;
+        font-size: 26px !important;
+        white-space: nowrap !important; /* Prevent title from breaking into 2 lines */
+        margin-top: 5px !important;
         margin-bottom: 12px !important;
         text-align: left !important;
     }
 
     #tmj .tmj-hero-content p,
     .tmj-hero-content p {
-        font-size: 15px !important;
+        font-size: 14.5px !important;
         line-height: 1.5 !important;
         word-break: keep-all !important;
         text-align: left !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 18px !important;
     }
 
     #tmj .tmj-hero-list,
     .tmj-hero-list {
         grid-template-columns: repeat(2, 1fr) !important;
-        gap: 12px 6px !important;
+        gap: 10px 6px !important;
         margin-top: 15px !important;
         justify-items: start !important;
         justify-content: flex-start !important;
@@ -4538,7 +4542,7 @@
 
     #tmj .tmj-hero-list li,
     .tmj-hero-list li {
-        font-size: 14.5px !important;
+        font-size: 14px !important;
         justify-content: flex-start !important;
         text-align: left !important;
         white-space: nowrap !important;

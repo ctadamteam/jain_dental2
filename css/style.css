@@ -4483,7 +4483,7 @@
     #tmj .tmj-hero,
     .tmj-hero {
         min-height: auto !important;
-        padding: 35px 10px !important;
+        padding: 35px 0 35px 5px !important;
         background-position: 62% center !important; /* Woman image 100% fixed in current position */
         background-size: cover !important;
         opacity: 1 !important;
@@ -4492,7 +4492,7 @@
 
     #tmj .tmj-hero-content,
     .tmj-hero-content {
-        margin-left: -20px !important; /* Shift whole block to the LEFT */
+        margin-left: -50px !important; /* Shift whole block to the LEFT */
         position: relative !important;
         left: -5px !important;
         max-width: 85% !important; /* UNSQUEEZED wide width so description expands to clean 2~3 lines */

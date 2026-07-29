@@ -1109,6 +1109,9 @@
     .loc-info h4,
     .loc-title {
         font-size: 21px !important;
+        position: relative !important;
+        top: 10px !important;
+        margin-top: 0 !important;
         margin-bottom: 14px !important;
     }
 
@@ -1124,9 +1127,9 @@
 
     #location .loc-consult-note,
     .loc-consult-note {
-        font-size: 13px !important;
+        font-size: 16px !important;
         color: #C69D5D !important;
-        line-height: 1.4 !important;
+        line-height: 1.45 !important;
         margin-top: 1px !important; /* Shifted UP by 5px (6px -> 1px) */
         margin-bottom: 0 !important;
         word-break: keep-all !important;
@@ -1134,14 +1137,14 @@
 
     #location .loc-box-hours ul,
     .loc-box-hours ul {
-        font-size: 15.5px !important;
+        font-size: 17px !important;
         line-height: 1.9 !important;
     }
 
     #location .loc-box-hours ul li span[style*="width"],
     .loc-box-hours ul li span[style*="width"] {
-        width: 58px !important;
-        font-size: 14.5px !important;
+        width: 68px !important;
+        font-size: 17px !important;
     }
 
     #location .loc-bottom-row,
@@ -1167,10 +1170,12 @@
         background-color: #C69D5D !important;
         color: #000000 !important;
         font-weight: 700 !important;
-        font-size: 13.5px !important;
-        padding: 5px 14px !important;
+        font-size: 16px !important;
+        padding: 7px 18px !important;
         border-radius: 20px !important;
         text-decoration: none !important;
+        position: relative !important;
+        top: -3px !important;
         margin: 0 !important;
         width: auto !important;
         height: auto !important;
@@ -1203,9 +1208,67 @@
         width: 100% !important;
         min-width: 100% !important;
         flex: none !important;
-        height: 250px !important;
-        min-height: 250px !important;
+        height: 320px !important;
+        min-height: 320px !important;
         position: relative !important;
+    }
+
+    .root_daum_roughmap .roughmap_maker_label {
+        top: -46px !important;
+        left: -14px !important;
+        transform: none !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .root_daum_roughmap .roughmap_maker_label:after,
+    .root_daum_roughmap .roughmap_maker_label:before,
+    .root_daum_roughmap [class*="label"]:after,
+    .root_daum_roughmap [class*="label"]:before {
+        display: none !important;
+        content: none !important;
+        background: none !important;
+        border: none !important;
+    }
+
+    .root_daum_roughmap .roughmap_maker_label a {
+        display: inline-block !important;
+        text-decoration: none !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .root_daum_roughmap .roughmap_lebel_text,
+    .root_daum_roughmap [class*="lebel"],
+    .root_daum_roughmap [class*="label"] {
+        display: inline-block !important;
+        height: auto !important;
+        line-height: 1.3 !important;
+        padding: 5px 12px !important;
+        text-align: center !important;
+        vertical-align: middle !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Footer Mobile Adjustments */
+    .footer .footer-links {
+        justify-content: center !important;
+    }
+
+    .footer .footer-links a {
+        font-size: 16px !important;
+    }
+
+    .footer .footer-info,
+    .footer .footer-info p {
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+        margin-bottom: 2px !important;
+    }
+
+    .footer .footer-info .copyright {
+        font-size: 12px !important;
+        margin-top: 10px !important;
     }
 
     /* Global Headings Scaling for Mobile */
@@ -1588,7 +1651,7 @@
         object-fit: contain !important;
         display: block !important;
         margin: auto 0 !important;
-        transform: translateY(6px) !important;
+        transform: translateY(7px) !important;
     }
 }
 
@@ -4657,7 +4720,7 @@
 
     #tmj .tmj-injection-grid .injection-desc,
     .tmj-injection-grid .injection-desc {
-        font-size: 16px !important;
+        font-size: 17px !important;
         line-height: 1.6 !important;
         word-break: keep-all !important;
     }
@@ -4721,7 +4784,7 @@
         margin-left: 0 !important;
         position: relative !important;
         left: 0 !important;
-        transform: translateX(-35px) !important;
+        transform: translateX(-50px) !important;
         padding-top: 15px !important; /* Shifted entire content block DOWN slightly */
         width: 100% !important;
         max-width: 320px !important;
@@ -4808,7 +4871,7 @@
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        margin-right: 8px !important;
+        margin-right: 3px !important;
         margin-bottom: 0 !important;
     }
 

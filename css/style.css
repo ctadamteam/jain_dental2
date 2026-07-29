@@ -4720,7 +4720,7 @@
     /* Section 8 TMJ Consult Banner Mobile Responsive */
     #tmj .tmj-consult-banner,
     .tmj-consult-banner {
-        background-position: calc(82% - 20px) 5% !important; /* Shifted background image 20px to the right */
+        background-position: 70% 5% !important; /* Shifted background image visibly to the right */
         background-size: 290% auto !important; /* Scaled up 2x to enlarge consultation elements clearly */
         min-height: 400px !important;
     }

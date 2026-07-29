@@ -4337,26 +4337,27 @@
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
-        gap: 16px 8px !important;
+        gap: 18px 8px !important;
         padding: 0 !important;
+        margin-top: 25px !important;
     }
 
-    /* All 5 items get equal 48% width: 2 items per row, 5th item automatically centered on 3rd row */
+    /* All 5 items get equal width: 2 items per row, 5th item automatically centered on 3rd row */
     #tmj .tc-icon-item,
     .tc-icon-item {
-        width: calc(48% - 4px) !important;
-        max-width: 170px !important;
+        width: calc(50% - 6px) !important;
+        max-width: 175px !important;
     }
 
     /* Remove Grey Box Background + Enlarge Image */
     #tmj .tc-img,
     .tc-img {
-        width: 95px !important;
-        height: 95px !important;
+        width: 100px !important;
+        height: 100px !important;
         background: transparent !important;
         border: none !important;
         box-shadow: none !important;
-        margin: 0 auto 2px !important;
+        margin: 0 auto 4px !important;
     }
 
     #tmj .tc-img img,
@@ -4369,10 +4370,15 @@
 
     #tmj .tc-title,
     .tc-title {
-        font-size: 13px !important;
-        letter-spacing: -0.4px !important;
-        padding: 6px 4px !important;
+        font-size: 17px !important;
+        font-weight: 500 !important;
+        letter-spacing: -0.7px !important;
+        padding: 8px 4px !important;
+        border-radius: 30px !important;
+        background: #122b5e !important;
+        color: #ffffff !important;
         white-space: nowrap !important;
+        text-align: center !important;
     }
 
     /* 4. Symptoms 6 Grid: Match Image 2 (레진치료 장점 ae-pro-item) layout while preserving outer margins */

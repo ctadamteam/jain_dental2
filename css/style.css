@@ -4546,7 +4546,7 @@
         display: flex !important;
         flex-direction: column !important; /* 1-Column Vertical Pure List */
         gap: 2px !important; /* Ultra-compact vertical spacing */
-        margin-top: 12px !important; /* Shifted UP by 10px */
+        margin-top: 2px !important; /* Shifted UP by another 10px */
         width: 100% !important;
         max-width: 175px !important;
         background: transparent !important; /* No background box */

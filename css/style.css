@@ -4260,3 +4260,191 @@
         padding: 6px 4px !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SECTION 8 (#TMJ) 100% MOBILE RESPONSIVE LAYOUT & BUG FIXES
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* 1. Hero Banner: Reset -500px margin-left & center content */
+    #tmj .tmj-hero,
+    .tmj-hero {
+        min-height: auto !important;
+        padding: 40px 15px !important;
+        background-position: center !important;
+    }
+
+    #tmj .tmj-hero-content,
+    .tmj-hero-content {
+        margin-left: 0 !important; /* Fix off-screen text bug */
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+
+    #tmj .tmj-badge,
+    .tmj-badge {
+        width: 100% !important;
+        max-width: 320px !important;
+        font-size: 16px !important;
+        padding: 10px 5px !important;
+        white-space: nowrap !important;
+        margin: 0 auto 15px !important;
+        display: block !important;
+    }
+
+    #tmj .tmj-hero-content h2,
+    .tmj-hero-content h2 {
+        font-size: 30px !important;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+
+    #tmj .tmj-hero-content p,
+    .tmj-hero-content p {
+        font-size: 17px !important;
+        line-height: 1.6 !important;
+        word-break: keep-all !important;
+    }
+
+    #tmj .tmj-hero-list,
+    .tmj-hero-list {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px 10px !important;
+        margin-top: 20px !important;
+        justify-items: center !important;
+    }
+
+    #tmj .tmj-hero-list li,
+    .tmj-hero-list li {
+        font-size: 16px !important;
+        justify-content: center !important;
+    }
+
+    /* 2. Hide forced <br> tags in Section 8 info text */
+    #tmj .tmj-info-section p br,
+    .tmj-info-section p br {
+        display: none !important;
+    }
+
+    #tmj .tmj-info-section p,
+    .tmj-info-section p {
+        font-size: 17px !important;
+        line-height: 1.65 !important;
+        word-break: keep-all !important;
+    }
+
+    #tmj .tmj-info-section h4,
+    .tmj-info-section h4 {
+        font-size: 22px !important;
+        line-height: 1.4 !important;
+        word-break: keep-all !important;
+    }
+
+    /* 3. Cause 5 Icons: 3-column / 2-column responsive grid */
+    #tmj .tmj-cause-icons,
+    .tmj-cause-icons {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 15px 10px !important;
+        padding: 0 10px !important;
+    }
+
+    #tmj .tc-icon-item,
+    .tc-icon-item {
+        width: calc(33.33% - 10px) !important;
+        min-width: 95px !important;
+    }
+
+    #tmj .tc-img,
+    .tc-img {
+        width: 80px !important;
+        height: 80px !important;
+        margin: 0 auto 6px !important;
+    }
+
+    #tmj .tc-title,
+    .tc-title {
+        font-size: 13.5px !important;
+        padding: 6px 4px !important;
+        white-space: nowrap !important;
+    }
+
+    /* 4. Symptoms 6 Grid: 1-column responsive cards */
+    #tmj .tmj-symp-grid,
+    .tmj-symp-grid {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+        padding: 0 10px !important;
+    }
+
+    #tmj .symp-item,
+    .symp-item {
+        font-size: 16px !important;
+        padding: 12px 15px !important;
+    }
+
+    /* 5. Diagnosis 3 Grid: 1-column responsive cards */
+    #tmj .tmj-diag-grid,
+    .tmj-diag-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 10px !important;
+    }
+
+    #tmj .diag-item,
+    .diag-item {
+        width: 100% !important;
+    }
+
+    #tmj .diag-img,
+    .diag-img {
+        height: 200px !important;
+    }
+
+    #tmj .diag-title,
+    .diag-title {
+        font-size: 17px !important;
+        padding: 10px 0 !important;
+    }
+
+    /* 6. Treatment Tab Hero & Badges */
+    #tmj .tmj-tab-hero,
+    .tmj-tab-hero {
+        height: 220px !important;
+    }
+
+    #tmj .tmj-tab-badge,
+    .tmj-tab-badge {
+        font-size: 17px !important;
+        padding: 8px 20px !important;
+    }
+
+    /* 7. Treatment Tab 3 Injection 3 Grid: 1-column responsive cards */
+    #tmj .tmj-injection-grid,
+    .tmj-injection-grid {
+        gap: 25px !important;
+        padding: 0 10px !important;
+    }
+
+    #tmj .tmj-injection-grid .injection-item,
+    .tmj-injection-grid .injection-item {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 15px !important;
+    }
+
+    #tmj .tmj-injection-grid .injection-title,
+    .tmj-injection-grid .injection-title {
+        font-size: 18px !important;
+    }
+
+    #tmj .tmj-injection-grid .injection-desc,
+    .tmj-injection-grid .injection-desc {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        word-break: keep-all !important;
+    }
+}

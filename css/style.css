@@ -4546,7 +4546,7 @@
         margin-top: 18px !important;
         width: 100% !important;
         max-width: 235px !important; /* Single glass container fits cleanly in left beige area */
-        background: rgba(255, 255, 255, 0.9) !important; /* Single crisp translucent white glass card */
+        background: rgba(255, 255, 255, 0.5) !important; /* Single crisp translucent white glass card */
         border: 1px solid rgba(13, 43, 91, 0.16) !important;
         border-radius: 14px !important; /* Sleek rounded rectangle module */
         padding: 12px 14px !important;

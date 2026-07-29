@@ -4331,17 +4331,17 @@
         word-break: keep-all !important;
     }
 
-    /* 3. Cause 5 Icons: 2-column (Top 2) + 3-column (Bottom 3) Golden Ratio Grid */
+    /* 3. Cause 5 Icons: Option B (No Grey Box + 1.5x Enlarged 3D Floating Icons) */
     #tmj .tmj-cause-icons,
     .tmj-cause-icons {
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
-        gap: 18px 8px !important;
+        gap: 16px 8px !important;
         padding: 0 !important;
     }
 
-    /* Row 1: Top 2 items get 48% width (치아상실·저작기능장애 150px+ ample space) */
+    /* Row 1: Top 2 items get 48% width (치아상실·저작기능장애 170px ample space) */
     #tmj .tc-icon-item:nth-child(1),
     #tmj .tc-icon-item:nth-child(2),
     .tc-icon-item:nth-child(1),
@@ -4357,11 +4357,23 @@
         min-width: 95px !important;
     }
 
+    /* Remove Grey Box Background + Enlarge Image */
     #tmj .tc-img,
     .tc-img {
-        width: 80px !important;
-        height: 80px !important;
-        margin: 0 auto 6px !important;
+        width: 95px !important;
+        height: 95px !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        margin: 0 auto 2px !important;
+    }
+
+    #tmj .tc-img img,
+    .tc-img img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.08)) !important;
     }
 
     #tmj .tc-title,

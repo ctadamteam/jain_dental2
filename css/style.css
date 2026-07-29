@@ -4415,7 +4415,7 @@
         display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 20px !important;
-        padding: 0 10px !important;
+        padding: 0 !important;
     }
 
     #tmj .diag-item,
@@ -4485,14 +4485,16 @@
         margin-top: 0 !important;
     }
 
-    #tmj .container,
-    #tmj .tmj-diag-grid,
-    #tmj .tmj-injection-grid,
-    #tmj .discomfort-container {
+    #tmj .container {
         padding-left: 15px !important; /* Single 15px container padding matching Section 6 (#clear-aligner) */
         padding-right: 15px !important;
     }
 
+    #tmj .tmj-cause-icons,
+    #tmj .tmj-symp-grid,
+    #tmj .tmj-diag-grid,
+    #tmj .tmj-injection-grid,
+    #tmj .discomfort-container,
     #tmj .tmj-info-section,
     .tmj-info-section {
         padding-left: 0 !important; /* Prevent double padding to align 100% with Section 6 */

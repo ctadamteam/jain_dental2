@@ -4516,7 +4516,7 @@
 
     #tmj .tmj-hero-content p,
     .tmj-hero-content p {
-        margin-top: 10px !important;
+        margin-top: 25px !important; /* Shifted DOWN by 15px */
         font-size: 17px !important;
         line-height: 1.55 !important;
         word-break: keep-all !important;

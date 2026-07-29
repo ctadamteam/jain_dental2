@@ -1077,8 +1077,15 @@
         width: 100% !important;
         min-width: 100% !important;
         flex: none !important;
-        padding: 30px 18px 25px 18px !important;
+        padding: 42px 18px 25px 18px !important;
+        margin-top: 15px !important;
         box-sizing: border-box !important;
+    }
+
+    #location .loc-inner-wrap,
+    .loc-inner-wrap {
+        padding-top: 10px !important;
+        transform: translateY(6px) !important;
     }
 
     #location .loc-top-row,
@@ -1229,7 +1236,6 @@
     }
 
     /* Reset Overly Large Inline Paddings on Mobile Containers */
-    .loc-info,
     .ca-proc-text,
     .sinus-info-box,
     .implant-target-box,

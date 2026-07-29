@@ -4448,3 +4448,27 @@
         word-break: keep-all !important;
     }
 }
+
+
+/* ==========================================================================
+   DIRECTIVE: SHIFT SECTION 8 (#TMJ) UPWARD & REDUCE SIDE PADDING TO 5PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    #tmj,
+    section#tmj {
+        padding-top: 35px !important; /* Reduced top padding to shift Section 8 UPWARD */
+        margin-top: 0 !important;
+    }
+
+    #tmj .container,
+    #tmj .tmj-hero,
+    #tmj .tmj-cause-icons,
+    #tmj .tmj-symp-grid,
+    #tmj .tmj-diag-grid,
+    #tmj .tmj-injection-grid,
+    #tmj .discomfort-container {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+}

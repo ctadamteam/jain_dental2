@@ -4509,8 +4509,8 @@
 
     #tmj .tmj-behavior-container,
     .tmj-behavior-container {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
         box-sizing: border-box !important;
     }
 }
@@ -4679,7 +4679,7 @@
     .tmj-behavior-grid {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important; /* 2x2 Grid Layout */
-        gap: 14px 8px !important; /* Tightened grid row & column gap */
+        gap: 12px 6px !important; /* Tightened grid row & column gap */
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 auto !important;
@@ -4705,7 +4705,7 @@
 
     #tmj .tmj-behavior-btn,
     .tmj-behavior-btn {
-        font-size: 15.5px !important; /* Adjusted font size so '턱에 무리 주지 않기' fits gracefully with pill padding */
+        font-size: 16px !important; /* 16px bold font size fitting nicely with 10px side margins */
         font-weight: 600 !important;
         padding: 9px 0 !important;
         width: 100% !important;

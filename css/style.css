@@ -4716,4 +4716,45 @@
         white-space: nowrap !important;
         box-sizing: border-box !important;
     }
+
+    /* Section 8 TMJ Consult Banner Mobile Responsive */
+    #tmj .tmj-consult-banner,
+    .tmj-consult-banner {
+        background-position: 85% center !important; /* Focuses on consultation scene with tooth model and patient */
+        background-size: cover !important;
+    }
+
+    #tmj .tmj-consult-banner > div:first-child,
+    .tmj-consult-banner > div:first-child {
+        background: rgba(11, 37, 89, 0.62) !important; /* Semi-transparent dim overlay so background scene & white text are both clear */
+    }
+
+    #tmj .tmj-consult-banner .container,
+    .tmj-consult-banner .container {
+        justify-content: center !important;
+        padding: 35px 20px !important;
+    }
+
+    #tmj .tmj-consult-banner .container > div,
+    .tmj-consult-banner .container > div {
+        margin-left: 0 !important; /* Resets desktop 400px margin overflow */
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    #tmj .tmj-consult-banner h3,
+    .tmj-consult-banner h3 {
+        font-size: 22px !important;
+        line-height: 1.4 !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    #tmj .tmj-consult-banner a,
+    .tmj-consult-banner a {
+        font-size: 15px !important;
+        padding: 12px 0 !important;
+    }
 }

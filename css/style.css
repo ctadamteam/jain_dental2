@@ -4303,6 +4303,7 @@
 
     #tmj .tmj-hero-content p,
     .tmj-hero-content p {
+        margin-top: 64px !important; /* Shifted down by 50px */
         font-size: 17px !important;
         line-height: 1.6 !important;
         word-break: keep-all !important;

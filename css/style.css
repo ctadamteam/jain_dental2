@@ -4452,14 +4452,14 @@
     }
 
     #tmj .container,
-    #tmj .tmj-hero,
+    #tmj .tmj-info-section,
     #tmj .tmj-cause-icons,
     #tmj .tmj-symp-grid,
     #tmj .tmj-diag-grid,
     #tmj .tmj-injection-grid,
     #tmj .discomfort-container {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+        padding-left: 15px !important; /* Synced to 15px side padding matching Section 6 (#clear-aligner) */
+        padding-right: 15px !important;
     }
 }
 

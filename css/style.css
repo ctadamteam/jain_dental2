@@ -400,6 +400,14 @@
    .tmj-hero-list { list-style: none; padding: 0; display: grid; grid-template-columns: 160px 1fr; gap: 10px 25px; }
    .tmj-hero-list li { display: flex; align-items: center; font-size: 21px; font-weight: 400; color: #111; background: none; padding: 5px 0; }
    .chk-icon { width: 37px; height: 37px; background: #122b5e; border-radius: 50%; margin-right: 12px; display: inline-block; position: relative; flex-shrink: 0; }
+
+   /* PC ONLY: Hide 1st br tag (.tmj-br-pc-hide) in .tmj-hero-content p to render 2 lines on PC while preserving 3 lines on mobile (0px Mobile Drift) */
+   @media screen and (min-width: 769px) {
+       .tmj-hero-content p br.tmj-br-pc-hide,
+       #tmj .tmj-hero-content p br.tmj-br-pc-hide {
+           display: none !important;
+       }
+   }
    
    .tmj-info-section { max-width: 1000px; margin-left: auto; margin-right: auto; }
    .tmj-info-section h4 { font-size: 26px; font-weight: 700; color: #111; margin-bottom: 20px; }

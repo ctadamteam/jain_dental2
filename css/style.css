@@ -5094,7 +5094,13 @@
         background: #ffffff !important;
     }
 
-    .mobile-only-section .section-subtitle {
+    .section-subtitle,
+    .mobile-only-section .section-subtitle,
+    #implant .section-subtitle,
+    #aesthetic .section-subtitle,
+    #clear-aligner .section-subtitle,
+    #conservation .section-subtitle,
+    #tmj .section-subtitle {
         font-size: 18px !important;
         font-weight: 600 !important;
         color: #dcb37b !important;
@@ -5104,10 +5110,17 @@
         margin-bottom: 4px !important;
     }
 
-    .mobile-only-section .section-title {
+    .section-title,
+    .mobile-only-section .section-title,
+    #implant .section-title,
+    #aesthetic .section-title,
+    #clear-aligner .section-title,
+    #conservation .section-title,
+    #tmj .section-title {
         font-size: 32px !important;
         font-weight: 800 !important;
         line-height: 1.35 !important;
+        letter-spacing: -1px !important;
         text-align: center !important;
         color: #111111 !important;
         margin-top: 0 !important;

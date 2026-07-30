@@ -1140,13 +1140,13 @@
     }
 
     /* Mobile 2-Column Split (2분할) for Section 11 Consult & Hours Boxes (0px PC Drift) */
-    /* Mobile 2-Column Split (2분할) for Section 11 Consult & Hours Boxes (0px PC Drift) */
     #location .loc-top-row,
     .loc-top-row {
         display: grid !important;
         grid-template-columns: 38% 62% !important;
         gap: 10px !important;
         align-items: start !important;
+        margin-left: 15px !important;
     }
 
     #location .loc-box-consult,

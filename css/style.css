@@ -305,13 +305,13 @@
            transform: translateY(-3px) !important;
        }
 
-       /* PC ONLY: Shift #ae-2 badges 1 and 4 DOWN by 13px (0px Mobile Drift) */
+       /* PC ONLY: Shift #ae-2 badges 1 and 4 DOWN by 3px (UP by 10px from 13px) (0px Mobile Drift) */
        #aesthetic #ae-2 .ae-pros-list .ae-pro-item:nth-child(1) .num-badge,
        #aesthetic #ae-2 .ae-pros-list .ae-pro-item:nth-child(4) .num-badge,
        #ae-2 .ae-pros-list .ae-pro-item:nth-child(1) .num-badge,
        #ae-2 .ae-pros-list .ae-pro-item:nth-child(4) .num-badge {
-           transform: translateY(13px) !important;
-           margin-top: 13px !important;
+           transform: translateY(3px) !important;
+           margin-top: 3px !important;
        }
    }
 

@@ -1140,11 +1140,12 @@
     }
 
     /* Mobile 2-Column Split (2분할) for Section 11 Consult & Hours Boxes (0px PC Drift) */
+    /* Mobile 2-Column Split (2분할) for Section 11 Consult & Hours Boxes (0px PC Drift) */
     #location .loc-top-row,
     .loc-top-row {
         display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 15px !important;
+        grid-template-columns: 38% 62% !important;
+        gap: 10px !important;
         align-items: start !important;
     }
 
@@ -1203,14 +1204,20 @@
 
     #location .loc-box-hours ul,
     .loc-box-hours ul {
-        font-size: 13px !important;
-        line-height: 1.8 !important;
+        font-size: 12px !important;
+        line-height: 1.85 !important;
+    }
+
+    #location .loc-box-hours ul li,
+    .loc-box-hours ul li {
+        white-space: nowrap !important;
     }
 
     #location .loc-box-hours ul li span[style*="width"],
     .loc-box-hours ul li span[style*="width"] {
-        width: 82px !important;
-        font-size: 13px !important;
+        width: 74px !important;
+        font-size: 12px !important;
+        letter-spacing: -0.5px !important;
         white-space: nowrap !important;
         margin-right: 2px !important;
     }

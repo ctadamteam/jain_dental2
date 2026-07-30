@@ -1584,8 +1584,8 @@
         right: 15px !important;
         top: 50% !important;
         transform: translateY(-50%) !important;
-        width: 36px !important;
-        height: 36px !important;
+        width: 40px !important;
+        height: 40px !important;
         padding: 0 !important;
         box-sizing: border-box !important;
         background: transparent !important;
@@ -1598,28 +1598,28 @@
     .hamburger-btn span {
         position: absolute !important;
         left: 8px !important;
-        width: 20px !important;
-        height: 2px !important;
+        width: 24px !important;
+        height: 2.2px !important;
         background: #111111 !important;
         border-radius: 2px !important;
         transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease !important;
         transform-origin: center !important;
         pointer-events: none !important;
     }
-    .hamburger-btn span:nth-child(1) { top: 9px !important; }
-    .hamburger-btn span:nth-child(2) { top: 17px !important; }
-    .hamburger-btn span:nth-child(3) { top: 25px !important; }
+    .hamburger-btn span:nth-child(1) { top: 10px !important; }
+    .hamburger-btn span:nth-child(2) { top: 19px !important; }
+    .hamburger-btn span:nth-child(3) { top: 28px !important; }
 
     /* Refined Compact X Close Icon for Active Mobile Menu */
     .hamburger-btn.active span:nth-child(1) {
-        top: 17px !important;
+        top: 19px !important;
         transform: rotate(45deg) !important;
     }
     .hamburger-btn.active span:nth-child(2) {
         opacity: 0 !important;
     }
     .hamburger-btn.active span:nth-child(3) {
-        top: 17px !important;
+        top: 19px !important;
         transform: rotate(-45deg) !important;
     }
 

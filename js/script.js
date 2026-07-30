@@ -1,24 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Mobile Hamburger Menu Toggle (Defensive Guard against Instant Touch Closure)
+    // 1. Mobile Hamburger Menu Toggle (Touch + Click Deduplicated Handler)
     const hamburgerBtn = document.querySelector('.hamburger-btn');
     const navMenu = document.querySelector('.nav-menu');
-    let isMenuToggling = false;
+    let lastToggleTime = 0;
     
     if (hamburgerBtn && navMenu) {
         const toggleMenu = (e) => {
             if (e) {
-                e.preventDefault();
+                if (e.cancelable) e.preventDefault();
                 e.stopPropagation();
             }
-            isMenuToggling = true;
+            const now = Date.now();
+            if (now - lastToggleTime < 300) return;
+            lastToggleTime = now;
+
             hamburgerBtn.classList.toggle('active');
             navMenu.classList.toggle('active');
-            setTimeout(() => {
-                isMenuToggling = false;
-            }, 200);
         };
 
+        hamburgerBtn.addEventListener('touchstart', toggleMenu, { passive: false });
         hamburgerBtn.addEventListener('click', toggleMenu);
 
         // Close mobile menu on link click
@@ -29,9 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Close mobile menu when clicking outside (Guarded by isMenuToggling)
+        // Close mobile menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (isMenuToggling) return;
+            const now = Date.now();
+            if (now - lastToggleTime < 400) return;
             if (navMenu.classList.contains('active')) {
                 if (!navMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
                     hamburgerBtn.classList.remove('active');

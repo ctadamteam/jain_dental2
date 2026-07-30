@@ -1,15 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Mobile Hamburger Menu Toggle (Defensive Null Check)
+    // 1. Mobile Hamburger Menu Toggle (Defensive Guard against Instant Touch Closure)
     const hamburgerBtn = document.querySelector('.hamburger-btn');
     const navMenu = document.querySelector('.nav-menu');
+    let isMenuToggling = false;
     
     if (hamburgerBtn && navMenu) {
-        hamburgerBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
+        const toggleMenu = (e) => {
+            if (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            isMenuToggling = true;
             hamburgerBtn.classList.toggle('active');
             navMenu.classList.toggle('active');
-        });
+            setTimeout(() => {
+                isMenuToggling = false;
+            }, 200);
+        };
+
+        hamburgerBtn.addEventListener('click', toggleMenu);
 
         // Close mobile menu on link click
         document.querySelectorAll('.nav-menu a').forEach(link => {
@@ -19,11 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Close mobile menu when clicking outside
+        // Close mobile menu when clicking outside (Guarded by isMenuToggling)
         document.addEventListener('click', (e) => {
-            if (!navMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
-                hamburgerBtn.classList.remove('active');
-                navMenu.classList.remove('active');
+            if (isMenuToggling) return;
+            if (navMenu.classList.contains('active')) {
+                if (!navMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+                    hamburgerBtn.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
             }
         });
     }

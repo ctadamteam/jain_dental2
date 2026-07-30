@@ -1707,8 +1707,8 @@
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
             <ul class="footer-links" style="display: flex; justify-content: flex-start; gap: 40px; list-style: none; padding: 0; margin: 0 0 20px 0;">
                 <li><a href="#" style="color: #e5e5e5; font-size: 16px; text-decoration: none; font-weight: 500;">병원소개</a></li>
-                <li><a href="#" style="color: #e5e5e5; font-size: 16px; text-decoration: none; font-weight: 500;">이용약관</a></li>
-                <li><a href="#" style="color: #e5e5e5; font-size: 16px; text-decoration: none; font-weight: 500;">개인정보처리방침</a></li>
+                <li><button type="button" class="footer-legal-btn" data-legal-type="terms">이용약관</button></li>
+                <li><button type="button" class="footer-legal-btn" data-legal-type="privacy">개인정보처리방침</button></li>
             </ul>
             <hr class="footer-line" style="border: 0; border-top: 1px solid #333333; margin-bottom: 25px;">
             <div class="footer-info" style="font-size: 15px; line-height: 1.8; color: #a0a0a0; text-align: left;">
@@ -1781,6 +1781,29 @@
             <span>TOP</span>
         </a>
     </div>
-    
+
+    <!-- 약관 및 개인정보처리방침 공통 레이어 모달 -->
+    <div id="legal-modal" class="legal-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title" aria-hidden="true" tabindex="-1">
+        <div class="legal-modal-card">
+            <div class="legal-modal-header">
+                <h3 id="legal-modal-title" class="legal-modal-title">이용약관</h3>
+                <button type="button" class="legal-modal-close-btn" aria-label="닫기">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="legal-modal-body" id="legal-modal-body">
+                <!-- 약관 동적 콘텐츠 -->
+            </div>
+            <div class="legal-modal-footer">
+                <button type="button" class="legal-modal-confirm-btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/legal-data.js?v=1785308705118"></script>
+    <script src="js/script.js?v=1785308705118"></script>
 </body>
 </html>

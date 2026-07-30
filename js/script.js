@@ -156,6 +156,76 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initMobileTreatmentTabs();
     window.addEventListener('resize', initMobileTreatmentTabs);
+
+    // 6. Common Legal Modal Popup (이용약관 & 개인정보처리방침)
+    const legalModal = document.getElementById('legal-modal');
+    const legalModalTitle = document.getElementById('legal-modal-title');
+    const legalModalBody = document.getElementById('legal-modal-body');
+    const legalModalCloseBtns = document.querySelectorAll('.legal-modal-close-btn, .legal-modal-confirm-btn');
+    const footerLegalBtns = document.querySelectorAll('.footer-legal-btn');
+    let lastActiveElement = null;
+
+    function openLegalModal(type) {
+        if (!legalModal || typeof LEGAL_DATA === 'undefined') return;
+        const data = LEGAL_DATA[type];
+        if (!data) return;
+
+        lastActiveElement = document.activeElement;
+
+        legalModalTitle.textContent = data.title;
+        legalModalBody.innerHTML = data.content;
+        legalModalBody.scrollTop = 0;
+
+        document.body.style.overflow = 'hidden';
+        legalModal.classList.add('active');
+        legalModal.setAttribute('aria-hidden', 'false');
+
+        // Focus close button inside modal
+        const firstCloseBtn = legalModal.querySelector('.legal-modal-close-btn');
+        if (firstCloseBtn) {
+            firstCloseBtn.focus();
+        }
+    }
+
+    function closeLegalModal() {
+        if (!legalModal) return;
+
+        document.body.style.overflow = '';
+        legalModal.classList.remove('active');
+        legalModal.setAttribute('aria-hidden', 'true');
+
+        if (lastActiveElement && typeof lastActiveElement.focus === 'function') {
+            lastActiveElement.focus();
+        }
+    }
+
+    footerLegalBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const type = btn.getAttribute('data-legal-type');
+            openLegalModal(type);
+        });
+    });
+
+    legalModalCloseBtns.forEach(btn => {
+        btn.addEventListener('click', closeLegalModal);
+    });
+
+    if (legalModal) {
+        // Close modal when clicking overlay background
+        legalModal.addEventListener('click', (e) => {
+            if (e.target === legalModal) {
+                closeLegalModal();
+            }
+        });
+
+        // Close modal on ESC key press
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && legalModal.classList.contains('active')) {
+                closeLegalModal();
+            }
+        });
+    }
 });
 
 function updateTabIndicators() {

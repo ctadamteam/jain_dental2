@@ -1146,15 +1146,21 @@
         grid-template-columns: 38% 62% !important;
         gap: 10px !important;
         align-items: start !important;
-        margin-left: 45px !important;
+        margin-left: 0 !important;
     }
 
     #location .loc-box-consult,
-    .loc-box-consult,
+    .loc-box-consult {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin-left: 0 !important;
+    }
+
     #location .loc-box-hours,
     .loc-box-hours {
         width: 100% !important;
         min-width: 0 !important;
+        margin-left: 15px !important;
     }
 
     #location .loc-info h4,

@@ -3587,7 +3587,10 @@
 @media screen and (max-width: 768px) {
     .ae-pro-item,
     #aesthetic .ae-pro-item {
-        padding-left: 18px !important; /* Shifted badge and text LEFT by 12px */
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+        padding-left: 18px !important;
+        padding-right: 18px !important;
     }
 
     .ae-pro-item .num-badge,

@@ -1139,40 +1139,40 @@
         transform: translateY(-4px) !important;
     }
 
+    /* Mobile 2-Column Split (2분할) for Section 11 Consult & Hours Boxes (0px PC Drift) */
     #location .loc-top-row,
     .loc-top-row {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 28px !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+        align-items: start !important;
     }
 
     #location .loc-box-consult,
-    .loc-box-consult {
-        width: 100% !important;
-    }
-
+    .loc-box-consult,
     #location .loc-box-hours,
     .loc-box-hours {
         width: 100% !important;
+        min-width: 0 !important;
     }
 
     #location .loc-info h4,
     .loc-info h4,
     .loc-title {
-        font-size: 21px !important;
+        font-size: 19px !important;
         position: relative !important;
-        top: 10px !important;
+        top: 0 !important;
         margin-top: 0 !important;
-        margin-bottom: 14px !important;
+        margin-bottom: 10px !important;
     }
 
     #location .loc-phone-numbers,
     .loc-phone-numbers {
-        font-size: 18px !important;
+        font-size: 17px !important;
         font-weight: 700 !important;
-        line-height: 1.35 !important;
+        line-height: 1.3 !important;
         color: #ffffff !important;
-        margin-bottom: 8px !important;
+        margin-bottom: 6px !important;
         white-space: nowrap !important;
     }
 
@@ -1183,15 +1183,15 @@
 
     #location .loc-consult-note,
     .loc-consult-note {
-        font-size: 14px !important;
+        font-size: 12px !important;
         color: #C69D5D !important;
-        line-height: 1.45 !important;
-        margin-top: 1px !important; /* Shifted UP by 5px (6px -> 1px) */
+        line-height: 1.4 !important;
+        margin-top: 4px !important;
         margin-bottom: 0 !important;
         word-break: keep-all !important;
     }
 
-    /* Location Phone Slash & BR Controls (Mobile: Show Slash, Hide BR) */
+    /* Location Phone Slash & BR Controls */
     #location .phone-slash,
     .phone-slash {
         display: inline !important;
@@ -1203,15 +1203,16 @@
 
     #location .loc-box-hours ul,
     .loc-box-hours ul {
-        font-size: 15px !important;
-        line-height: 1.9 !important;
+        font-size: 13px !important;
+        line-height: 1.8 !important;
     }
 
     #location .loc-box-hours ul li span[style*="width"],
     .loc-box-hours ul li span[style*="width"] {
-        width: 125px !important;
-        font-size: 15px !important;
+        width: 82px !important;
+        font-size: 13px !important;
         white-space: nowrap !important;
+        margin-right: 2px !important;
     }
 
     #location .loc-bottom-row,

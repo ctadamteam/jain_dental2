@@ -1161,7 +1161,7 @@
         width: 100% !important;
         min-width: 0 !important;
         margin-left: 0 !important;
-        transform: translateX(15px) !important;
+        transform: translateX(30px) !important;
     }
 
     #location .loc-info h4,

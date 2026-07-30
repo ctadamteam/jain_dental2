@@ -448,6 +448,10 @@
 .discomfort-num { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: #122b5e; color: #fff; font-size: 14px; font-weight: bold; border-radius: 0; flex-shrink: 0; }
 .discomfort-text { font-size: 20px; color: #111; }
 
+/* Location Phone Slash & BR Controls (PC: Hide Slash, Show BR) */
+.phone-slash { display: none; }
+.phone-br { display: block; }
+
 /* 지르코니아 장점 리스트 */
 .zirconia-adv-list { display: flex; flex-direction: column; gap: 15px; margin: 0 auto; max-width: 900px; }
 .zirconia-adv-item { background: #fff; border-radius: 10px; padding: 20px 30px; display: flex; align-items: center; gap: 15px; text-align: left; }
@@ -835,9 +839,10 @@
     .intro-right-content p.intro-desc-2,
     .intro-right-content p.intro-desc-3 {
         padding-right: 0 !important;
-        font-size: 16px !important;
+        font-size: 15px !important;
         line-height: 1.6 !important;
-        margin-bottom: 20px !important;
+        margin-top: 0 !important;
+        margin-bottom: 12px !important;
         word-break: keep-all !important;
     }
 
@@ -1119,7 +1124,7 @@
 
     #location .loc-phone-numbers,
     .loc-phone-numbers {
-        font-size: 20px !important;
+        font-size: 18px !important;
         font-weight: 700 !important;
         line-height: 1.35 !important;
         color: #ffffff !important;
@@ -1134,7 +1139,7 @@
 
     #location .loc-consult-note,
     .loc-consult-note {
-        font-size: 16px !important;
+        font-size: 14px !important;
         color: #C69D5D !important;
         line-height: 1.45 !important;
         margin-top: 1px !important; /* Shifted UP by 5px (6px -> 1px) */
@@ -1142,16 +1147,27 @@
         word-break: keep-all !important;
     }
 
+    /* Location Phone Slash & BR Controls (Mobile: Show Slash, Hide BR) */
+    #location .phone-slash,
+    .phone-slash {
+        display: inline !important;
+    }
+    #location .phone-br,
+    .phone-br {
+        display: none !important;
+    }
+
     #location .loc-box-hours ul,
     .loc-box-hours ul {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.9 !important;
     }
 
     #location .loc-box-hours ul li span[style*="width"],
     .loc-box-hours ul li span[style*="width"] {
-        width: 68px !important;
-        font-size: 17px !important;
+        width: 125px !important;
+        font-size: 15px !important;
+        white-space: nowrap !important;
     }
 
     #location .loc-bottom-row,
@@ -1165,7 +1181,7 @@
     #location .loc-kakao-btn-wrap,
     .loc-kakao-btn-wrap {
         position: absolute !important;
-        top: 24px !important;
+        top: 36px !important;
         right: 18px !important;
         margin: 0 !important;
         padding: 0 !important;
@@ -1202,7 +1218,7 @@
 
     #location .loc-address-text,
     .loc-address-text {
-        font-size: 16.5px !important;
+        font-size: 14.5px !important;
         line-height: 1.55 !important;
         word-break: keep-all !important;
         margin-bottom: 12px !important;
@@ -1273,18 +1289,18 @@
     }
 
     .footer .footer-links a {
-        font-size: 16px !important;
+        font-size: 15px !important;
     }
 
     .footer .footer-info,
     .footer .footer-info p {
-        font-size: 13px !important;
+        font-size: 11px !important;
         line-height: 1.45 !important;
         margin-bottom: 2px !important;
     }
 
     .footer .footer-info .copyright {
-        font-size: 12px !important;
+        font-size: 10px !important;
         margin-top: 10px !important;
     }
 
@@ -1330,7 +1346,7 @@
         box-sizing: border-box !important;
     }
 
-    /* Reset Inline 20px/21px Font Sizes for Mobile List Items & Badges */
+    /* Reset Inline 20px/21px Font Sizes for Mobile List Items & Badges -> 15px Unified */
     li[style*="font-size:20px"],
     li[style*="font-size: 20px"],
     div[style*="font-size:20px"],
@@ -1359,7 +1375,7 @@
 
     /* Location Section Parking Info & Text Padding Reset */
     .loc-info p, .loc-info div {
-        font-size: 14px !important;
+        font-size: 12px !important;
         line-height: 1.6 !important;
     }
 
@@ -1383,8 +1399,9 @@
 
     /* 2. Section 2 (#special) Exact PC Design Reproduction */
     #special {
-        padding-top: 40px !important;
+        padding-top: 0px !important;
         padding-bottom: 40px !important;
+        margin-top: -35px !important;
         background: #ffffff !important; /* Base section background is clean white like PC */
     }
 
@@ -1453,7 +1470,7 @@
     }
 
     .tscan-box ul li {
-        font-size: 14px !important;
+        font-size: 15px !important;
         color: #444444 !important;
         line-height: 1.5 !important;
     }
@@ -1555,9 +1572,9 @@
     .intro-right-content p.intro-desc-2,
     .intro-right-content p.intro-desc-3 {
         font-size: 15px !important;
-        line-height: 1.65 !important;
-        margin-top: 14px !important;
-        margin-bottom: 24px !important;
+        line-height: 1.6 !important;
+        margin-top: 0 !important;
+        margin-bottom: 12px !important;
     }
 
     /* 4. Section 2 (#special) 100% PC Design Reproduction */
@@ -1722,9 +1739,11 @@
         font-size: 32px !important;
     }
 
-    /* 2. Subtitles & Card Headings -> 21px Only */
+    /* 2. Unified Subtitles, Card Headings & Tab Titles Across ALL Sections -> 21px (100% Uniform) */
     h3, h4, h5, .card-title, .feature-title, .pro-title, 
-    .tscan-box h5, .tscan-badge, .implant-tab-title, .ig-text h4 {
+    .tscan-box h5, .tscan-badge, .tscan-content h4, 
+    .ig-text h4, .ae-text h4, .ae-info-section h4, 
+    .implant-tab-title, .sinus-badge, .tmj-behavior-title {
         font-size: 21px !important;
     }
 /* Reduce Gap Between English Subtitle & Main Title on Mobile */
@@ -1750,21 +1769,23 @@
         font-size: 21px !important;
     }
 
-    /* 3. General Body Text -> 17px Only */
+    /* 3. General Body Text & FAQ -> 15px Unified */
     p, li, .intro-desc-1, .intro-desc-2, .intro-desc-3,
     .special-top-text p, .tscan-box ul li, .tscan-desc,
     .doctor-desc, .implant-desc, .feature-card p, .pro-card p,
     .aesthetic-card p, .aligner-step p, .conservation-box p,
-    .tmj-card p, .tour-desc, .location-info p {
-        font-size: 17px !important;
+    .tmj-card p, .tour-desc, .location-info p,
+    .con-info-section p, .tmj-info-section p, .ae-info-section p,
+    .faq-question, .faq-a-text {
+        font-size: 15px !important;
         word-break: keep-all !important;
     }
-/* Section 1 Intro Description Paragraphs -> 17px */
+/* Section 1 Intro Description Paragraphs -> 15px */
     .intro-right-content p,
     .intro-right-content p.intro-desc-1,
     .intro-right-content p.intro-desc-2,
     .intro-right-content p.intro-desc-3 {
-        font-size: 17px !important;
+        font-size: 15px !important;
     }
 }
 
@@ -1880,7 +1901,7 @@
     }
 
     .special-top-text p {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.65 !important;
         color: #e0e4ee !important;
         word-break: keep-all !important;
@@ -1951,7 +1972,7 @@
     }
 
     .special-top-text p {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.65 !important;
         color: #e0e4ee !important;
         word-break: keep-all !important;
@@ -1991,7 +2012,7 @@
     }
 
     .special-top-text p {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.65 !important;
         color: #e0e4ee !important;
         word-break: keep-all !important;
@@ -2239,7 +2260,7 @@
     .tscan-boxes ul li,
     .tscan-box li,
     .tab-pane .tscan-box ul li {
-        font-size: 17px !important; /* Strictly set to 17px per user directive */
+        font-size: 15px !important;
         line-height: 1.65 !important;
         color: #333333 !important;
         word-break: keep-all !important;
@@ -2257,7 +2278,7 @@
     .tscan-boxes ul li,
     .tscan-box li,
     .tab-pane .tscan-box ul li {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.5 !important;
         color: #333333 !important;
         word-break: keep-all !important;
@@ -2302,7 +2323,7 @@
     .tscan-footer,
     .tab-pane .tscan-footer,
     p.tscan-footer {
-        font-size: 18px !important; /* Set to 18px per user directive */
+        font-size: 15px !important; /* Set to 15px per user directive */
         margin-top: 10px !important; /* Moved UP by 30px (40px -> 10px) */
         margin-bottom: 20px !important;
         font-weight: 700 !important;
@@ -2322,7 +2343,7 @@
     .tab-pane .tscan-footer,
     p.tscan-footer {
         margin-top: -10px !important; /* Shifted UP by an additional 20px */
-        font-size: 18px !important;
+        font-size: 15px !important;
         margin-bottom: 20px !important;
         font-weight: 700 !important;
         color: #111111 !important;
@@ -2717,7 +2738,7 @@
 @media screen and (max-width: 768px) {
     .doc-history li,
     .doctor-card .doc-history li {
-        font-size: 17px !important; /* Updated from 16px to 17px */
+        font-size: 15px !important;
         line-height: 1.5 !important;
         color: #111111 !important;
         word-break: keep-all !important;
@@ -2744,7 +2765,7 @@
     }
 
     .ig-text p {
-        font-size: 17px !important; /* Updated card content font size to 17px */
+        font-size: 15px !important;
         line-height: 1.65 !important;
         color: #555555 !important;
         margin-bottom: 0 !important;
@@ -2817,7 +2838,7 @@
     /* 4. Tab Body Typography Harmonization (matching Section 2) */
     .implant-tab-title,
     #implant .implant-tab-title {
-        font-size: 20px !important;
+        font-size: 21px !important;
         font-weight: 700 !important;
         line-height: 1.4 !important;
         color: #0b1732 !important;
@@ -2825,7 +2846,7 @@
 
     .implant-tab-desc,
     #implant .implant-tab-desc {
-        font-size: 16px !important;
+        font-size: 15px !important;
         line-height: 1.65 !important;
         color: #555555 !important;
     }
@@ -2878,13 +2899,11 @@
         margin-bottom: 12px !important;
     }
 
-    /* 3. Body Text & Details -> 17px */
+    /* 3. Body Text & Details -> 15px */
     .implant-tab-desc,
-    .implant-target-box ul li,
-    .implant-pros li .pro-title,
     .implant-pros li .pro-desc,
     .process-item p {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.6 !important;
         color: #333333 !important;
         word-break: keep-all !important;
@@ -3012,9 +3031,9 @@
         font-weight: 600 !important; /* Semibold font weight */
     }
 
-    /* Step Title 18px & Reduced Vertical Padding */
+    /* Step Title 15px & Reduced Vertical Padding */
     .process-item .process-step {
-        font-size: 18px !important; /* Updated from 19px to 18px */
+        font-size: 15px !important;
         font-weight: 700 !important;
         padding: 7px 4px !important; /* Reduced top/bottom padding */
         line-height: 1.3 !important;
@@ -3027,7 +3046,7 @@
     }
 
     .process-item p {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.55 !important;
         color: #333333 !important;
         word-break: keep-all !important;
@@ -3098,7 +3117,7 @@
     .implant-intro p,
     .implant-target-box p,
     #implant p {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.65 !important;
         color: #444444 !important;
     }
@@ -3129,7 +3148,7 @@
     #implant .sinus-badge,
     .sinus-desc,
     #implant .sinus-desc {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.6 !important;
     }
 }
@@ -3167,11 +3186,11 @@
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
-    /* Enforce exact 17px bold on number badge adjacent titles & lists */
+    /* Enforce 15px on number badge adjacent titles & lists */
     .implant-target-box ul li,
     .implant-pros li .pro-title,
     #implant .implant-pros li .pro-title {
-        font-size: 17px !important;
+        font-size: 15px !important;
         font-weight: 700 !important;
         line-height: 1.4 !important;
         color: #111111 !important;
@@ -3193,7 +3212,7 @@
     .implant-pros li .pro-desc {
         margin-top: 4px !important; /* Adjusted down to +4px for natural, comfortable grouping */
         padding-top: 0 !important;
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.6 !important;
         color: #444444 !important;
     }
@@ -3277,14 +3296,14 @@
 
 @media screen and (max-width: 768px) {
     .implant-target-box ul li {
-        font-size: 16.5px !important;
+        font-size: 15px !important;
         letter-spacing: -1px !important;
         word-break: keep-all !important;
         align-items: flex-start !important;
     }
 
     .implant-target-box ul li .num {
-        margin-top: 2px !important;
+        margin-top: -1px !important; /* Shifted badge UP 3px so right description text drops 3px down relative to badge */
         margin-right: 6px !important;
         flex-shrink: 0 !important;
     }
@@ -3308,7 +3327,7 @@
 @media screen and (max-width: 768px) {
     .implant-target-box ul li,
     #implant .implant-target-box ul li {
-        font-size: 17px !important;
+        font-size: 15px !important;
         letter-spacing: -0.2px !important; /* Restored from -1px to comfortable normal spacing */
         line-height: 1.45 !important;
     }
@@ -3343,7 +3362,7 @@
 @media screen and (max-width: 768px) {
     .implant-pros li .pro-desc,
     #implant .implant-pros li .pro-desc {
-        margin-top: 9px !important; /* Increased by 5px from 4px to 9px */
+        margin-top: 7px !important; /* Shifted UP 2px (9px -> 7px) */
         padding-top: 0 !important;
     }
 }
@@ -3529,7 +3548,8 @@
 @media screen and (max-width: 768px) {
     .ae-text,
     #aesthetic .ae-text {
-        padding-top: 32px !important; /* Shifted DOWN by 10px more */
+        padding-top: 25px !important;
+        padding-bottom: 6px !important;
     }
 }
 
@@ -3541,7 +3561,7 @@
 @media screen and (max-width: 768px) {
     .ae-pro-item,
     #aesthetic .ae-pro-item {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.5 !important;
     }
 }
@@ -3555,6 +3575,11 @@
     .ae-pro-item,
     #aesthetic .ae-pro-item {
         padding-left: 18px !important; /* Shifted badge and text LEFT by 12px */
+    }
+
+    .ae-pro-item .num-badge,
+    #aesthetic .ae-pro-item .num-badge {
+        transform: translateY(-3px) !important; /* Shifted badge UP 3px so description text on the right drops 3px down relative to badge */
     }
 }
 
@@ -3676,11 +3701,11 @@
     }
 
     .ca-rec-title {
-        font-size: 18px !important; /* Title font size: 18px */
+        font-size: 16px !important; /* Title font size: 16px */
     }
 
     .ca-rec-item p {
-        font-size: 17px !important; /* Description font size: 17px */
+        font-size: 15px !important; /* Description font size: 15px */
     }
 }
 
@@ -3979,7 +4004,7 @@
 
     .ca-proc-text p,
     #clear-aligner .ca-proc-text p {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.55 !important;
         color: #555555 !important;
         word-break: keep-all !important;
@@ -4231,7 +4256,7 @@
     #conservation .con-info-section p,
     #conservation .con-info-section .highlight-blue,
     p[style*="font-size:20px"] {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.6 !important;
         word-break: keep-all !important;
         overflow-wrap: break-word !important;
@@ -4270,7 +4295,7 @@
 @media screen and (max-width: 768px) {
     .implant-pros .pro-desc,
     #conservation .implant-pros .pro-desc {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.55 !important;
         word-break: keep-all !important;
     }
@@ -4315,7 +4340,7 @@
     .discomfort-text,
     .discomfort-item .discomfort-text,
     .discomfort-container .discomfort-text {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.5 !important;
     }
 }
@@ -4353,7 +4378,7 @@
 @media screen and (max-width: 768px) {
     .discomfort-container p,
     #conservation .discomfort-container p {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.6 !important;
         word-break: keep-all !important;
         overflow-wrap: break-word !important;
@@ -4373,7 +4398,7 @@
 @media screen and (max-width: 768px) {
     .zirconia-adv-text,
     .zirconia-adv-item .zirconia-adv-text {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.5 !important;
         word-break: keep-all !important;
     }
@@ -4444,18 +4469,40 @@
    ========================================================================== */
 
 .zirconia-adv-item:nth-child(2) .discomfort-num,
-.zirconia-adv-item:nth-child(3) .discomfort-num,
 .zirconia-adv-item:nth-child(4) .discomfort-num {
     position: relative !important;
     top: -13px !important;
 }
 
+.zirconia-adv-item:nth-child(3) .discomfort-num {
+    position: relative !important;
+    top: 0px !important; /* Shifted badge 3 down by 3px further (-3px -> 0px) */
+}
+
 @media screen and (max-width: 768px) {
     .zirconia-adv-item:nth-child(2) .discomfort-num,
-    .zirconia-adv-item:nth-child(3) .discomfort-num,
     .zirconia-adv-item:nth-child(4) .discomfort-num {
         position: relative !important;
         top: -13px !important;
+    }
+
+    .zirconia-adv-item:nth-child(3) .discomfort-num {
+        position: relative !important;
+        top: 0px !important; /* Shifted badge 3 down by 3px further (-3px -> 0px) */
+    }
+}
+
+
+/* ==========================================================================
+   DIRECTIVE: BEFORE / AFTER LABELS (.ba-label) FONT SIZE 16PX ON MOBILE
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .ba-label,
+    .lbl-before,
+    .lbl-after {
+        font-size: 16px !important;
+        padding: 6px 0 !important;
     }
 }
 
@@ -4512,9 +4559,10 @@
 
 @media screen and (max-width: 768px) {
     #con-3 .process-item .process-step {
-        font-size: 18px !important;
+        font-size: 16px !important;
         letter-spacing: -0.5px !important;
-        min-height: 58px !important;
+        min-height: 42px !important;
+        padding: 4px 2px !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -4551,7 +4599,7 @@
     .tmj-badge {
         width: 100% !important;
         max-width: 320px !important;
-        font-size: 16px !important;
+        font-size: 15px !important;
         padding: 10px 5px !important;
         white-space: nowrap !important;
         margin: 0 auto 15px !important;
@@ -4568,7 +4616,7 @@
     #tmj .tmj-hero-content p,
     .tmj-hero-content p {
         margin-top: 20px !important;
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.6 !important;
         word-break: keep-all !important;
     }
@@ -4583,7 +4631,7 @@
 
     #tmj .tmj-info-section p,
     .tmj-info-section p {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.65 !important;
         word-break: keep-all !important;
     }
@@ -4634,7 +4682,7 @@
 
     #tmj .tc-title,
     .tc-title {
-        font-size: 17px !important;
+        font-size: 16px !important;
         font-weight: 500 !important;
         letter-spacing: -0.7px !important;
         padding: 8px 4px !important;
@@ -4661,7 +4709,7 @@
         background: #f9f9f9 !important;
         border-radius: 12px !important;
         padding: 18px 20px !important;
-        font-size: 17px !important;
+        font-size: 15px !important;
         font-weight: 400 !important;
         color: #111 !important;
         line-height: 1.5 !important;
@@ -4669,7 +4717,8 @@
 
     #tmj .symp-item .num-badge,
     .symp-item .num-badge {
-        margin-right: 15px !important;
+        margin-right: 8px !important; /* Brought description text left by 7px */
+        transform: translateY(-3px) !important; /* Shifted badge UP 3px so right description text drops 3px down relative to badge */
         flex-shrink: 0 !important;
     }
 
@@ -4737,7 +4786,7 @@
 
     #tmj .tmj-injection-grid .injection-desc,
     .tmj-injection-grid .injection-desc {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.6 !important;
         word-break: keep-all !important;
     }
@@ -4801,7 +4850,7 @@
         margin-left: 0 !important;
         position: relative !important;
         left: 0 !important;
-        transform: translateX(-50px) !important;
+        transform: translateX(-65px) !important; /* Shifted 15px further to the left (-50px -> -65px) */
         padding-top: 15px !important; /* Shifted entire content block DOWN slightly */
         width: 100% !important;
         max-width: 320px !important;
@@ -4813,7 +4862,7 @@
     .tmj-badge {
         width: auto !important;
         max-width: 100% !important;
-        font-size: 16.5px !important;
+        font-size: 15px !important;
         padding: 4px 10px !important;
         white-space: nowrap !important;
         margin: 0 0 5px 0 !important;
@@ -4834,7 +4883,7 @@
     #tmj .tmj-hero-content p,
     .tmj-hero-content p {
         margin-top: 25px !important; /* Shifted DOWN by 15px */
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.55 !important;
         word-break: keep-all !important;
         text-align: left !important;
@@ -4860,6 +4909,8 @@
         padding: 0 !important;
         box-shadow: none !important;
         box-sizing: border-box !important;
+        position: relative !important;
+        left: -5px !important; /* Shifted 5px further to the left as requested */
     }
 
     #tmj .tmj-hero-list li,
@@ -4871,7 +4922,7 @@
         background: transparent !important;
         border: none !important; /* NO horizontal divider lines */
         padding: 0 !important;
-        font-size: 15.5px !important;
+        font-size: 15px !important;
         font-weight: 400 !important; /* Regular weight */
         color: #222222 !important; /* Crisp Black Text */
         box-shadow: none !important;
@@ -4933,7 +4984,7 @@
 
     #tmj .tmj-behavior-desc,
     .tmj-behavior-desc {
-        font-size: 17px !important; /* Set description text size to 17px */
+        font-size: 15px !important; /* Set description text size to 15px */
         line-height: 1.55 !important;
         margin-bottom: 22px !important;
         word-break: keep-all !important;
@@ -4970,7 +5021,7 @@
 
     #tmj .tmj-behavior-btn,
     .tmj-behavior-btn {
-        font-size: 17px !important; /* 17px font size for button text as requested */
+        font-size: 16px !important;
         font-weight: 600 !important;
         padding: 10px 0 !important;
         width: 100% !important;

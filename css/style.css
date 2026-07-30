@@ -4477,9 +4477,15 @@
    DIRECTIVE: ADJUST TOP AND BOTTOM PADDING FOR DISCOMFORT BOX (.DISCOMFORT-CONTAINER)
    ========================================================================== */
 
-.discomfort-container {
-    padding-top: 32px !important;
-    padding-bottom: 22px !important;
+/* PC ONLY: Increase left and bottom inner padding for .discomfort-container grey box (0px Mobile Drift) */
+@media screen and (min-width: 769px) {
+    .discomfort-container,
+    #conservation .discomfort-container {
+        padding-top: 40px !important;
+        padding-bottom: 35px !important;
+        padding-left: 60px !important;
+        padding-right: 40px !important;
+    }
 }
 
 @media screen and (max-width: 768px) {

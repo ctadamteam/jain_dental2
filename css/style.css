@@ -1160,7 +1160,8 @@
     .loc-box-hours {
         width: 100% !important;
         min-width: 0 !important;
-        margin-left: 15px !important;
+        margin-left: 0 !important;
+        transform: translateX(15px) !important;
     }
 
     #location .loc-info h4,

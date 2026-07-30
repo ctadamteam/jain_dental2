@@ -5158,9 +5158,9 @@
         border: none !important;
         border-bottom: 1px solid #e2e8f0 !important; /* Subtle 1px grey bottom baseline */
         border-radius: 0 !important;
-        font-size: 15px !important;
+        font-size: 19px !important; /* Updated to 19px */
         font-weight: 700 !important; /* Bold for Inactive */
-        color: #111111 !important; /* Black for Inactive */
+        color: #555555 !important; /* Updated to #555555 for Inactive */
         cursor: pointer !important;
         outline: none !important;
         box-shadow: none !important;
@@ -5182,7 +5182,7 @@
         border: none !important;
         border-bottom: 1px solid #e2e8f0 !important;
         border-radius: 0 !important;
-        color: #0b1732 !important; /* Navy for Active */
+        color: #122b5e !important; /* Updated to #122b5e for Active */
         font-weight: 800 !important; /* Extra Bold for Active */
         box-shadow: none !important;
     }
@@ -5193,7 +5193,7 @@
         left: 0 !important;
         right: 0 !important;
         height: 3px !important;
-        background-color: #0b1732 !important;
+        background-color: #122b5e !important; /* Updated to #122b5e for Active Bar */
         border-radius: 0 !important;
         width: 0% !important;
         margin: 0 auto !important;

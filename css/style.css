@@ -5089,8 +5089,8 @@
 
     .mobile-only-section {
         display: block !important;
-        padding-top: 10px !important;
-        margin-top: -15px !important;
+        padding-top: 0 !important;
+        margin-top: -65px !important; /* Shifted UP by 50px further (-15px -> -65px) */
         padding-bottom: 20px !important;
         background: #ffffff !important;
     }

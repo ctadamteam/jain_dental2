@@ -313,6 +313,17 @@
            transform: translateY(0px) !important;
            margin-top: 0px !important;
        }
+
+       /* PC ONLY: Shift #ae-3 badges 2, 3, and 4 DOWN by 10px (0px Mobile Drift) */
+       #aesthetic #ae-3 .ae-pros-list .ae-pro-item:nth-child(2) .num-badge,
+       #aesthetic #ae-3 .ae-pros-list .ae-pro-item:nth-child(3) .num-badge,
+       #aesthetic #ae-3 .ae-pros-list .ae-pro-item:nth-child(4) .num-badge,
+       #ae-3 .ae-pros-list .ae-pro-item:nth-child(2) .num-badge,
+       #ae-3 .ae-pros-list .ae-pro-item:nth-child(3) .num-badge,
+       #ae-3 .ae-pros-list .ae-pro-item:nth-child(4) .num-badge {
+           transform: translateY(10px) !important;
+           margin-top: 10px !important;
+       }
    }
 
    /* 7. 투명교정 */

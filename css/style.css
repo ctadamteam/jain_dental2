@@ -2567,6 +2567,11 @@
         padding-top: 15px !important;
         margin-top: -18px !important; /* Shifted UP by 23px */
     }
+
+    .implant-intro,
+    #implant .implant-intro {
+        margin-top: 15px !important; /* Shifted intro text block slightly DOWN */
+    }
 }
 
 

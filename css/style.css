@@ -1211,7 +1211,7 @@
 
     #location .loc-box-hours ul,
     .loc-box-hours ul {
-        font-size: 12px !important;
+        font-size: 15px !important;
         line-height: 1.85 !important;
     }
 
@@ -1222,8 +1222,8 @@
 
     #location .loc-box-hours ul li span[style*="width"],
     .loc-box-hours ul li span[style*="width"] {
-        width: 74px !important;
-        font-size: 12px !important;
+        width: 88px !important;
+        font-size: 15px !important;
         letter-spacing: -0.5px !important;
         white-space: nowrap !important;
         margin-right: 2px !important;

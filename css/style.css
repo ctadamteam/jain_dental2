@@ -298,6 +298,14 @@
    .ae-pros-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 1000px; margin: 40px auto 0; text-align: left; }
    .ae-pro-item { display: flex; align-items: center; background: #f9f9f9; padding: 20px 30px; border-radius: 10px; font-size: 20px; font-weight: 400; color: #111; }
 
+   /* PC ONLY: Shift .ae-pro-item description text downward relative to badge by 3px (0px Mobile Drift) */
+   @media screen and (min-width: 769px) {
+       .ae-pro-item .num-badge,
+       #aesthetic .ae-pro-item .num-badge {
+           transform: translateY(-3px) !important;
+       }
+   }
+
    /* 7. 투명교정 */
    .bg-light { background-color: #f9f9f9 !important; }
    .ca-intro { text-align: center; margin-bottom: 40px; }

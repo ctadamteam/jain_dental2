@@ -2564,8 +2564,8 @@
 @media screen and (max-width: 768px) {
     #implant,
     section#implant {
-        padding-top: 20px !important;
-        margin-top: -30px !important;
+        padding-top: 30px !important;
+        margin-top: 0px !important; /* Shifted content DOWNWARD by 30px */
     }
 }
 

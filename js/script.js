@@ -1,4 +1,7 @@
 function initJainDentalApp() {
+    if (window.isJainAppInitialized) return;
+    window.isJainAppInitialized = true;
+
     // 1. Mobile Hamburger Menu Toggle (Touch + Click Deduplicated Handler)
     const hamburgerBtn = document.querySelector('.hamburger-btn');
     const navMenu = document.querySelector('.nav-menu');

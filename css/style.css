@@ -5103,13 +5103,8 @@
         box-sizing: border-box !important;
     }
 
-    .section-subtitle,
-    .mobile-only-section .section-subtitle,
-    #implant .section-subtitle,
-    #aesthetic .section-subtitle,
-    #clear-aligner .section-subtitle,
-    #conservation .section-subtitle,
-    #tmj .section-subtitle {
+    /* Master Treatment Section Header (32px / 18px) */
+    #mobile-treatment-section .section-subtitle {
         font-size: 18px !important;
         font-weight: 600 !important;
         color: #dcb37b !important;
@@ -5119,13 +5114,7 @@
         margin-bottom: 4px !important;
     }
 
-    .section-title,
-    .mobile-only-section .section-title,
-    #implant .section-title,
-    #aesthetic .section-title,
-    #clear-aligner .section-title,
-    #conservation .section-title,
-    #tmj .section-title {
+    #mobile-treatment-section .section-title {
         font-size: 32px !important;
         font-weight: 800 !important;
         line-height: 1.35 !important;
@@ -5134,6 +5123,36 @@
         color: #111111 !important;
         margin-top: 0 !important;
         margin-bottom: 20px !important;
+    }
+
+    /* Individual Tab Treatment Section Headers (H3 Sub-level: 25px / 14px) */
+    #implant .section-subtitle,
+    #aesthetic .section-subtitle,
+    #clear-aligner .section-subtitle,
+    #conservation .section-subtitle,
+    #tmj .section-subtitle {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        color: #dcb37b !important;
+        letter-spacing: 1px !important;
+        text-transform: uppercase !important;
+        text-align: center !important;
+        margin-bottom: 2px !important;
+    }
+
+    #implant .section-title,
+    #aesthetic .section-title,
+    #clear-aligner .section-title,
+    #conservation .section-title,
+    #tmj .section-title {
+        font-size: 25px !important;
+        font-weight: 700 !important;
+        line-height: 1.3 !important;
+        letter-spacing: -0.5px !important;
+        text-align: center !important;
+        color: #111111 !important;
+        margin-top: 0 !important;
+        margin-bottom: 15px !important;
     }
 
     .mobile-treatment-tabs-grid {

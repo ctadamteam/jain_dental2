@@ -304,6 +304,12 @@
        #aesthetic .ae-pro-item .num-badge {
            transform: translateY(-3px) !important;
        }
+
+       /* PC ONLY: Shift #ae-2 badges 1 and 4 DOWN by 13px (0px Mobile Drift) */
+       #ae-2 .ae-pros-list .ae-pro-item:nth-child(1) .num-badge,
+       #ae-2 .ae-pros-list .ae-pro-item:nth-child(4) .num-badge {
+           transform: translateY(13px) !important;
+       }
    }
 
    /* 7. 투명교정 */

@@ -102,8 +102,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Re-calculate any Swiper sliders or tab indicators upon tab reveal
-        window.dispatchEvent(new Event('resize'));
+        // Update active sub-tab indicator in target section if present
+        const targetSec = document.getElementById(targetId);
+        if (targetSec) {
+            const activeSubBtn = targetSec.querySelector('.tab-btn.active');
+            const tabContainer = targetSec.querySelector('.tab-container');
+            if (activeSubBtn && tabContainer) {
+                const indicator = tabContainer.querySelector('.active-indicator');
+                const btnContainer = tabContainer.querySelector('.tab-buttons');
+                if (indicator && btnContainer) {
+                    const btnRect = activeSubBtn.getBoundingClientRect();
+                    const containerRect = btnContainer.getBoundingClientRect();
+                    indicator.style.left = (btnRect.left - containerRect.left) + 'px';
+                    indicator.style.width = btnRect.width + 'px';
+                }
+            }
+        }
     }
 
     function initMobileTreatmentTabs() {
@@ -155,7 +169,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     initMobileTreatmentTabs();
-    window.addEventListener('resize', initMobileTreatmentTabs);
+
+    // Boundary-checked resize listener to prevent infinite loops
+    let lastWindowWidth = window.innerWidth;
+    window.addEventListener('resize', () => {
+        const currentWidth = window.innerWidth;
+        if ((lastWindowWidth <= 768 && currentWidth > 768) || (lastWindowWidth > 768 && currentWidth <= 768)) {
+            lastWindowWidth = currentWidth;
+            initMobileTreatmentTabs();
+        }
+    });
 
     // 6. Common Legal Modal Popup (이용약관 & 개인정보처리방침)
     const legalModal = document.getElementById('legal-modal');

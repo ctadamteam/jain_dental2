@@ -76,25 +76,82 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Tour Gallery Touch Swipe Support
-    const tourDisplay = document.getElementById('tour-main-display');
-    if (tourDisplay) {
-        let touchStartX = 0;
-        let touchEndX = 0;
+    // 5. Mobile Master Treatment Tab Switching (2x3 Grid)
+    const mTabButtons = document.querySelectorAll('.m-tab-btn');
+    const treatmentSecIds = ['implant', 'aesthetic', 'clear-aligner', 'conservation', 'tmj'];
 
-        tourDisplay.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-        }, { passive: true });
-
-        tourDisplay.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            if (touchStartX - touchEndX > 50) {
-                if (typeof nextTourImg === 'function') nextTourImg();
-            } else if (touchEndX - touchStartX > 50) {
-                if (typeof prevTourImg === 'function') prevTourImg();
+    function switchMobileTreatmentTab(targetId) {
+        mTabButtons.forEach(btn => {
+            if (btn.getAttribute('data-target') === targetId) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
             }
-        }, { passive: true });
+        });
+
+        treatmentSecIds.forEach(secId => {
+            const sec = document.getElementById(secId);
+            if (sec) {
+                if (secId === targetId) {
+                    sec.classList.remove('m-treatment-section-hidden');
+                    sec.classList.add('m-treatment-section-active');
+                } else {
+                    sec.classList.remove('m-treatment-section-active');
+                    sec.classList.add('m-treatment-section-hidden');
+                }
+            }
+        });
+
+        // Re-calculate any Swiper sliders or tab indicators upon tab reveal
+        window.dispatchEvent(new Event('resize'));
     }
+
+    function initMobileTreatmentTabs() {
+        if (window.innerWidth <= 768) {
+            const activeBtn = document.querySelector('.m-tab-btn.active');
+            const initialTarget = activeBtn ? activeBtn.getAttribute('data-target') : 'implant';
+            switchMobileTreatmentTab(initialTarget);
+        } else {
+            // Restore all sections on Desktop for 0px PC Drift
+            treatmentSecIds.forEach(secId => {
+                const sec = document.getElementById(secId);
+                if (sec) {
+                    sec.classList.remove('m-treatment-section-hidden');
+                    sec.classList.remove('m-treatment-section-active');
+                }
+            });
+        }
+    }
+
+    mTabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.getAttribute('data-target');
+            switchMobileTreatmentTab(targetId);
+        });
+    });
+
+    // Handle GNB menu links on Mobile to auto-switch master treatment tab
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                const href = link.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    const secId = href.substring(1);
+                    if (treatmentSecIds.includes(secId)) {
+                        e.preventDefault();
+                        switchMobileTreatmentTab(secId);
+                        const masterSec = document.getElementById('mobile-treatment-section');
+                        if (masterSec) {
+                            masterSec.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                }
+            }
+        });
+    });
+
+    initMobileTreatmentTabs();
+    window.addEventListener('resize', initMobileTreatmentTabs);
 });
 
 function updateTabIndicators() {

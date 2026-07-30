@@ -5095,6 +5095,14 @@
         background: #ffffff !important;
     }
 
+    #mobile-treatment-section .container,
+    .mobile-only-section .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
     .section-subtitle,
     .mobile-only-section .section-subtitle,
     #implant .section-subtitle,
@@ -5146,18 +5154,19 @@
         width: 100% !important;
         height: 48px !important;
         padding: 0 8px !important;
-        background: #f7f8fa !important;
-        border: 1px solid #e2e8f0 !important;
-        border-radius: 8px !important;
+        background: #ffffff !important;
+        border: none !important;
+        border-radius: 0 !important;
         font-size: 15px !important;
-        font-weight: 400 !important;
-        color: #64748b !important;
+        font-weight: 700 !important; /* Bold for Inactive */
+        color: #111111 !important; /* Black for Inactive */
         cursor: pointer !important;
         outline: none !important;
+        box-shadow: none !important;
         box-sizing: border-box !important;
         white-space: nowrap !important;
         overflow: hidden !important;
-        transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease !important;
+        transition: color 0.25s ease, background-color 0.25s ease !important;
     }
 
     .m-tab-btn .m-tab-text {
@@ -5169,10 +5178,11 @@
 
     .m-tab-btn.active {
         background: #ffffff !important;
-        border-color: #0b1732 !important;
-        color: #0b1732 !important;
-        font-weight: 700 !important;
-        box-shadow: 0 4px 12px rgba(11, 23, 50, 0.08) !important;
+        border: none !important;
+        border-radius: 0 !important;
+        color: #0b1732 !important; /* Navy for Active */
+        font-weight: 800 !important; /* Extra Bold for Active */
+        box-shadow: none !important;
     }
 
     .m-tab-btn .tab-indicator {
@@ -5182,7 +5192,7 @@
         right: 0 !important;
         height: 3.5px !important;
         background-color: #0b1732 !important;
-        border-radius: 2px 2px 0 0 !important;
+        border-radius: 0 !important;
         width: 0% !important;
         margin: 0 auto !important;
         opacity: 0 !important;

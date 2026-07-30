@@ -5463,6 +5463,20 @@
 }
 
 /* Legal Content Typography */
+.legal-content-section .legal-chapter-title {
+    color: #122b5e;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+    letter-spacing: -0.5px;
+}
+.legal-content-section .legal-chapter-title:first-child {
+    margin-top: 0;
+}
+
 .legal-content-section h4 {
     color: #122b5e;
     font-size: 17px;

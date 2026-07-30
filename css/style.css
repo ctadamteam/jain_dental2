@@ -1353,13 +1353,13 @@
 
     .footer .footer-info,
     .footer .footer-info p {
-        font-size: 11px !important;
-        line-height: 1.45 !important;
-        margin-bottom: 2px !important;
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 3px !important;
     }
 
     .footer .footer-info .copyright {
-        font-size: 10px !important;
+        font-size: 12px !important;
         margin-top: 10px !important;
     }
 

@@ -5168,11 +5168,13 @@
     }
 
     /* Hiding Sections 4-8 on Mobile when not selected in Master Tab */
-    .m-treatment-hidden {
+    .m-treatment-hidden,
+    .m-treatment-section-hidden {
         display: none !important;
     }
 
-    .m-treatment-active {
+    .m-treatment-active,
+    .m-treatment-section-active {
         display: block !important;
         animation: mTabFadeIn 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
     }

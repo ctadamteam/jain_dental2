@@ -127,6 +127,10 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => {
             const targetId = btn.getAttribute('data-target');
             switchMobileTreatmentTab(targetId);
+            const masterSec = document.getElementById('mobile-treatment-section');
+            if (masterSec) {
+                masterSec.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     });
 

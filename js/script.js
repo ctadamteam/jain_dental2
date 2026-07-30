@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    
+function initJainDentalApp() {
     // 1. Mobile Hamburger Menu Toggle (Touch + Click Deduplicated Handler)
     const hamburgerBtn = document.querySelector('.hamburger-btn');
     const navMenu = document.querySelector('.nav-menu');
@@ -22,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburgerBtn.addEventListener('touchstart', toggleMenu, { passive: false });
         hamburgerBtn.addEventListener('click', toggleMenu);
 
-        // Close mobile menu on link click
+        // Close mobile menu on link click & navigate smoothly
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburgerBtn.classList.remove('active');
@@ -264,7 +263,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initJainDentalApp);
+} else {
+    initJainDentalApp();
+}
 
 function updateTabIndicators() {
     document.querySelectorAll('.tab-buttons.text-style').forEach(container => {

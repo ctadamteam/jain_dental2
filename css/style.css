@@ -214,8 +214,9 @@
    /* 5. 임플란트 */
    .implant-intro { text-align: center; margin-bottom: 50px; }
    .implant-intro .implant-desc { font-size: 20px; line-height: 1.6; color: #333; margin-bottom: 20px; }
-   .implant-intro .implant-desc.highlight { color: #122b5e; }
-   .implant-intro .implant-desc.highlight strong { font-weight: 700; }
+   .implant-intro .implant-desc.highlight { color: #333333; }
+   .implant-intro .implant-desc.highlight strong,
+   #implant .implant-intro .implant-desc.highlight strong { color: #122b5e !important; font-weight: 700 !important; }
 
    .implant-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1000px; margin: 0 auto; }
    .ig-item { display: flex; background: #fff; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 0; overflow: hidden; }

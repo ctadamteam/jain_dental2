@@ -3606,7 +3606,7 @@
 
 #ae-2 .ae-pros-list .ae-pro-item:nth-child(1) .num-badge,
 #ae-2 .ae-pros-list .ae-pro-item:nth-child(4) .num-badge {
-    transform: translateY(-16px) !important;
+    transform: translateY(-13px) !important; /* Shifted badges 1 and 4 DOWN by 3px (-16px -> -13px) */
 }
 
 

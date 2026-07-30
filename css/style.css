@@ -3692,6 +3692,17 @@
     padding-bottom: 12px !important;
 }
 
+/* PC ONLY: Increase left and bottom inner padding for Section 6 Clear Aligner feature grey box (0px Mobile Drift) */
+@media screen and (min-width: 769px) {
+    #clear-aligner .implant-target-box,
+    .ca-info-section .implant-target-box {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+}
+
 
 /* ==========================================================================
    DIRECTIVE: CONVERT SECTION 6 CA-RECOMMEND-GRID TO 2X3 GRID ON MOBILE WITH OPTIMIZED IMAGE HEIGHT

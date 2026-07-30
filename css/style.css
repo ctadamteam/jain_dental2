@@ -5507,12 +5507,13 @@
 
 .legal-content-section .legal-intro {
     font-size: 15px;
-    color: #333333;
-    background: #f8fafc;
-    padding: 14px 18px;
+    color: #ffffff;
+    background: #122b5e;
+    padding: 16px 20px;
     border-radius: 8px;
-    border-left: 3px solid #122b5e;
-    margin-bottom: 18px;
+    border-left: none;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .legal-content-section .legal-contact-box {

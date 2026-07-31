@@ -2309,9 +2309,9 @@
         overflow: hidden !important;
     }
 
-    /* Shift RAYFace 5D Segmentation graphic 5px to the right on mobile only */
+    /* Shift RAYFace 5D Segmentation graphic 15px to the right on mobile only */
     #special-1 .tscan-img {
-        background-position: calc(50% + 5px) center !important;
+        background-position: calc(50% + 15px) center !important;
     }
 
     .tscan-img img {

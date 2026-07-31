@@ -1139,119 +1139,137 @@
         transform: translateY(-4px) !important;
     }
 
-    /* Mobile 2-Column Split (2분할) for Section 11 Consult & Hours Boxes (0px PC Drift) */
+    /* Mobile Vertical 1-Column Stacked Layout for Section 11 Consult, Hours & Location (Matching Image 2 Layout, 0px PC Drift) */
+    #location .loc-info,
+    .loc-info {
+        order: 1 !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        flex: none !important;
+        padding: 35px 24px 45px 24px !important;
+        margin-top: 0 !important;
+        box-sizing: border-box !important;
+        background-color: #081d45 !important;
+    }
+
     #location .loc-top-row,
     .loc-top-row {
-        display: grid !important;
-        grid-template-columns: 38% 62% !important;
-        gap: 10px !important;
-        align-items: start !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 32px !important;
+        align-items: flex-start !important;
         margin-left: 0 !important;
     }
 
     #location .loc-box-consult,
     .loc-box-consult {
         width: 100% !important;
-        min-width: 0 !important;
+        min-width: 100% !important;
         margin-left: 0 !important;
     }
 
     #location .loc-box-hours,
     .loc-box-hours {
         width: 100% !important;
-        min-width: 0 !important;
+        min-width: 100% !important;
         margin-left: 0 !important;
-        transform: translateX(35px) !important;
+        transform: none !important;
     }
 
-    #location .loc-info h4,
-    .loc-info h4,
-    .loc-title {
-        font-size: 19px !important;
-        position: relative !important;
-        top: 0 !important;
+    #location .loc-box-consult h4,
+    #location .loc-box-hours h4,
+    #location .loc-header-wrap h4,
+    .loc-info h4 {
+        font-size: 18.5px !important;
+        font-weight: 700 !important;
+        color: #C69D5D !important;
         margin-top: 0 !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 14px !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    /* Gold Bullet Dot (●) Title Prefix */
+    #location .loc-box-consult h4::before,
+    #location .loc-box-hours h4::before,
+    #location .loc-header-wrap h4::before {
+        content: "●" !important;
+        font-size: 11px !important;
+        color: #C69D5D !important;
     }
 
     #location .loc-phone-numbers,
     .loc-phone-numbers {
-        font-size: 20px !important;
-        font-weight: 700 !important;
-        line-height: 1.3 !important;
+        font-size: 27px !important;
+        font-weight: 800 !important;
+        line-height: 1.2 !important;
         color: #ffffff !important;
-        margin-bottom: 6px !important;
+        margin-bottom: 0 !important;
         white-space: nowrap !important;
-    }
-
-    #location .loc-phone-numbers br,
-    .loc-phone-numbers br {
-        display: none !important;
+        letter-spacing: 0.5px !important;
     }
 
     #location .loc-consult-note,
     .loc-consult-note {
-        font-size: 12px !important;
-        color: #C69D5D !important;
-        line-height: 1.4 !important;
-        margin-top: 4px !important;
-        margin-bottom: 0 !important;
-        word-break: keep-all !important;
-    }
-
-    /* Location Phone Slash & BR Controls */
-    #location .phone-slash,
-    .phone-slash {
-        display: inline !important;
-    }
-    #location .phone-br,
-    .phone-br {
         display: none !important;
     }
 
     #location .loc-box-hours ul,
     .loc-box-hours ul {
         font-size: 15px !important;
-        line-height: 1.85 !important;
+        line-height: 2.1 !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     #location .loc-box-hours ul li,
     .loc-box-hours ul li {
         white-space: nowrap !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        max-width: 320px !important;
+        color: #ffffff !important;
     }
 
     #location .loc-box-hours ul li span[style*="width"],
     .loc-box-hours ul li span[style*="width"] {
-        width: 88px !important;
+        width: auto !important;
         font-size: 15px !important;
-        letter-spacing: -0.5px !important;
+        color: #b0c2de !important;
         white-space: nowrap !important;
-        margin-right: 2px !important;
     }
 
     #location .loc-bottom-row,
     .loc-bottom-row {
-        margin-top: 30px !important;
-        padding-top: 24px !important;
-        border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
-        position: relative !important;
-    }
-
-    #location .loc-kakao-btn-wrap,
-    .loc-kakao-btn-wrap {
-        position: absolute !important;
-        top: 36px !important;
-        right: 18px !important;
-        margin: 0 !important;
-        padding: 0 !important;
+        margin-top: 32px !important;
+        padding-top: 0 !important;
+        border-top: none !important;
+        position: static !important;
     }
 
     #location .loc-header-wrap,
     .loc-header-wrap {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        margin-bottom: 6px !important;
+        display: block !important;
+        margin-bottom: 14px !important;
+    }
+
+    #location .loc-address-text,
+    .loc-address-text {
+        font-size: 14.5px !important;
+        line-height: 1.65 !important;
+        word-break: keep-all !important;
+        margin-bottom: 18px !important;
+        margin-top: 0 !important;
+        color: #e0e6ed !important;
+    }
+
+    #location .loc-kakao-btn-wrap,
+    .loc-kakao-btn-wrap {
+        position: static !important;
+        margin-top: 20px !important;
+        margin-bottom: 18px !important;
+        display: block !important;
     }
 
     #location .loc-kakao-btn,
@@ -1259,39 +1277,35 @@
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        background-color: #C69D5D !important;
-        color: #000000 !important;
-        font-weight: 700 !important;
-        font-size: 16px !important;
-        padding: 7px 18px !important;
-        border-radius: 20px !important;
+        background-color: #1e3563 !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
+        font-size: 15px !important;
+        padding: 10px 22px !important;
+        border-radius: 8px !important;
         text-decoration: none !important;
-        position: relative !important;
-        top: -3px !important;
+        position: static !important;
         margin: 0 !important;
         width: auto !important;
-        height: auto !important;
-        line-height: 1.2 !important;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.15) !important;
+        box-shadow: none !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
     }
 
-    #location .loc-address-text,
-    .loc-address-text {
-        font-size: 14.5px !important;
-        line-height: 1.55 !important;
-        word-break: keep-all !important;
-        margin-bottom: 12px !important;
-        margin-top: 0 !important;
+    #location .loc-kakao-btn::before {
+        content: "📍" !important;
+        font-size: 14px !important;
+        margin-right: 6px !important;
     }
 
     #location .loc-parking-info,
     .loc-parking-info {
-        font-size: 16px !important;
-        line-height: 1.4 !important;
+        font-size: 14.5px !important;
+        line-height: 1.5 !important;
         display: flex !important;
         align-items: center !important;
-        gap: 6px !important;
-        margin-top: 10px !important;
+        gap: 8px !important;
+        margin-top: 14px !important;
+        color: #cccccc !important;
     }
 
     #location .loc-map,

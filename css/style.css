@@ -4450,9 +4450,9 @@
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
-    #clear-aligner p br,
-    #clear-aligner .section-desc br,
-    #clear-aligner div p br {
+    #clear-aligner p br:not(.m-br),
+    #clear-aligner .section-desc br:not(.m-br),
+    #clear-aligner div p br:not(.m-br) {
         display: none !important;
     }
 

@@ -2343,10 +2343,10 @@
         overflow: hidden !important;
     }
 
-    /* Center RAYFace main banner graphic on mobile without left whitespace gap */
+    /* Center RAYFace main banner graphic on mobile matching 3D CT banner image size */
     #special-1 .tscan-img {
         background-position: center center !important;
-        background-size: cover !important;
+        background-size: contain !important;
     }
 
     .tscan-img img {

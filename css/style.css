@@ -2922,7 +2922,7 @@
         word-break: keep-all !important;
     }
 
-    .ig-text h4 br {
+    .ig-text h4 br:not(.m-br) {
         display: none !important; /* Hide forced line breaks inside card titles */
     }
 

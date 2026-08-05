@@ -4438,8 +4438,8 @@
         overflow-wrap: break-word !important;
     }
 
-    .con-info-section p br,
-    #conservation .con-info-section p br {
+    .con-info-section p br:not(.m-br),
+    #conservation .con-info-section p br:not(.m-br) {
         display: none !important;
     }
 }

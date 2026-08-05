@@ -21,6 +21,9 @@
    a { text-decoration: none; color: inherit; }
    ul { list-style: none; }
    button { background: none; border: none; cursor: pointer; font-family: inherit; }
+
+   .m-br { display: none !important; }
+   .pc-br { display: inline !important; }
    
    /* ==========================================================================
       Layout
@@ -1573,6 +1576,15 @@
     br {
         display: inline !important;
         content: " " !important;
+    }
+
+    .pc-br {
+        display: none !important;
+    }
+
+    .m-br {
+        display: block !important;
+        content: normal !important;
     }
 
     /* 2. Header & Logo Size (135px Balanced Size) */

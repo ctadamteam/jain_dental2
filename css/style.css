@@ -2343,9 +2343,10 @@
         overflow: hidden !important;
     }
 
-    /* Shift RAYFace 5D Segmentation graphic 15px to the right on mobile only */
+    /* Center RAYFace main banner graphic on mobile without left whitespace gap */
     #special-1 .tscan-img {
-        background-position: calc(50% + 15px) center !important;
+        background-position: center center !important;
+        background-size: cover !important;
     }
 
     .tscan-img img {

@@ -3291,11 +3291,11 @@
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
-    #implant p br,
-    #implant .implant-tab-desc br,
-    #implant .sinus-desc br,
-    #implant .sinus-info-box br,
-    #implant .implant-intro br {
+    #implant p br:not(.m-br),
+    #implant .implant-tab-desc br:not(.m-br),
+    #implant .sinus-desc br:not(.m-br),
+    #implant .sinus-info-box br:not(.m-br),
+    #implant .implant-intro br:not(.m-br) {
         display: none !important;
     }
 }

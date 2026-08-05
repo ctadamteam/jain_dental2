@@ -3203,7 +3203,7 @@
     }
 
     /* Step Description: Hide forced <br> line breaks */
-    .process-item p br {
+    .process-item p br:not(.m-br) {
         display: none !important; /* Remove forced line breaks in step description */
     }
 

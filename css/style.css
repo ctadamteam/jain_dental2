@@ -3775,8 +3775,8 @@
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
-    #aesthetic .ae-info-section p br,
-    .ae-info-section p br {
+    #aesthetic .ae-info-section p br:not(.m-br),
+    .ae-info-section p br:not(.m-br) {
         display: none !important;
     }
     #aesthetic .ae-info-section p,

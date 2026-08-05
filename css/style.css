@@ -4089,7 +4089,7 @@
         word-break: keep-all !important;
     }
 
-    .ca-proc-text p br {
+    .ca-proc-text p br:not(.m-br) {
         display: none !important;
     }
 }
@@ -4159,7 +4159,7 @@
         word-break: keep-all !important;
     }
 
-    .ca-proc-text p br {
+    .ca-proc-text p br:not(.m-br) {
         display: none !important;
     }
 }

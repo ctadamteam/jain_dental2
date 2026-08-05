@@ -3619,8 +3619,8 @@
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
-    #aesthetic .aesthetic-intro br,
-    .aesthetic-intro br {
+    #aesthetic .aesthetic-intro br:not(.m-br),
+    .aesthetic-intro br:not(.m-br) {
         display: none !important;
     }
 
@@ -3642,8 +3642,8 @@
         padding-right: 5px !important;
     }
 
-    .ae-text br,
-    #aesthetic .ae-text br {
+    .ae-text br:not(.m-br),
+    #aesthetic .ae-text br:not(.m-br) {
         display: none !important;
     }
 

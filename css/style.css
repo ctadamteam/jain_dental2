@@ -4560,8 +4560,8 @@
         overflow-wrap: break-word !important;
     }
 
-    .discomfort-container p br,
-    #conservation .discomfort-container p br {
+    .discomfort-container p br:not(.m-br),
+    #conservation .discomfort-container p br:not(.m-br) {
         display: none !important;
     }
 }

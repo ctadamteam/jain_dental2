@@ -4962,13 +4962,19 @@
         font-size: 18px !important;
     }
 
+    #tmj .tmj-injection-grid .injection-content,
+    .tmj-injection-grid .injection-content {
+        width: 100% !important;
+    }
+
     #tmj .tmj-injection-grid .injection-desc,
     .tmj-injection-grid .injection-desc {
         font-size: 15px !important;
         line-height: 1.6 !important;
         word-break: keep-all !important;
         text-align: left !important;
-        padding: 0 10px !important;
+        padding: 0 !important;
+        width: 100% !important;
         box-sizing: border-box !important;
     }
 }

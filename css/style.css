@@ -4802,8 +4802,8 @@
 
 
     /* 2. Hide forced <br> tags in Section 8 info text */
-    #tmj .tmj-info-section p br,
-    .tmj-info-section p br {
+    #tmj .tmj-info-section p br:not(.m-br),
+    .tmj-info-section p br:not(.m-br) {
         display: none !important;
     }
 

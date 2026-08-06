@@ -4973,7 +4973,7 @@
         line-height: 1.6 !important;
         word-break: keep-all !important;
         text-align: left !important;
-        padding: 0 !important;
+        padding: 0 5px !important;
         width: 100% !important;
         box-sizing: border-box !important;
     }

@@ -4968,6 +4968,8 @@
         line-height: 1.6 !important;
         word-break: keep-all !important;
         text-align: left !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
     }
 }
 

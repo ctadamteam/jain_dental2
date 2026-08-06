@@ -5155,8 +5155,8 @@
         margin-bottom: 12px !important;
     }
 
-    #tmj .tmj-behavior-desc br,
-    .tmj-behavior-desc br {
+    #tmj .tmj-behavior-desc br:not(.m-br),
+    .tmj-behavior-desc br:not(.m-br) {
         display: none !important;
     }
 

@@ -4967,6 +4967,7 @@
         font-size: 15px !important;
         line-height: 1.6 !important;
         word-break: keep-all !important;
+        text-align: left !important;
     }
 }
 
